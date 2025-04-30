@@ -12,16 +12,16 @@
     <header class="header">
         <div class="container">
            <div class="header__inner">
-            <div class="header__video">
-                <div class="header__video_tabs">
-                    <button class="btn-reset header__video_tab">
+            <div class="header__media">
+                <div class="header__media_tabs">
+                    <button class="btn-reset header__media_tab active" data-tab="tab1">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="4" y="8" width="12" height="8" rx="2" stroke-width="1.5" />
                             <path d="M5.38892 3L9.88895 7.50003L14.3889 3" stroke-width="1.5" stroke-linejoin="bevel" />
                           </svg>
                           Телевидение
                     </button>
-                    <button class="btn-reset header__video_tab active">
+                    <button class="btn-reset header__media_tab" data-tab="tab2">
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M13.5 13C15.1568 11.3431 15.1568 8.65684 13.5 6.99999M7.50001 13C5.84316 11.3431 5.84316 8.65684 7.50001 6.99999" stroke-width="1.5" />
                             <path d="M15.5 15C18.2614 12.2385 18.2614 7.76141 15.5 4.99999M5.50001 15C2.73859 12.2385 2.73859 7.76141 5.50001 4.99999" stroke-width="1.5" />
@@ -30,8 +30,13 @@
                           Радио
                     </button>
                 </div>
-                <div class="header__video_content">
-                    <img src="./assets/img/testvideo.png" alt="тест">
+                <div class="header__media_content active" id="tab1">
+                    <!-- <img src="./assets/img/testvideo.png" alt="тест"> -->
+                    1
+                </div>
+                <div class="header__media_content" id="tab2">
+                    <!-- <img src="./assets/img/testvideo.png" alt="тест"> -->
+                    2
                 </div>
             </div>
             <div class="header__main">
@@ -255,6 +260,134 @@
                             <div class="content__popular popular-sidebar">
                                 <h3 class="popular-sidebar__title">Популярное</h3>
                                 <ul class="list-reset popular-sidebar__list">
+                                    <li class="popular-sidebar__item">
+                                        <a href="#" class="popular-sidebar__item_text">
+                                            Учёные создали материал, который восстанавливается
+                                        </a>
+                                        <div class="popular-sidebar__item_info">
+                                            <time class="popular-sidebar__item_time">
+                                                19 сен, 21:34
+                                            </time>
+                                            <div class="popular-sidebar__item_views">
+                                                <div class="item-views__icon">
+                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
+                                                </div>
+                                                <span>99</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="popular-sidebar__item">
+                                        <a href="#" class="popular-sidebar__item_text">
+                                            Учёные создали материал, который восстанавливается
+                                        </a>
+                                        <div class="popular-sidebar__item_info">
+                                            <time class="popular-sidebar__item_time">
+                                                19 сен, 21:34
+                                            </time>
+                                            <div class="popular-sidebar__item_views">
+                                                <div class="item-views__icon">
+                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
+                                                </div>
+                                                <span>99</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="popular-sidebar__item">
+                                        <a href="#" class="popular-sidebar__item_text">
+                                            Учёные создали материал, который восстанавливается
+                                        </a>
+                                        <div class="popular-sidebar__item_info">
+                                            <time class="popular-sidebar__item_time">
+                                                19 сен, 21:34
+                                            </time>
+                                            <div class="popular-sidebar__item_views">
+                                                <div class="item-views__icon">
+                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
+                                                </div>
+                                                <span>99</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="popular-sidebar__item">
+                                        <a href="#" class="popular-sidebar__item_text">
+                                            Учёные создали материал, который восстанавливается
+                                        </a>
+                                        <div class="popular-sidebar__item_info">
+                                            <time class="popular-sidebar__item_time">
+                                                19 сен, 21:34
+                                            </time>
+                                            <div class="popular-sidebar__item_views">
+                                                <div class="item-views__icon">
+                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
+                                                </div>
+                                                <span>99</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="popular-sidebar__item">
+                                        <a href="#" class="popular-sidebar__item_text">
+                                            Учёные создали материал, который восстанавливается
+                                        </a>
+                                        <div class="popular-sidebar__item_info">
+                                            <time class="popular-sidebar__item_time">
+                                                19 сен, 21:34
+                                            </time>
+                                            <div class="popular-sidebar__item_views">
+                                                <div class="item-views__icon">
+                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
+                                                </div>
+                                                <span>99</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="popular-sidebar__item">
+                                        <a href="#" class="popular-sidebar__item_text">
+                                            Учёные создали материал, который восстанавливается
+                                        </a>
+                                        <div class="popular-sidebar__item_info">
+                                            <time class="popular-sidebar__item_time">
+                                                19 сен, 21:34
+                                            </time>
+                                            <div class="popular-sidebar__item_views">
+                                                <div class="item-views__icon">
+                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
+                                                </div>
+                                                <span>99</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="popular-sidebar__item">
+                                        <a href="#" class="popular-sidebar__item_text">
+                                            Учёные создали материал, который восстанавливается
+                                        </a>
+                                        <div class="popular-sidebar__item_info">
+                                            <time class="popular-sidebar__item_time">
+                                                19 сен, 21:34
+                                            </time>
+                                            <div class="popular-sidebar__item_views">
+                                                <div class="item-views__icon">
+                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
+                                                </div>
+                                                <span>99</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="popular-sidebar__item">
+                                        <a href="#" class="popular-sidebar__item_text">
+                                            Учёные создали материал, который восстанавливается
+                                        </a>
+                                        <div class="popular-sidebar__item_info">
+                                            <time class="popular-sidebar__item_time">
+                                                19 сен, 21:34
+                                            </time>
+                                            <div class="popular-sidebar__item_views">
+                                                <div class="item-views__icon">
+                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
+                                                </div>
+                                                <span>99</span>
+                                            </div>
+                                        </div>
+                                    </li>
                                     <li class="popular-sidebar__item">
                                         <a href="#" class="popular-sidebar__item_text">
                                             Учёные создали материал, который восстанавливается
