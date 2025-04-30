@@ -16,6 +16,17 @@ const swiper = new Swiper('.swiper', {
     },
   
   });
+
+
+  function fixHeaderOnScroll() {
+    const header = document.querySelector('.header');
+    if(window.pageYOffset> 300) {
+        header.classList.add("fixed");
+    }else {
+        header.classList.remove("fixed");
+    }
+  }
+  window.addEventListener("scroll",fixHeaderOnScroll)
 //   swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal
 // swiper-pagination-current
 // swiper-pagination-total
