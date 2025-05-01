@@ -34,7 +34,7 @@
                     <!-- <img src="./assets/img/testvideo.png" alt="тест">
                     1 -->
                     <video
-                    poster="./assets/poster.jpg" class="header__media_video" id="videoOne">
+                    poster="./assets/img/preview.png" class="header__media_video" id="videoOne">
                     <source
                       src="./assets/test.mp4"
                       type="video/mp4"
@@ -324,7 +324,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="btn-reset head__search">
+                    <button class="btn-reset head__search head__search--fixed">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="7.5" cy="7.5" r="6.5" transform="matrix(-1 0 0 1 19 3)" stroke="#1A1A1A" stroke-width="2" />
                             <path d="M16 15.5L21 20.5" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" />
@@ -355,7 +355,53 @@
                     </label>
                    </div>
                    <div class="menu__results">
-
+                    <h6 class="menu__results_title">
+                        Результаты поиска
+                    </h6>
+                    <div class="menu__results_main">
+                        <div class="menu-results__filters menu-filters">
+                            <ul class="list-reset menu-filters__list">
+                                <li class="menu-filters__item">
+                                    Все
+                                </li>
+                                <li class="menu-filters__item">
+                                    Все
+                                </li>
+                                <li class="menu-filters__item">
+                                    Все
+                                </li>
+                                <li class="menu-filters__item">
+                                    Все
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu__results_content results-content">
+                            <div class="results-news">
+                                <div class="results-news__media">
+                                    <img src="./assets/poster.jpg" alt="news image">
+                                </div>
+                                <div class="results-news__info">
+                                   <div class="resuts-news__text">
+                                    <h5 class="results-news__title">
+                                       <a href="#"> В Карабулаке и Джейрахе прошли продовольственные ярмарки, приуроченные к священному месяцу Рамадан.</a>
+                                    </h5>
+                                    <p class="results-news__descr">В Карабулаке и Джейрахе состоялись продовольственные ярмарки, приуроченные к священному месяцу Рамадан. </p>
+                                   </div>
+                                    <div class="popular-sidebar__item_info popular-sidebar__item_info--results">
+                                        <time class="popular-sidebar__item_time">
+                                            19 сен, 21:34
+                                        </time>
+                                        <div class="popular-sidebar__item_views">
+                                            <div class="item-views__icon">
+                                                <img src="./assets/img/Subtract-s.svg" alt="Eye icon">
+                                            </div>
+                                            <span>99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                    </div>
             </div>
           </div>
