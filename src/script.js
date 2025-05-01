@@ -4,6 +4,10 @@ const menu = document.querySelector(".menu");
 const navigators = document.querySelectorAll(".menu > .navigator");
 const body = document.querySelector('.body');
 const menuitem = navigators.length;
+const video = document.getElementById("videoOne");
+const muteButton = document.getElementById("muteVideo");
+const unmuteButton = document.getElementById("unmuteVideo");
+const fullscreenButton = document.getElementById("fullScreenVideo");
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -57,7 +61,77 @@ function showTab(tabId) {
   }
 }
 
+function videoCustom() {
+  const videoEl = document.querySelector('.header__media_video');
+  const playBtn = document.querySelector('#play');
+  const pauseBtn = document.querySelector("#pause");
 
+  playBtn.addEventListener("click",()=> {
+    videoEl.play();
+    playBtn.classList.add("hidden");
+    pauseBtn.classList.remove("hidden");
+});
+pauseBtn.addEventListener("click",()=> {
+  videoEl.pause();
+  playBtn.classList.remove("hidden");
+  pauseBtn.classList.add("hidden");
+});
+}
+function toggleFullscreen(element) {
+  if (!document.fullscreenElement) {
+    // Если не в полноэкранном режиме, запрашиваем его
+    if (element.requestFullscreen) {
+      element.requestFullscreen();    // Стандартный
+    } else if (element.mozRequestFullScreen) { /* Firefox */
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      element.webkitRequestFullscreen();
+    } else if (element.msRequestFullscreen) { /* IE/Edge */
+      element.msRequestFullscreen();
+    }
+  } else {
+    // Если в полноэкранном режиме, выходим из него
+    if (document.exitFullscreen) {
+      document.exitFullscreen();      // Стандартный
+    } else if (document.mozCancelFullScreen) { /* Firefox */
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE/Edge */
+      document.msExitFullscreen();
+    }
+  }
+}
+
+
+function toggleMute() {
+  // if (video.muted) {
+  //   video.muted = false;
+  //   muteButton.classList.add("hidden");
+  //  unmuteButton.classList.remove("hidden");
+  // } else {
+  //   video.muted = true;
+  //   muteButton.classList.remove("hidden");
+  //  unmuteButton.classList.add("hidden");
+  // }
+ muteButton.addEventListener("click",()=> {
+  video.muted=true;
+  unmuteButton.classList.remove("hidden");
+  muteButton.classList.add("hidden");
+ })
+ unmuteButton.addEventListener("click",()=> {
+  video.muted=false;
+  muteButton.classList.remove("hidden");
+  unmuteButton.classList.add("hidden");
+ })
+}
+
+
+
+toggleMute()
+fullscreenButton.addEventListener("click", function() {
+  toggleFullscreen(video);
+});
 tabBtns.forEach(button => {
   button.addEventListener('click', () => {
     const tabId = button.dataset.tab;
@@ -66,8 +140,9 @@ tabBtns.forEach(button => {
 });
 
 
-showTab('tab2');
 
+showTab('tab1');
+videoCustom()
 
   function fixHeaderOnScroll() {
     const header = document.querySelector('.header');
