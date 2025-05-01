@@ -85,9 +85,13 @@ img {
   .main.active {
     padding-top: 443px;
   }
+  .dis-scroll {
+    overflow-y: hidden;
+  }
 /* header */
 .header {
     height: 200px;
+    position: relative;
 
 }
 .header__inner {
@@ -277,7 +281,7 @@ color: var(--bw-black);
     width: 100%;
 }
 .header.fixed .schedule-list__item {
-max-width: none;
+
 flex-direction: row;
 gap:17px;
   justify-content: center;
@@ -302,7 +306,14 @@ gap:17px;
 
 }
 .header__schedule_body--fixed {
-    width: 800px;
+    width: 1210px;
+    overflow-x: hidden;
+    display: flex;
+  justify-content: center;
+}
+.schedule-list--fixed {
+    display: flex;
+    width: 100%;
 }
 .header.fixed .head__inner {
     max-width: none;
@@ -859,4 +870,81 @@ font-weight: 600;
 font-size: 14px;
 line-height: 143%;
 color: var(--neutral-neutral-300);
+}
+
+
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 8;
+    transform: scaleY(0);
+    background: var(--neutral-neutral-900);
+    transform-origin: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.2s cubic-bezier(0, 0.32, 0.36, 0.97);
+}
+.navigator {
+    margin: 10px;
+    background: transparent;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 34px;
+    box-shadow: inset 0 0 5px 0px #f44336;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+    transition: all 1s linear;
+}
+.menu.open {
+    transform: scaleY(1);
+}
+.menu__container {
+    height: 100%;
+}
+.menu.open .navigator {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.menu__inner {
+    padding-top: 12%;
+    height: 100%;
+}
+.menu__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    gap: 100px;
+
+}
+.menu__input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 1000px;
+    height: 48px;
+    border-bottom: 1px solid var(--bw-white);
+
+}
+.menu__input input {
+    outline: none;
+    width: 100%;
+    padding: 12px 0px;
+    color:#fff;
+}
+.menu__input input::placeholder {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+color: var(--neutral-neutral-500);
 }
