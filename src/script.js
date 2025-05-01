@@ -1,4 +1,5 @@
 const menuButton = document.querySelector(".head__search");
+const menuCloseBtn = document.querySelector(".menu__close");
 const menu = document.querySelector(".menu");
 const navigators = document.querySelectorAll(".menu > .navigator");
 const body = document.querySelector('.body');
@@ -99,7 +100,23 @@ showTab('tab2');
       }
     }
   });
-
+  menuCloseBtn.addEventListener("click", function() {
+    if (menu.classList.contains("open")) {
+      for (let i = 0; i < menuitem; i++) {
+        navigators[i].style.transition = `all .1s linear .${i + 1}s`;
+      }
+      menu.style.transition = `all .2s linear .${menuitem + 1}s`;
+      menu.classList.toggle("open");
+      body.classList.toggle("dis-scroll");
+    } else {
+      body.classList.toggle("dis-scroll");
+      menu.classList.toggle("open");
+      menu.style.transition = "all .2s linear .0s";
+      for (let i = 0; i < menuitem; i++) {
+        navigators[i].style.transition = `all .1s linear .${i + 1}s`;
+      }
+    }
+  });
 //   swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal
 // swiper-pagination-current
 // swiper-pagination-total
