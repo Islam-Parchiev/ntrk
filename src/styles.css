@@ -151,6 +151,12 @@ stroke: var(--neutral-neutral-700);
     height: 100%;
     object-fit: cover;
 }
+.header__media_content video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .header__main {
     padding-top: 16px;
