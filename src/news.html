@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./vendor/normalize.css">
-    <link rel="stylesheet" href="./vendor/swiper.min.css">
-    <link rel="stylesheet" href="./settings.css">
-    <link rel="stylesheet" href="./header.css">
-    <link rel="stylesheet" href="./tabs.css">
-    <link rel="stylesheet" href="./news-page.css">
-    <link rel="stylesheet" href="./main-news.css"> 
-    <link rel="stylesheet" href="./news-item.css">
-    <link rel="stylesheet" href="./popular-sidebar.css"> 
-    <link rel="stylesheet" href="./footer.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/vendor/normalize.css">
+    <link rel="stylesheet" href="./css/vendor/swiper.min.css">
+    <link rel="stylesheet" href="./css/settings.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/tabs.css">
+    <link rel="stylesheet" href="./css/news-page.css">
+    <link rel="stylesheet" href="./css/main-news.css"> 
+    <link rel="stylesheet" href="./css/news-item.css">
+    <link rel="stylesheet" href="./css/dropdown.css"> 
+    <link rel="stylesheet" href="./css/popular-sidebar.css"> 
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Новости</title>
 </head>
 <body class="body">
@@ -542,7 +543,7 @@
         <div class="news-content__inner">
             <div class="news-content__top">
                 <h1 class="news-page__title">Новости</h1>
-            <div class="news-content__filters_wrapper">
+            <div class="news-content__tabs_wrapper">
                 <div class="tabs">
                     <ul class="list-reset tabs__list">
                         <li class="tab active">
@@ -565,7 +566,7 @@
                         </li>
                     </ul>
                 </div>
-                <button class="btn-reset news-content__filters_btn">
+                <button class="btn-reset news-content__filters_btn" id="filtersBtn">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 6L13 6" stroke="#1A1A1A" stroke-width="1.5" />
                         <path d="M17 14L7 14" stroke="#1A1A1A" stroke-width="1.5" />
@@ -574,6 +575,53 @@
                       </svg>
                       Фильтры
                 </button>
+            </div>
+            <div class="filters">
+            <div class="filter-item filters--sort">
+                <span class="filter-item__title">
+                    Сортировка
+                </span>
+                <div class="dropdown">
+                    <button type="button" class="dropdown__button">По дате</button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="Любой">По дате</li>
+                      <li class="dropdown__list-item dropdown__list-item_active" data-value="до 100 дней">до 100 дней</li>
+                      <li class="dropdown__list-item" data-value="от 100 до 200 дней">от 100 до 200 дней</li>
+                      <li class="dropdown__list-item" data-value="более 200 дней">более 200 дней</li>
+                    </ul>
+                    <input type="text" name="select-category" value="" class="dropdown__input_hidden">
+                  </div>
+            </div>
+            <div class="filter-item filters--time">
+                <span class="filter-item__title">
+                    Период
+                </span>
+                <div class="dropdown">
+                    <button type="button" class="dropdown__button">Все время</button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="Любой">Все время</li>
+                      <li class="dropdown__list-item dropdown__list-item_active" data-value="до 100 дней">до 100 дней</li>
+                      <li class="dropdown__list-item" data-value="от 100 до 200 дней">от 100 до 200 дней</li>
+                      <li class="dropdown__list-item" data-value="более 200 дней">более 200 дней</li>
+                    </ul>
+                    <input type="text" name="select-category" value="" class="dropdown__input_hidden">
+                  </div>
+            </div>
+            <div class="filter-item filters--content">
+                <span class="filter-item__title">
+                    Контент
+                </span>
+                <div class="dropdown">
+                    <button type="button" class="dropdown__button">Весь контент</button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="Любой">Весь контент</li>
+                      <li class="dropdown__list-item dropdown__list-item_active" data-value="до 100 дней">до 100 дней</li>
+                      <li class="dropdown__list-item" data-value="от 100 до 200 дней">от 100 до 200 дней</li>
+                      <li class="dropdown__list-item" data-value="более 200 дней">более 200 дней</li>
+                    </ul>
+                    <input type="text" name="select-category" value="" class="dropdown__input_hidden">
+                  </div>
+            </div>
             </div>
             </div>
             <div class="news-content__bottom">
@@ -1032,6 +1080,7 @@
     </div>
 </footer>
     <script src="./js/swiper.min.js"></script>
+    <script src="./js/dropdown.js"></script>
     <script defer src="./script.js"></script>
 </body>
 </html>
