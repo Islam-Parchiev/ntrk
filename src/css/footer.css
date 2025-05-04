@@ -3,7 +3,7 @@
     min-height: 384px;
     width: 100%;
     background: var(--neutral-neutral-900);
-    background-image: url("./assets/img/footerbg.png");
+    background-image: url("./../assets/img/footerbg.png");
     background-size: auto;
     background-position: center bottom;
     background-repeat: no-repeat;
