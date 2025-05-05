@@ -85,6 +85,7 @@
 }
 
 .releases-item {
+    margin-top: 2.4%;
     width: 280px;
     display: flex;
     flex-direction: column;
