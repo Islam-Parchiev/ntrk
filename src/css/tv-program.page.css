@@ -16,6 +16,10 @@
     color: var(--bw-black);
 }
 
+.programList {
+    margin-top: 30px;
+}
+
 .programListItem {
     margin-top: 8px;
     display: flex;
@@ -122,6 +126,7 @@
 }
 
 .ProgramTabBar__item {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -132,8 +137,6 @@
 
 .ProgramTabBar__item.active {
     border-bottom: 2px solid var(--primary-primary-500);
-    /* stroke-width: 2px; */
-    /* stroke: var(--primary-primary-500); */
 }
 
 .ProgramTabBar__item time {

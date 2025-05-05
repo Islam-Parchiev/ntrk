@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/settings.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/tabs.css">
-    <link rel="stylesheet" href="./css/tv-program.page.css">
+    <link rel="stylesheet" href="./css/transfer.page.css">
     <link rel="stylesheet" href="./css/main-news.css">
     <link rel="stylesheet" href="./css/news-item.css">
     <link rel="stylesheet" href="./css/dropdown.css">
@@ -20,7 +20,7 @@
     <title>Новости</title>
 </head>
 
-<body class="body tvProgram">
+<body class="body transfer-body">
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -591,373 +591,161 @@
         </div>
     </header>
 
-    <main class="tvProgram__page">
-        <section class="tvProgram__tv">
+    <main class="transfer__page">
+        <section class="transfer-hero">
+            <div class="container transfer-hero__container">
+                <div class="transfer-hero__inner">
+                    <div class="transfer-hero__info">
+                        <time>ПО БУДНЯМ в 19:50</time>
+                        <h1 class="transfer-hero__title">
+                            ЭРУДИТЫ. Битва интеллектов
+                        </h1>
+                        <p class="transfer-hero__description">
+                            Интеллектуальная передача, где участники соревнуются в знаниях из разных областей. Острые
+                            вопросы, неожиданные темы и азарт делают игру захватывающей, а зрители могут проверить свои
+                            знания вместе с участниками. Каждый выпуск – это возможность не только продемонстрировать
+                            эрудицию, но и узнать множество интересных фактов.
+                        </p>
+                        <span class="transfer-hero__count">28 выпусков</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="transfer-releases releases">
             <div class="container">
-                <div class="tvProgram__inner">
-                    <h1 class="tvProgram__title">
-                        Телепрограмма
-                    </h1>
-                    <div class="tvProgram__main">
-                        <div class="tvProgram__left">
-                            <div class="ProgramTabBar">
-                                <button class="btn-reset ProgramTabBar__btn ProgramTabBar__btn--prev ">
-                                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.25 1L2.25 10L11.25 19" stroke="#1A1A1A" stroke-width="2" />
-                                    </svg>
-                                </button>
-                                <ul class="list-reset ProgramTabBar__list">
-                                    <li class="ProgramTabBar__item">
-                                        <time>12 апр</time>
-                                        <span>Сб</span>
-                                    </li>
-                                    <li class="ProgramTabBar__item">
-                                        <time>12 апр</time>
-                                        <span>Сб</span>
-                                    </li>
-                                    <li class="ProgramTabBar__item active">
-                                        <time>12 апр</time>
-                                        <span>Сб</span>
-                                    </li>
-                                    <li class="ProgramTabBar__item">
-                                        <time>12 апр</time>
-                                        <span>Сб</span>
-                                    </li>
-                                    <li class="ProgramTabBar__item">
-                                        <time>12 апр</time>
-                                        <span>Сб</span>
-                                    </li>
-                                    <li class="ProgramTabBar__item">
-                                        <time>12 апр</time>
-                                        <span>Сб</span>
-                                    </li>
-                                    <li class="ProgramTabBar__item">
-                                        <time>12 апр</time>
-                                        <span>Сб</span>
-                                    </li>
-                                    <li class="ProgramTabBar__item">
-                                        <time>12 апр</time>
-                                        <span>Сб</span>
-                                    </li>
-                                </ul>
-
-                                <button class="btn-reset ProgramTabBar__btn ProgramTabBar__btn--next">
-                                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.75 1L9.75 10L0.75 19" stroke="#1A1A1A" stroke-width="2" />
-                                    </svg>
-                                </button>
-
-                            </div>
-                            <div class="programList">
-                                <div class="programListItem programListItem--third">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
+                <div class="releases__inner">
+                    <h2 class="releases__title">
+                        Выпуски передачи
+                    </h2>
+                    <div class="releases__content">
+                        <ul class="list-reset releases__list">
+                            <li class="releases__item releases-item">
+                                <div class="releases-item__media">
+                                    <video src="./assets/test.mp4" poster="./assets/poster.jpg"></video>
+                                    <button class="btn-reset releases-item__play-btn">
+                                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.7">
+                                                <circle cx="26" cy="26" r="26" fill="#1A1A1A" />
+                                                <path
+                                                    d="M33.9199 24.1398C35.2533 24.9096 35.2533 26.8341 33.9199 27.6039L23.9299 33.3716C22.5966 34.1414 20.9299 33.1792 20.9299 31.6396L20.9299 20.1041C20.9299 18.5645 22.5966 17.6023 23.9299 18.3721L33.9199 24.1398Z"
+                                                    fill="#70E780" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <div class="releases-item__timeline">
+                                        <span>54</span>
+                                        :
+                                        <span>32</span>
                                     </div>
                                 </div>
-                                <div class="programListItem">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem  programListItem--second">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Новости
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
+                                <h6 class="releases-item__title">
+                                    <a href="#">Эрудиты. Выпуск 28. Комета и винчестер</a>
+                                </h6>
+                                <time>28 мар, 21:34</time>
+                            </li>
+                            <li class="releases__item releases-item">
+                                <div class="releases-item__media">
+                                    <video src="./assets/test.mp4" poster="./assets/poster.jpg"></video>
+                                    <button class="btn-reset releases-item__play-btn">
+                                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.7">
+                                                <circle cx="26" cy="26" r="26" fill="#1A1A1A" />
+                                                <path
+                                                    d="M33.9199 24.1398C35.2533 24.9096 35.2533 26.8341 33.9199 27.6039L23.9299 33.3716C22.5966 34.1414 20.9299 33.1792 20.9299 31.6396L20.9299 20.1041C20.9299 18.5645 22.5966 17.6023 23.9299 18.3721L33.9199 24.1398Z"
+                                                    fill="#70E780" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <div class="releases-item__timeline">
+                                        <span>54</span>
+                                        :
+                                        <span>32</span>
                                     </div>
                                 </div>
-                                <div class="programListItem programListItem--third">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
+                                <h6 class="releases-item__title">
+                                    <a href="#">Эрудиты. Выпуск 28. Комета и винчестер</a>
+                                </h6>
+                                <time>28 мар, 21:34</time>
+                            </li>
+                            <li class="releases__item releases-item">
+                                <div class="releases-item__media">
+                                    <video src="./assets/test.mp4" poster="./assets/poster.jpg"></video>
+                                    <button class="btn-reset releases-item__play-btn">
+                                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.7">
+                                                <circle cx="26" cy="26" r="26" fill="#1A1A1A" />
+                                                <path
+                                                    d="M33.9199 24.1398C35.2533 24.9096 35.2533 26.8341 33.9199 27.6039L23.9299 33.3716C22.5966 34.1414 20.9299 33.1792 20.9299 31.6396L20.9299 20.1041C20.9299 18.5645 22.5966 17.6023 23.9299 18.3721L33.9199 24.1398Z"
+                                                    fill="#70E780" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <div class="releases-item__timeline">
+                                        <span>54</span>
+                                        :
+                                        <span>32</span>
                                     </div>
                                 </div>
-                                <div class="programListItem  programListItem--second">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Новости
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem programListItem--third">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
+                                <h6 class="releases-item__title">
+                                    <a href="#">Эрудиты. Выпуск 28. Комета и винчестер</a>
+                                </h6>
+                                <time>28 мар, 21:34</time>
+                            </li>
+                            <li class="releases__item releases-item">
+                                <div class="releases-item__media">
+                                    <video src="./assets/test.mp4" poster="./assets/poster.jpg"></video>
+                                    <button class="btn-reset releases-item__play-btn">
+                                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.7">
+                                                <circle cx="26" cy="26" r="26" fill="#1A1A1A" />
+                                                <path
+                                                    d="M33.9199 24.1398C35.2533 24.9096 35.2533 26.8341 33.9199 27.6039L23.9299 33.3716C22.5966 34.1414 20.9299 33.1792 20.9299 31.6396L20.9299 20.1041C20.9299 18.5645 22.5966 17.6023 23.9299 18.3721L33.9199 24.1398Z"
+                                                    fill="#70E780" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <div class="releases-item__timeline">
+                                        <span>54</span>
+                                        :
+                                        <span>32</span>
                                     </div>
                                 </div>
-                                <div class="programListItem">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem  programListItem--second">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Новости
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
+                                <h6 class="releases-item__title">
+                                    <a href="#">Эрудиты. Выпуск 28. Комета и винчестер</a>
+                                </h6>
+                                <time>28 мар, 21:34</time>
+                            </li>
+                            <li class="releases__item releases-item">
+                                <div class="releases-item__media">
+                                    <video src="./assets/test.mp4" poster="./assets/poster.jpg"></video>
+                                    <button class="btn-reset releases-item__play-btn">
+                                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.7">
+                                                <circle cx="26" cy="26" r="26" fill="#1A1A1A" />
+                                                <path
+                                                    d="M33.9199 24.1398C35.2533 24.9096 35.2533 26.8341 33.9199 27.6039L23.9299 33.3716C22.5966 34.1414 20.9299 33.1792 20.9299 31.6396L20.9299 20.1041C20.9299 18.5645 22.5966 17.6023 23.9299 18.3721L33.9199 24.1398Z"
+                                                    fill="#70E780" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <div class="releases-item__timeline">
+                                        <span>54</span>
+                                        :
+                                        <span>32</span>
                                     </div>
                                 </div>
-                                <div class="programListItem programListItem--third">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem  programListItem--second">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Новости
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem programListItem--third">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem  programListItem--second">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Новости
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-news__right-block tvProgram__right">
-                            <div class="ads-block">
-                                <img src="./assets/add.jpg" alt="add">
-                            </div>
-                        </div>
+                                <h6 class="releases-item__title">
+                                    <a href="#">Эрудиты. Выпуск 28. Комета и винчестер</a>
+                                </h6>
+                                <time>28 мар, 21:34</time>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
