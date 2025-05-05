@@ -1,3 +1,9 @@
+.tvProgram__main {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+
 .tvProgram__inner {
     padding-bottom: 10%;
 }
