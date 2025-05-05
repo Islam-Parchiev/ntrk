@@ -1,0 +1,82 @@
+.advertising__text p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bw-black);
+    margin-top: 2%;
+}
+
+.advertising__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 122%;
+    color: var(--bw-black);
+}
+
+.advertising__inner {
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+
+.advertising__cards {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.advertising__card {
+    border-radius: 12px;
+    background: var(--neutral-neutral-100);
+    width: 384px;
+    height: 244px;
+}
+
+.advertising__card_inner {
+    padding: 20px;
+}
+
+.advertising__card_header {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--neutral-neutral-200);
+}
+
+.advertising__card_title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--bw-black);
+}
+
+.advertising__card_list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 5px;
+}
+
+.advertising__card_item {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bw-black);
+}
+
+.advertising__card_item a {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bw-black);
+}
+
+.advertising__card_item--mail a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--primary-primary-700);
+}
