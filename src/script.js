@@ -1,3 +1,5 @@
+
+
 const menuButton = document.querySelector(".head__search");
 const menuButtonFixed = document.querySelector(".head__search--fixed");
 const menuCloseBtn = document.querySelector(".menu__close");
@@ -213,3 +215,16 @@ videoCustom()
 //   swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal
 // swiper-pagination-current
 // swiper-pagination-total
+document.addEventListener('DOMContentLoaded', function() {
+  const p = document.getElementById("my-player"); // Use getElementById!
+  const player = videojs(p, {
+    controls: true,
+    autoplay: true,
+    preload: 'auto',
+    loop: false,
+    muted: false,
+    poster: './assets/poster.jpg',
+    playbackRates: [0.5, 1, 1.5, 2],
+  });
+});
+

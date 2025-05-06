@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" href="./css/vendor/normalize.css">
     <link rel="stylesheet" href="./css/vendor/swiper.min.css">
+    <link rel="stylesheet" href="./css/vendor/video.css">
     <link rel="stylesheet" href="./css/settings.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/tabs.css">
@@ -599,8 +602,60 @@
                 <div class="release__main_inner">
                     <div class="release__media">
                         <div class="release__media_top">
-                            <video src="./assets/test.mp4" poster="./assets/poster.jpg" controls></video>
-                        </div>
+                            <!-- <video src="./assets/test.mp4" poster="./assets/poster.jpg" controls></video> -->
+                            <!-- <video
+                            id="video-js"
+                            class="video-js"
+                          >
+                            <source src="./assets/test.mp4" type="video/mp4" />
+                            <p class="vjs-no-js">
+                              To view this video please enable JavaScript, and consider upgrading to a
+                              web browser that
+                              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                                >supports HTML5 video</a
+                              >
+                            </p>
+                          </video> -->
+                        <video id="my-player" class="video-js vjs-theme-city release__video">
+                            <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
+                            <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm" />
+                            <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg" />
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that
+                                <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                    supports HTML5 video
+                                </a>
+                            </p>
+                        </video>  
+                        <!-- .vjs-default-skin .vjs-big-play-button {
+                            width:50px;
+                            height:50px;
+                          }
+                          .video-js .vjs-big-play-button {
+                          background:yellow;
+                            border-radius:100%;
+                          }
+                            .video-js .vjs-big-play-button::before {
+content:"T"
+}
+
+or
+.vjs-default-skin .vjs-big-play-button {
+  width:50px;
+  height:50px;
+}
+.video-js .vjs-big-play-button::before {
+
+  color:#70e780;
+}
+.video-js .vjs-big-play-button {
+background:#1a1a1a;
+  border-radius:100%;
+  border:none;
+}
+                            styles for button -->
+                    </div>
                         <div class="release__media_bottom">
                             <h1 class="release__media_title">
                                 Эрудиты. Выпуск 25. Кул и Граница Альтаира
@@ -918,6 +973,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/video.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/dropdown.js"></script>
     <script defer src="./script.js"></script>
