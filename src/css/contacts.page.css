@@ -15,6 +15,23 @@ font-size: 16px;
 line-height: 150%;
 color: var(--bw-black);
 }
+.contacts__address div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.contacts__address a {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bw-black);
+}
+.contacts__address_email {
+    text-decoration: underline;
+text-decoration-skip-ink: none;
+color: var(--primary-primary-700);
+}
 .requisite {
     border-top: 1px solid var(--neutral-neutral-200);
     padding-top: 30px;
@@ -109,4 +126,27 @@ font-weight: 500;
 font-size: 12px;
 line-height: 167%;
 color: var(--neutral-neutral-700);
+}
+
+.aboutUs__director {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.aboutUs__director_info  span {
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 12px;
+line-height: 167%;
+color: var(--neutral-neutral-500);
+}
+.aboutUs__director_name {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: var(--bw-black);
+}
+.aboutUs__text p {
+    margin-top: 20px;
 }
