@@ -1,5 +1,6 @@
 .transfer__page {
     padding-top: 2%;
+    font-family: var(--font-family);
 }
 
 .transfer-hero {
@@ -27,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    font-family: var(--font-family);
+    
 }
 
 .transfer-hero__info time {
@@ -77,7 +78,7 @@
 }
 
 .releases__title {
-    font-family: var(--font-family);
+    
     font-weight: 600;
     font-size: 36px;
     line-height: 122%;
@@ -95,7 +96,7 @@
 }
 
 .releases-item__title a {
-    font-family: var(--font-family);
+    
     font-weight: 600;
     font-size: 14px;
     line-height: 143%;
@@ -104,7 +105,7 @@
 }
 
 .releases-item time {
-    font-family: var(--font-family);
+    
     font-weight: 500;
     font-size: 12px;
     line-height: 167%;
@@ -146,7 +147,7 @@
     height: 28px;
     background: rgba(26, 26, 26, 0.8);
 
-    font-family: var(--font-family);
+    
     font-weight: 500;
     font-size: 12px;
     line-height: 167%;

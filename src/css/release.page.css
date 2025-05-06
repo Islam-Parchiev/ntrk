@@ -1,3 +1,6 @@
+.release__page {
+    font-family: var(--font-family);
+}
 .release__main_inner {
     display: flex;
     align-items: start;
@@ -30,7 +33,6 @@
 }
 
 .release__media_title {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 28px;
     line-height: 129%;
@@ -38,7 +40,6 @@
 }
 
 .release__media_bottom time {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;

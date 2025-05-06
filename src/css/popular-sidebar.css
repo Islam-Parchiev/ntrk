@@ -1,5 +1,6 @@
 .popular-sidebar {
     width: 100%;
+    font-family: var(--font-family);
     height: 100%;
     max-height: 880px;
     background: var(--primary-primary-100);
@@ -8,7 +9,7 @@ padding: 20px 16px;
 overflow-y: scroll;
 }
 .popular-sidebar__title {
-    font-family: var(--font-family);
+    
     font-weight: 600;
     font-size: 18px;
     line-height: 156%;
@@ -28,7 +29,7 @@ overflow-y: scroll;
     align-items: start;
 }
 .popular-sidebar__item_text {
-    font-family: var(--font-family);
+    
 font-weight: 400;
 font-size: 16px;
 line-height: 150%;
@@ -39,7 +40,7 @@ color: var(--bw-black);
     gap: 15px;
 }
 .popular-sidebar__item_time {
-    font-family: var(--font-family);
+    
 font-weight: 500;
 font-size: 12px;
 line-height: 167%;
@@ -47,7 +48,7 @@ color: var(--primary-primary-500);
 }
 .popular-sidebar__item_views {
 
-font-family: var(--font-family);
+
 font-weight: 500;
 font-size: 12px;
 line-height: 167%;

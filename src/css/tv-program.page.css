@@ -2,6 +2,7 @@
     display: flex;
     align-items: start;
     gap: 30px;
+    font-family: var(--font-family);
 }
 
 .tvProgram__inner {
@@ -9,7 +10,6 @@
 }
 
 .tvProgram__title {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 36px;
     line-height: 122%;
@@ -35,7 +35,6 @@
 }
 
 .programListItem time {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
     line-height: 143%;
@@ -48,7 +47,6 @@
 
 .programListItem__title {
     position: relative;
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -57,7 +55,6 @@
 
 .programListItem__text {
     display: none;
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -65,7 +62,6 @@
 }
 
 .programListItem__type {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 143%;
@@ -74,7 +70,6 @@
 
 .programListItem__age {
     position: absolute;
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 133%;
@@ -140,7 +135,6 @@
 }
 
 .ProgramTabBar__item time {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
     line-height: 143%;
@@ -148,7 +142,6 @@
 }
 
 .ProgramTabBar__item span {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
     line-height: 143%;

@@ -1,5 +1,7 @@
-.advertising__text p {
+.advertising__page {
     font-family: var(--font-family);
+}
+.advertising__text p {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -8,7 +10,6 @@
 }
 
 .advertising__title {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 36px;
     line-height: 122%;
@@ -44,7 +45,6 @@
 }
 
 .advertising__card_title {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 18px;
     line-height: 156%;
@@ -60,7 +60,6 @@
 }
 
 .advertising__card_item {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -68,7 +67,6 @@
 }
 
 .advertising__card_item a {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
