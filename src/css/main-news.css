@@ -31,11 +31,15 @@ height: 100%;
 flex-shrink: 1;
 flex-grow: 0;
 }
-.main-news__title {
+.main-news__title a{
 font-weight: 600;
 font-size: 20px;
 line-height: 140%;
 color: var(--bw-black);
+cursor: pointer;
+}
+.main-news__title:hover > a{
+    color: var(--primary-primary-500);
 }
 .main-news__paragraph {
 font-weight: 400;

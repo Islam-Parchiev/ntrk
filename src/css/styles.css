@@ -114,14 +114,34 @@ line-height: 143%;
 .programs-slide__btn--primary {
     color: var(--bw-white);
     background: var(--primary-primary-500);
+    transition: background ease-in-out 0.1s;
+}
+.programs-slide__btn--primary:hover {
+    background:var(--primary-primary-700);
+}
+.programs-slide__btn--primary:disabled {
+    background: var(--primary-primary-500);
+opacity: 0.5;
 }
 .programs-slide__btn--secondary {
+    padding: 14px 22px;
     border: 2px solid var(--primary-primary-500);
     background: transparent;
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--primary-primary-500);
+    transition: all ease-in-out 0.1s;
+}
+.programs-slide__btn--secondary > svg {
+    fill: var(--primary-primary-500);
+}
+.programs-slide__btn--secondary:hover {
+    background: var(--primary-primary-100);
+    color: var(--primary-primary-700);
+}
+.programs-slide__btn--secondary:hover > svg {
+    fill: var(--primary-primary-700);
 }
 .programs__slider {
     position: relative;
@@ -182,11 +202,40 @@ color: var(--b&w-black);
     align-items: start;
     gap: 10px;
 }
+.popular-item__media.btn-hidden  .popular-item__media_btn {
+    display: none;
+}
 .popular-item__media {
+    position: relative;
     border-radius: 12px;
     width: 100%;
     height: 216px;
     overflow: hidden;
+    z-index: 11;
+}
+.popular-item__media_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+}
+.popular-item__media_timeline {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    border-radius: 8px;
+padding: 4px 7px;
+width: 45px;
+height: 28px;
+background-color: rgba(0, 0, 0, 0.7);
+}
+.popular-item__media_timeline {
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 12px;
+line-height: 167%;
+color: var(--bw-white);
 }
 .popular-item__media video, .popular-item__media img{
     display: block;
@@ -204,6 +253,9 @@ font-weight: 600;
 font-size: 20px;
 line-height: 140%;
 color: var(--bw-black);
+}
+.popular-item__title > a:hover {
+    color: var(--primary-primary-500);
 }
 .popular-item__time {
     padding-top: 3%;

@@ -41,6 +41,7 @@ line-height: 156%;
 color: var(--bw-black);
 }
 .news-item__title a:hover {
+    color: var(--primary-primary-500);
     text-decoration: underline;
 }
 .news-item__descr {

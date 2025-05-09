@@ -35,6 +35,9 @@ font-size: 16px;
 line-height: 150%;
 color: var(--bw-black);
 }
+.popular-sidebar__item_text:hover {
+    color: var(--primary-primary-500);
+}
 .popular-sidebar__item_info {
     display: flex;
     gap: 15px;

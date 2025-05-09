@@ -11,6 +11,9 @@
     cursor: pointer;
     padding: 8px 20px;
 }
+.tab:hover {
+    background: var(--neutral-neutral-100);
+}
 .tab a {
     font-family: var(--font-family);
 font-weight: 600;

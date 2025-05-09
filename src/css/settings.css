@@ -96,8 +96,49 @@ img {
 .vjs-slider-bar::before {
   display: none;
 }
-.vjs-big-play-button {
-  width: 50px;
-  height: 50px;
-  background-color:yellow;
+.video-js .vjs-big-play-button {
+  width:88px;
+  height:88px;
+  margin-top: auto;
+margin-left: auto;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+background:var(--bw-black);
+  border-radius:100%;
+  border:none;
+}
+.video-js .vjs-big-play-button .vjs-icon-placeholder::before {
+content:"";
+background-image: url("./../assets/play.svg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: 31px 27px;
+  color:var(--primary-primary-300);
+  width:27px;
+  height:31px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  
+}
+.video-js .vjs-big-play-button:hover .vjs-icon-placeholder::before {
+  opacity: 0.5;
+}
+
+.play-btn {
+  border-radius:100%;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* opacity: 0.7; */
+
+}
+.play-btn:hover {
+  background-color: rgba(0,0,0,1);
+}
+.play-btn--small {
+  width: 52px;
+  height: 52px;
 }

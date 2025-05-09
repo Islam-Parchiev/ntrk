@@ -74,32 +74,3 @@
 .vjs-poster img {
     object-fit: cover;
 }
-.video-js .vjs-big-play-button {
-    width:88px;
-    height:88px;
-    margin-top: auto;
-  margin-left: auto;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  background:var(--bw-black);
-    border-radius:100%;
-    border:none;
-  }
-  .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
-  content:"";
-  background-image: url("./../assets/play.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 31px 27px;
-    color:var(--primary-primary-300);
-    width:27px;
-    height:31px;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    
-  }
-  .video-js .vjs-big-play-button:hover .vjs-icon-placeholder::before {
-    opacity: 0.5;
-  }
