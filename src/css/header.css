@@ -74,6 +74,7 @@ color: var(--neutral-neutral-700);
     gap: 10px;
 }
 .schedule-list__item {
+    flex-shrink: 0;
     border: 1px solid var(--neutral-neutral-200);
 border-radius: 12px;
 padding: 12px;
