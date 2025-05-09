@@ -49,3 +49,24 @@ color: var(--bw-black);
     margin-top: 10%;
     width: 100%;
 }
+.news-content__load-more_btn {
+    margin-top: 32px;
+    width: 100%;
+    border: 2px solid var(--primary-primary-500);
+border-radius: 12px;
+padding: 16px 24px;
+height: 52px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 143%;
+color: var(--primary-primary-500);
+text-align: center;
+}
+.news-content__load-more_btn:hover {
+    background-color: var(--primary-primary-500);
+    color:#fff;
+}
+.news-content__load-more_btn:active {
+    background-color: var(--primary-primary-700);
+}
