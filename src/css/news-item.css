@@ -16,6 +16,25 @@
 width: 100%;
 height: 158px;
 }
+.news-item--media__btn {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    background-color: var(--primary-primary-500);
+    display: none;
+}
+.news-item--media__btn:hover {
+    background-color: var(--primary-primary-700);
+}
+.news-item--media {
+    position: relative;
+}
+.news-item.news-item--media  .news-item--media__btn {
+    display: block;
+}
 .news-item__media img {
     display: block;
     width: 100%;
