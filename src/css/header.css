@@ -173,7 +173,7 @@ stroke: var(--bw-black);
     /* overlay */
 
 
-    .video-overlay {
+    .overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -184,29 +184,96 @@ stroke: var(--bw-black);
         display: none;
     }
     
-    .header__media_content--video:hover .video-overlay {
+    .header__media_content--video:hover .overlay {
         display: block;
     }
     
-    .video-overlay__inner {
+    .overlay__inner {
         padding: 12px;
         display: flex;
-        flex-direction: column;
         align-items: center;
         height: 100%;
-        justify-content: end;
+        justify-content: center;
         gap: 40%;
     }
     
-    .video-overlay__info {
+    .overlay__info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        padding: 0 10px 5px 10px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 77.43%);
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        justify-content: start;
+        gap: 7px;
+        align-items: center;
         font-weight: 500;
         font-size: 12px;
         line-height: 167%;
         color: var(--neutral-neutral-200);
     }
+    .video-custom-controls {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
     .video-custom-controls__btn svg{
         fill:#fff;
+    }
+.video__title {
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 12px;
+line-height: 167%;
+color: var(--neutral-neutral-200);
+}
+    .hidden {
+        display: none;
+    }
+
+    .header__media_content--radio {
+        height: calc(100% - 32px);
+        position: relative;
+        background-color: var(--primary-primary-500);
+    }
+    .radio__inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .radio-content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .radio-content span {
+        font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+color: var(--bw-white);
+    }
+    .radio-overlay {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding-left: 10px;
+        gap: 10px;
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 77.43%);
+       height: 30px;
+       
+    }
+    .radio-overlay__title {
+        font-family: var(--font-family);
+font-weight: 500;
+font-size: 12px;
+line-height: 167%;
+color: var(--neutral-neutral-200);
     }
