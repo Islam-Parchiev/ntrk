@@ -11,10 +11,14 @@ const video = document.getElementById("videoOne");
 const muteButton = document.getElementById("muteVideo");
 const unmuteButton = document.getElementById("unmuteVideo");
 const fullscreenButton = document.getElementById("fullScreenVideo");
-
+const slSwiper = document.querySelector('.swiper');
 const popularItemVIdeo = document.querySelectorAll('.popular-item__media');
 const popularItenVideoBtn = document.querySelectorAll('.popular-item__media_btn');
-const swiper = new Swiper('.swiper', {
+const headerScheduleSlider= document.querySelector(".header__schedule_slider");
+if(slSwiper) {
+
+
+const swiper = new Swiper(slSwiper, {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -31,8 +35,10 @@ const swiper = new Swiper('.swiper', {
     },
   
   });
+}
+if(headerScheduleSlider) {
 
-  const scheduleSlider = new Swiper('.header__schedule_slider', {
+  const scheduleSlider = new Swiper(headerScheduleSlider, {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
@@ -49,6 +55,7 @@ const swiper = new Swiper('.swiper', {
     },
   
   });
+  }
     const tabBtns = document.querySelectorAll(".header__media_tab");
     const tabs = document.querySelectorAll(".header__media_content");
    
@@ -213,8 +220,10 @@ popularItemVIdeo.forEach(item=> {
 // swiper-pagination-total
 document.addEventListener('DOMContentLoaded', function() {
   const p = document.getElementById("my-player"); // Use getElementById!
-  const player = videojs(p, {
-    controls: true,
+  if(p) {
+
+    const player = videojs(p, {
+      controls: true,
     autoplay: true,
     preload: 'auto',
     loop: false,
@@ -222,6 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
     poster: './assets/poster.jpg',
     playbackRates: [0.5, 1, 1.5, 2],
   });
+    }
 });
 
 // popularItemVIdeo, popularItenVideoBtn

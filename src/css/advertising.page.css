@@ -78,3 +78,17 @@
     text-decoration-skip-ink: none;
     color: var(--primary-primary-700);
 }
+.advertising__priceList {
+    margin-top: 30px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+.advertising__priceList_download {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+color: var(--primary-primary-500);
+}
