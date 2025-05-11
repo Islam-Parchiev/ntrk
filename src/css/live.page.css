@@ -2,6 +2,7 @@
     display: flex;
     gap: 30px;
     justify-content: start;
+    padding-bottom: 5%;
 }
 .live__title {
     font-family: var(--font-family);

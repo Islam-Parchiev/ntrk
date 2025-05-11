@@ -446,3 +446,36 @@ color: var(--bw-white);
     gap: 30px;
     max-height: 500px;
 }
+
+.main-transfers__list {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.main-transfers__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-transfers__title {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 36px;
+line-height: 122%;
+color: var(--bw-black);
+}
+.main-transfers__body {
+    padding-top: 3%;
+}
+.main-transfers__all {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+color: var(--primary-primary-500);
+}
+.main-transfers__inner {
+    padding-bottom: 5%;
+}

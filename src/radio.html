@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +8,20 @@
     <link rel="stylesheet" href="./css/vendor/video.css">
     <link rel="stylesheet" href="./css/settings.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/tabs.css">
-    <link rel="stylesheet" href="./css/transfers.page.css">
-    <link rel="stylesheet" href="./css/main-news.css">
-    <link rel="stylesheet" href="./css/news-item.css">
-    <link rel="stylesheet" href="./css/components/transferItem.css">
-    <link rel="stylesheet" href="./css/dropdown.css">
     <link rel="stylesheet" href="./css/popular-sidebar.css">
-    <link rel="stylesheet" href="./css/ads.css">
+    <link rel="stylesheet" href="./css/tabs.css">
+    <link rel="stylesheet" href="./css/pages/radio.page.css">
+    <link rel="stylesheet" href="./css/main-news.css">
+    <link rel="stylesheet" href="./css/components/transferItem.css">
+    <link rel="stylesheet" href="./css/components/program-list-item.css">
+    <link rel="stylesheet" href="./css/news-item.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Новости</title>
+    <title>Радио</title>
 </head>
 
-<body class="body transfers-page">
-     <header class="header">
+<body class="body">
+    <header class="header">
         <div class="header__top">
             <div class="container">
                 <div class="header__top_inner">
@@ -194,7 +192,7 @@
                     <nav class="header__nav">
                         <ul class="list-reset header__list">
                             <li class="header__item">
-                                <a href="#">
+                                <a href="live.html">
                                     Эфир
                                 </a>
                             </li>
@@ -278,216 +276,188 @@
             </div>
           </div>
     </header>
-
-    <main class="tvProgram__page">
-        <section class="transfers-content">
-            <div class="container">
-                <div class="transfers__inner">
-                    <div class="transfers__top">
-                        <h1 class="transfers__title">
-                            Передачи
-                        </h1>
-                        <div class="news-content__tabs_wrapper">
-                            <div class="tabs">
-                                <ul class="list-reset tabs__list">
-                                    <li class="tab active">
-                                        <a href="#">Все</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a href="#">Развлечение</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a href="#">Образование</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a href="#">Религия</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a href="#">Социум</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a href="#">Экономика</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="transfers__bottom">
-                        <ul class="list-reset transfers__list">
-                          
-                            <li class="transferItem">
-                                <div class="transferItem_media">
-                                       <video class="video-js vjs-theme-city transfer__video transfer__video_btn--small" controls>
-                            <source src="./assets/test.mp4" type="video/mp4" />
-                            <p class="vjs-no-js">
-                                To view this video please enable JavaScript, and consider upgrading to a
-                                web browser that
-                                <a href="https://videojs.com/html5-video-support/" target="_blank">
-                                    supports HTML5 video
-                                </a>
-                            </p>
-                        </video>  
-                                </div>
-                                <h6 class="transferItem_title">
-                                    <a href="#">Неявное интервью</a>
-                                </h6>
-                                <span class="transferItem_count">24 выпуска</span>
+<main class="radio">
+    <section class="radio__content">
+        <div class="container">
+            <div class="radio__content--left">
+                <h1 class="radio__title">
+                    Радио
+                </h1>
+                <div class="radio__tabs_wrapper">
+                    <div class="tabs">
+                        <ul class="list-reset tabs__list">
+                            <li class="tab active">
+                                <a href="#">102.4 FM</a>
                             </li>
-                          
-                            <li class="transferItem">
-                                <div class="transferItem_media">
-                                       <video class="video-js vjs-theme-city transfer__video transfer__video_btn--small" controls>
-                            <source src="./assets/test.mp4" type="video/mp4" />
-                            <p class="vjs-no-js">
-                                To view this video please enable JavaScript, and consider upgrading to a
-                                web browser that
-                                <a href="https://videojs.com/html5-video-support/" target="_blank">
-                                    supports HTML5 video
-                                </a>
-                            </p>
-                        </video>  
-                        <button class="btn-reset play-btn transferItem_media_btn play-btn--small">
-                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.92 6.1398C15.2533 6.9096 15.2533 8.8341 13.92 9.6039L3.92999 15.3716C2.59666 16.1414 0.929998 15.1792 0.929998 13.6396L0.929998 2.10411C0.929998 0.564513 2.59667 -0.397735 3.93 0.372065L13.92 6.1398Z" fill="#70E780" />
+                            <li class="tab">
+                                <a href="#">103.2 FM</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="radio__player">
+                    <div class="radio__player_info">
+                        <span>102.4 FM</span>
+                        <svg class="equalizer" width="48" height="48" viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38.5155 8.13684C37.2923 8.13684 36.2971 9.13424 36.2971 10.3603V37.6534C36.409 40.604 40.6312 40.5934 40.7423 37.6534V10.3603C40.7423 9.13434 39.7434 8.13684 38.5155 8.13684ZM24 8.13684C22.7721 8.13684 21.7732 9.13424 21.7732 10.3603V37.6534C21.8854 40.5998 26.1157 40.5975 26.2269 37.6534V10.3603C26.2269 9.13434 25.2279 8.13684 24 8.13684ZM31.2577 16.2668C30.0345 16.2668 29.0394 17.2642 29.0394 18.4903V29.5235C29.1514 32.4742 33.3734 32.4633 33.4846 29.5235V18.4903C33.4846 17.2642 32.4856 16.2668 31.2577 16.2668ZM45.7732 20.3319C44.55 20.3319 43.5548 21.3293 43.5548 22.5554V25.4585C43.6668 28.4091 47.8888 28.3984 48 25.4585V22.5554C48 21.3293 47.0011 20.3319 45.7732 20.3319ZM2.22694 20.3319C0.999 20.3319 0 21.3293 0 22.5553V25.4584C0.112312 28.4004 4.33434 28.4069 4.44516 25.4584V22.5553C4.44516 21.3293 3.45009 20.3319 2.22694 20.3319ZM9.48459 12.2018C8.25666 12.2018 7.25766 13.1992 7.25766 14.4253V33.5884C7.36997 36.5306 11.5921 36.5368 11.703 33.5884V14.4253C11.703 13.1992 10.7078 12.2018 9.48459 12.2018ZM16.7423 0.00683594C15.5144 0.00683594 14.5155 1.00424 14.5155 2.2303V45.7834C14.6277 48.7255 18.8497 48.7318 18.9607 45.7834V2.2303C18.9607 1.00424 17.9655 0.00683594 16.7423 0.00683594Z" />
+                          </svg>
+                    </div>
+                    <div class="radio__player_controls">
+                        <button class="btn-reset radio-btn radio__stop-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="6" y="4" width="4" height="16" rx="1" fill="white" />
+                                <rect x="14" y="4" width="4" height="16" rx="1" fill="white" />
                               </svg>
                         </button>
-                                </div>
-                                <h6 class="transferItem_title">
-                                    <a href="#">Неявное интервью</a>
-                                </h6>
-                                <span class="transferItem_count">24 выпуска</span>
-                            </li>
-                            
-                          
-                            <li class="transferItem">
-                                <div class="transferItem_media">
-                                       <video class="video-js vjs-theme-city transfer__video transfer__video_btn--small" controls>
-                            <source src="./assets/test.mp4" type="video/mp4" />
-                            <p class="vjs-no-js">
-                                To view this video please enable JavaScript, and consider upgrading to a
-                                web browser that
-                                <a href="https://videojs.com/html5-video-support/" target="_blank">
-                                    supports HTML5 video
-                                </a>
+                        <button class="btn-reset radio-btn radio__mute-btn">
+                            <svg width="19" height="16" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.32429 0.536043L3 4.4998V4.49994H1C0.447715 4.49994 
+                                    0 4.94765 0 5.49994V10.4999C0 11.0522 0.447715 11.4999 
+                                    1 11.4999H3V11.4998L7.32426 15.4639C7.96566 16.0519 
+                                    9 15.5969 9 14.7267V1.27321C9 0.403119 7.9657 -0.0518867 
+                                    7.32429 0.536043ZM17.293 4.29297C17.6835 3.90244 18.3165 
+                                    3.90244 18.707 4.29297C19.0976 4.68349 19.0976 5.31651 
+                                    18.707 5.70703L16.4141 8L18.707 10.293C19.0976 10.6835 
+                                    19.0976 11.3165 18.707 11.707C18.3165 12.0976 17.6835 
+                                    12.0976 17.293 11.707L15 9.41406L12.707 11.707C12.3165 
+                                    12.0976 11.6835 12.0976 11.293 11.707C10.9024 11.3165 
+                                    10.9024 10.6835 11.293 10.293L13.5859 8L11.293 5.70703C10.9024 
+                                    5.31651 10.9024 4.68349 11.293 4.29297C11.6835 3.90244 
+                                    12.3165 3.90244 12.707 4.29297L15 6.58594L17.293 4.29297Z" />
+                            </svg>
+                           
+                        </button>
+                     <span class="radio__status">
+                        В ЭФИРЕ
+                     </span>
+                    </div>
+                </div>
+                <div class="radio__program_list">
+                    <div class="programListItem">
+                        <time>06:30</time>
+                        <div class="programListItem__info">
+                            <h6 class="programListItem__title">
+                                Беркате вахара наькъаш
+                                <span class="programListItem__age">12+</span>
+                            </h6>
+                            <span class="programListItem__type">
+                                Передача
+                            </span>
+                            <p class="programListItem__text">
+                                Необычный формат беседы, где герой раскрывается через непрямые вопросы,
+                                неожиданные темы и нестандартный подход. Без заготовленных сценариев –
+                                только искренность, эмоции и неожиданные повороты в разговоре.
                             </p>
-                        </video>  
-                                </div>
-                                <h6 class="transferItem_title">
-                                    <a href="#">Неявное интервью</a>
-                                </h6>
-                                <span class="transferItem_count">24 выпуска</span>
+                        </div>
+                        <div class="programListItem__media">
+                            <img src="./assets/poster.jpg" alt="Program item image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__inner--top">
+                <div class="footer__top-left">
+                    <div class="footer__logo">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 0C9.85077 0 0 9.84941 0 22.0009C0 34.1524 9.84901 44 22 44C34.151 44 44 34.1506 44 22.0009C44 9.85117 34.151 0 22 0ZM35.4543 33.432L30.9842 30.8393C30.8451 30.7583 30.6725 30.7829 30.5562 30.8956C28.3318 33.0427 25.3041 34.3602 21.9701 34.3602C17.4683 34.3602 13.5283 31.9577 11.3619 28.3646C11.3003 28.2624 11.17 28.2272 11.066 28.2871L9.03531 29.4601C8.91026 29.5341 8.8944 29.7103 9.00536 29.8036C10.8124 31.3448 10.1132 33.4284 8.70243 34.2457C7.23001 35.0947 5.14466 34.3461 4.15835 32.6464C3.17733 30.945 3.85365 28.8278 5.32431 27.9806L9.79441 25.395C9.93531 25.314 10.0022 25.1502 9.96173 24.9952C9.72044 24.0335 9.59363 23.0242 9.59363 21.9886C9.59363 15.2268 15.0166 9.7314 21.7517 9.61691C21.8714 9.61339 21.9683 9.51827 21.9683 9.3985V7.05416C21.9683 6.90621 21.8204 6.80405 21.6812 6.85337C19.4462 7.64949 17.9896 5.99912 17.9896 4.36812C17.9896 2.73712 19.6822 1.23822 21.646 1.23822C23.6098 1.23822 25.1034 2.88155 25.1034 4.58124V9.74372C25.1034 9.90577 25.2126 10.0449 25.3675 10.0872C30.5474 11.5649 34.3412 16.3329 34.3412 21.9886C34.3412 24.1708 33.7741 26.2246 32.7807 28.007C32.7226 28.111 32.7578 28.2413 32.8617 28.3012L34.8907 29.4778C35.0158 29.5517 35.1778 29.4778 35.2042 29.3316C35.6375 26.9996 37.7951 26.5645 39.2058 27.3835C40.6765 28.2343 41.0657 30.4166 40.0829 32.1162C39.0966 33.8177 36.9232 34.2845 35.4543 33.432Z" fill="white" />
+                            <path d="M28.5713 21.9868C28.5713 25.6328 25.6159 28.5918 21.9701 28.5918C18.3242 28.5918 15.3653 25.6328 15.3653 21.9868C15.3653 18.3408 18.3207 15.3835 21.9701 15.3835C25.6194 15.3835 28.5713 18.3408 28.5713 21.9868Z" fill="white" />
+                          </svg>
+                    </div>
+                    <address class="footer__info">
+                       <span> ГАУ РИ НТРК “Магас”</span>
+                       <a href="#"> 386001 Республика Ингушетия, г. Магас, пр-т И. Зязикова, 15</a>
+                        <a href="tel:787325702222">Тел.: +7 (8732) 570-22-22 </a>
+                       <a href="mailto:ntrkmagas@mail.ru"> E-mail: ntrkmagas@mail.ru</a>
+                    </address>
+                </div>
+                <div class="footer__top-right">
+                    <nav class="footer__nav">
+                        <ul class="list-reset footer__nav_list">
+                            <li class="footer__nav_item">
+                                <a href="#">Эфир</a>
                             </li>
-                           
-                           
+                            <li class="footer__nav_item">
+                                <a href="#">Эфир</a>
+                            </li>
+                            <li class="footer__nav_item">
+                                <a href="#">Эфир</a>
+                            </li>
+                            <li class="footer__nav_item">
+                                <a href="#">Эфир</a>
+                            </li>
+                            <li class="footer__nav_item">
+                                <a href="#">Эфир</a>
+                            </li>
+                              <li class="footer__nav_item">
+                                <a href="#">Эфир</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__socials">
+                        <span class="footer__socials_title">Подписывайтесь на нас:</span>
+                        <ul class="list-reset footer__socials_list">
+                            <li class="footer__socials_item">
+                                <a href="#">
+                                    <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.400024 0.299988C0.604647 9.91921 5.51557 15.7 14.1254 15.7H14.6135V10.1967C17.7772 10.505 20.1696 12.7711 21.1297 15.7H25.6C24.3723 11.322 21.1454 8.90179 19.1307 7.97686C21.1454 6.83612 23.9786 4.06135 24.6555 0.299988H20.5944C19.713 3.35224 17.1004 6.12701 14.6135 6.38908V0.299988H10.5523V10.9675C8.03391 10.3508 4.85448 7.36025 4.71282 0.299988H0.400024Z" fill="#BDBDBD" />
+                                      </svg>
+                                </a>
+                            </li>
+                            <li class="footer__socials_item">
+                                <a href="#">
+                                    <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.400024 0.299988C0.604647 9.91921 5.51557 15.7 14.1254 15.7H14.6135V10.1967C17.7772 10.505 20.1696 12.7711 21.1297 15.7H25.6C24.3723 11.322 21.1454 8.90179 19.1307 7.97686C21.1454 6.83612 23.9786 4.06135 24.6555 0.299988H20.5944C19.713 3.35224 17.1004 6.12701 14.6135 6.38908V0.299988H10.5523V10.9675C8.03391 10.3508 4.85448 7.36025 4.71282 0.299988H0.400024Z" fill="#BDBDBD" />
+                                      </svg>
+                                </a>
+                            </li>
+                            <li class="footer__socials_item">
+                                <a href="#">
+                                    <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.400024 0.299988C0.604647 9.91921 5.51557 15.7 14.1254 15.7H14.6135V10.1967C17.7772 10.505 20.1696 12.7711 21.1297 15.7H25.6C24.3723 11.322 21.1454 8.90179 19.1307 7.97686C21.1454 6.83612 23.9786 4.06135 24.6555 0.299988H20.5944C19.713 3.35224 17.1004 6.12701 14.6135 6.38908V0.299988H10.5523V10.9675C8.03391 10.3508 4.85448 7.36025 4.71282 0.299988H0.400024Z" fill="#BDBDBD" />
+                                      </svg>
+                                </a>
+                            </li>
+                            <li class="footer__socials_item">
+                                <a href="#">
+                                    <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.400024 0.299988C0.604647 9.91921 5.51557 15.7 14.1254 15.7H14.6135V10.1967C17.7772 10.505 20.1696 12.7711 21.1297 15.7H25.6C24.3723 11.322 21.1454 8.90179 19.1307 7.97686C21.1454 6.83612 23.9786 4.06135 24.6555 0.299988H20.5944C19.713 3.35224 17.1004 6.12701 14.6135 6.38908V0.299988H10.5523V10.9675C8.03391 10.3508 4.85448 7.36025 4.71282 0.299988H0.400024Z" fill="#BDBDBD" />
+                                      </svg>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__top">
-            <div class="container">
-                <div class="footer__inner--top">
-                    <div class="footer__top-left">
-                        <div class="footer__logo">
-                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M22 0C9.85077 0 0 9.84941 0 22.0009C0 34.1524 9.84901 44 22 44C34.151 44 44 34.1506 44 22.0009C44 9.85117 34.151 0 22 0ZM35.4543 33.432L30.9842 30.8393C30.8451 30.7583 30.6725 30.7829 30.5562 30.8956C28.3318 33.0427 25.3041 34.3602 21.9701 34.3602C17.4683 34.3602 13.5283 31.9577 11.3619 28.3646C11.3003 28.2624 11.17 28.2272 11.066 28.2871L9.03531 29.4601C8.91026 29.5341 8.8944 29.7103 9.00536 29.8036C10.8124 31.3448 10.1132 33.4284 8.70243 34.2457C7.23001 35.0947 5.14466 34.3461 4.15835 32.6464C3.17733 30.945 3.85365 28.8278 5.32431 27.9806L9.79441 25.395C9.93531 25.314 10.0022 25.1502 9.96173 24.9952C9.72044 24.0335 9.59363 23.0242 9.59363 21.9886C9.59363 15.2268 15.0166 9.7314 21.7517 9.61691C21.8714 9.61339 21.9683 9.51827 21.9683 9.3985V7.05416C21.9683 6.90621 21.8204 6.80405 21.6812 6.85337C19.4462 7.64949 17.9896 5.99912 17.9896 4.36812C17.9896 2.73712 19.6822 1.23822 21.646 1.23822C23.6098 1.23822 25.1034 2.88155 25.1034 4.58124V9.74372C25.1034 9.90577 25.2126 10.0449 25.3675 10.0872C30.5474 11.5649 34.3412 16.3329 34.3412 21.9886C34.3412 24.1708 33.7741 26.2246 32.7807 28.007C32.7226 28.111 32.7578 28.2413 32.8617 28.3012L34.8907 29.4778C35.0158 29.5517 35.1778 29.4778 35.2042 29.3316C35.6375 26.9996 37.7951 26.5645 39.2058 27.3835C40.6765 28.2343 41.0657 30.4166 40.0829 32.1162C39.0966 33.8177 36.9232 34.2845 35.4543 33.432Z" fill="white" />
-                                <path d="M28.5713 21.9868C28.5713 25.6328 25.6159 28.5918 21.9701 28.5918C18.3242 28.5918 15.3653 25.6328 15.3653 21.9868C15.3653 18.3408 18.3207 15.3835 21.9701 15.3835C25.6194 15.3835 28.5713 18.3408 28.5713 21.9868Z" fill="white" />
-                              </svg>
-                        </div>
-                        <address class="footer__info">
-                           <span> ГАУ РИ НТРК “Магас”</span>
-                           <a href="#"> 386001 Республика Ингушетия, г. Магас, пр-т И. Зязикова, 15</a>
-                            <a href="tel:787325702222">Тел.: +7 (8732) 570-22-22 </a>
-                           <a href="mailto:ntrkmagas@mail.ru"> E-mail: ntrkmagas@mail.ru</a>
-                        </address>
-                    </div>
-                    <div class="footer__top-right">
-                        <nav class="footer__nav">
-                            <ul class="list-reset footer__nav_list">
-                                <li class="footer__nav_item">
-                                    <a href="#">Эфир</a>
-                                </li>
-                                <li class="footer__nav_item">
-                                    <a href="#">Эфир</a>
-                                </li>
-                                <li class="footer__nav_item">
-                                    <a href="#">Эфир</a>
-                                </li>
-                                <li class="footer__nav_item">
-                                    <a href="#">Эфир</a>
-                                </li>
-                                <li class="footer__nav_item">
-                                    <a href="#">Эфир</a>
-                                </li>
-                                  <li class="footer__nav_item">
-                                    <a href="#">Эфир</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="footer__socials">
-                            <span class="footer__socials_title">Подписывайтесь на нас:</span>
-                            <ul class="list-reset footer__socials_list">
-                                <li class="footer__socials_item">
-                                    <a href="#">
-                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.400024 0.299988C0.604647 9.91921 5.51557 15.7 14.1254 15.7H14.6135V10.1967C17.7772 10.505 20.1696 12.7711 21.1297 15.7H25.6C24.3723 11.322 21.1454 8.90179 19.1307 7.97686C21.1454 6.83612 23.9786 4.06135 24.6555 0.299988H20.5944C19.713 3.35224 17.1004 6.12701 14.6135 6.38908V0.299988H10.5523V10.9675C8.03391 10.3508 4.85448 7.36025 4.71282 0.299988H0.400024Z" fill="#BDBDBD" />
-                                          </svg>
-                                    </a>
-                                </li>
-                                <li class="footer__socials_item">
-                                    <a href="#">
-                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.400024 0.299988C0.604647 9.91921 5.51557 15.7 14.1254 15.7H14.6135V10.1967C17.7772 10.505 20.1696 12.7711 21.1297 15.7H25.6C24.3723 11.322 21.1454 8.90179 19.1307 7.97686C21.1454 6.83612 23.9786 4.06135 24.6555 0.299988H20.5944C19.713 3.35224 17.1004 6.12701 14.6135 6.38908V0.299988H10.5523V10.9675C8.03391 10.3508 4.85448 7.36025 4.71282 0.299988H0.400024Z" fill="#BDBDBD" />
-                                          </svg>
-                                    </a>
-                                </li>
-                                <li class="footer__socials_item">
-                                    <a href="#">
-                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.400024 0.299988C0.604647 9.91921 5.51557 15.7 14.1254 15.7H14.6135V10.1967C17.7772 10.505 20.1696 12.7711 21.1297 15.7H25.6C24.3723 11.322 21.1454 8.90179 19.1307 7.97686C21.1454 6.83612 23.9786 4.06135 24.6555 0.299988H20.5944C19.713 3.35224 17.1004 6.12701 14.6135 6.38908V0.299988H10.5523V10.9675C8.03391 10.3508 4.85448 7.36025 4.71282 0.299988H0.400024Z" fill="#BDBDBD" />
-                                          </svg>
-                                    </a>
-                                </li>
-                                <li class="footer__socials_item">
-                                    <a href="#">
-                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.400024 0.299988C0.604647 9.91921 5.51557 15.7 14.1254 15.7H14.6135V10.1967C17.7772 10.505 20.1696 12.7711 21.1297 15.7H25.6C24.3723 11.322 21.1454 8.90179 19.1307 7.97686C21.1454 6.83612 23.9786 4.06135 24.6555 0.299988H20.5944C19.713 3.35224 17.1004 6.12701 14.6135 6.38908V0.299988H10.5523V10.9675C8.03391 10.3508 4.85448 7.36025 4.71282 0.299988H0.400024Z" fill="#BDBDBD" />
-                                          </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__inner--bottom">
+                <p>Сетевое издание «Телеканал «Магас». Реестровая запись СМИ ЭЛ № ФС77-88796, выдано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций «Роскомнадзор» от 24 декабря 2024 года.</p>
+                <span>
+                    Учредитель: Государственное автономное учреждение Республики Ингушетия «Национальная телерадиокомпания «Магас».
+                </span>
+                <span>
+                    Главный редактор сетевого издания: Котиева М.Б. 
+                </span>
+                <address><a href="#">Адрес: 386001 Республика Ингушетия, г. Магас, пр-т И. Зязикова, 15.</a> <a href="#">Тел.: 8 (8734) 55-40-55.</a> <a href="#">E-mail: magas.tv@magas.tv</a>   </address>
+              <span>
+                  При использовании материалов сайта в интернете обязательна активная гиперссылка на www.magas.tv. При использовании видеоматериалов необходимо письменное разрешение.
+              </span>
+             <span> Используя настоящий сайт, вы обязуетесь выполнять условия <a href="#">данного соглашения.</a> </span>
+              <span><a href="#">Положение об обработке и защите персональных данных</a> в ГАУ РИ «НТРК «Магас»</span>
             </div>
         </div>
-        <div class="footer__bottom">
-            <div class="container">
-                <div class="footer__inner--bottom">
-                    <p>Сетевое издание «Телеканал «Магас». Реестровая запись СМИ ЭЛ № ФС77-88796, выдано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций «Роскомнадзор» от 24 декабря 2024 года.</p>
-                    <span>
-                        Учредитель: Государственное автономное учреждение Республики Ингушетия «Национальная телерадиокомпания «Магас».
-                    </span>
-                    <span>
-                        Главный редактор сетевого издания: Котиева М.Б. 
-                    </span>
-                    <address><a href="#">Адрес: 386001 Республика Ингушетия, г. Магас, пр-т И. Зязикова, 15.</a> <a href="#">Тел.: 8 (8734) 55-40-55.</a> <a href="#">E-mail: magas.tv@magas.tv</a>   </address>
-                  <span>
-                      При использовании материалов сайта в интернете обязательна активная гиперссылка на www.magas.tv. При использовании видеоматериалов необходимо письменное разрешение.
-                  </span>
-                 <span> Используя настоящий сайт, вы обязуетесь выполнять условия <a href="#">данного соглашения.</a> </span>
-                  <span><a href="#">Положение об обработке и защите персональных данных</a> в ГАУ РИ «НТРК «Магас»</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="./js/swiper.min.js"></script>
-    <script src="./js/video.js"></script>
-    <script src="./js/dropdown.js"></script>
-    <script src="./js/transfers.js"></script>
+    </div>
+</footer>
+
     <script defer src="./script.js"></script>
 </body>
-
 </html>
