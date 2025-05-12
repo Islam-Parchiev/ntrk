@@ -1,0 +1,139 @@
+.about-us__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 5%;
+}
+
+.about-us--left {
+    max-width: 800px;
+}
+
+
+.about-us__media {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.about-us__image {
+    width: 100%;
+    height: 431px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.about-us__media_subtitle {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 167%;
+    color: var(--neutral-neutral-700);
+}
+
+.about-us__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-us__text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bw-black);
+    padding: 30px 0;
+}
+.about-us__text:first-child {
+    padding-top: 0;
+}
+.about-us__text-list {
+    margin-left: 5%;
+}
+
+
+.director {
+    border-radius: 12px;
+    padding: 24px;
+    width: 368px;
+    height: 681px;
+    background: var(--neutral-neutral-100);
+}
+
+.director__image {
+    border-radius: 12px;
+    width: 100%;
+    height: 333px;
+    overflow: hidden;
+}
+
+.director__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.director__name {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--bw-black);
+}
+
+.director__info {
+    margin-top: 5%;
+}
+
+.director__top {
+    border-bottom: 1px solid var(--neutral-neutral-300);
+    padding-bottom: 24px;
+}
+
+.director__bottom {
+    padding-top: 24px;
+}
+
+.director__top span {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--neutral-neutral-500);
+}
+
+.director__list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 16px;
+}
+
+.director__item a {
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bw-black);
+}
+
+.director__item span {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 167%;
+    color: var(--neutral-neutral-500);
+}
