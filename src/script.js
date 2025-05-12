@@ -157,6 +157,8 @@ videoCustom()
 function fixHeaderOnScroll() {
   const header = document.querySelector('.header');
   const main = document.querySelector('main[data-main]');
+if(!window.location.pathname.split("/").find((item)=>item==="watch.html")) {
+
   if (window.pageYOffset > 600) {
     header.classList.add("fixed");
     main.classList.add("active");
@@ -165,8 +167,8 @@ function fixHeaderOnScroll() {
     main.classList.remove("active");
   }
 }
+}
 window.addEventListener("scroll", fixHeaderOnScroll)
-
 
 menuButton.addEventListener("click", function () {
   if (menu.classList.contains("open")) {
