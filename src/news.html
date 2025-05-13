@@ -27,7 +27,7 @@
                 <div class="header__top_inner">
                     <div class="header__media">
                         <div class="header__media_tabs">
-                            <button class="btn-reset header__media_tab active" data-tab="tab1">
+                            <button class="btn-reset header__media_tab active" data-tab="tv">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="4" y="8" width="12" height="8" rx="2" stroke-width="1.5" />
@@ -36,7 +36,7 @@
                                 </svg>
                                 ТВ
                             </button>
-                            <button class="btn-reset header__media_tab" data-tab="tab2">
+                            <button class="btn-reset header__media_tab" data-tab="radio">
                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -50,7 +50,7 @@
                                 Радио
                             </button>
                         </div>
-                        <div class="header__media_content  header__media_content--video active" id="tab1">
+                        <div class="header__media_content  header__media_content--video active" id="tv">
 
                             <video poster="./assets/img/preview.png" class="header__media_video" id="videoOne">
                                 <source src="./assets/test.mp4" type="video/mp4" />
@@ -119,7 +119,7 @@
                                 </h6>
                             </div>
                         </div>
-                        <div class="header__media_content header__media_content--radio" id="tab2">
+                        <div class="header__media_content header__media_content--radio" id="radio">
                             <div class="radio__inner">
                                 <div class="radio-content">
                                     <span>102.4 FM</span>
@@ -165,9 +165,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="header__schedule_slider">
-
-
+                            <div class="header__schedule_slider" data-schedule="tv">
                                 <ul class="list-reset header__schedule_list schedule-list schedule-wrapper">
                                     <li class="schedule-list__item schedule-slide">
                                         <time>12:00</time>
@@ -203,7 +201,42 @@
                                     </li>
                                 </ul>
                             </div>
-
+                            <div class="header__schedule_slider" data-schedule="radio">
+                                <ul class="list-reset header__schedule_list schedule-list schedule-wrapper">
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>12:00</time>
+                                        <a href="#">Приятно познакомиться1</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>12:40</time>
+                                        <a href="#">Спортивная Ингушетия2</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>13:00</time>
+                                        <a href="#">Новости 244</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>13:20</time>
+                                        <a href="#">Хроника происшествий3</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>14:20</time>
+                                        <a href="#">Ваше здоровье5</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>12:00</time>
+                                        <a href="#">Приятно познакомиться136</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>12:00</time>
+                                        <a href="#">Приятно познакомиться147</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>12:00</time>
+                                        <a href="#">Приятно познакомиться15</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -435,9 +468,17 @@
                             </div>
                             <div class="news-content__news-block">
                                 <ul class="list-reset news-block__list news-block__list--second">
-                                    <li class="news-item news-item--second">
+                                    <li class="news-item news-item--second news-item--media">
                                         <div class="news-item__media">
                                             <img src="./assets/img/zagl.png" alt="News Item Preview">
+                                            <button class="btn-reset news-item--media__btn">
+                                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.39052 5.1221L1.47885 0.806647C0.812478 0.44317 0 0.925483 0 1.68454V10.3155C0 11.0745 0.812477 11.5568 1.47885 11.1934L9.39052 6.8779C10.0854 6.49888 10.0854 5.50112 9.39052 5.1221Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </button>
                                         </div>
                                         <div class="news-item__bottom">
                                             <h6 class="news-item__title">
@@ -464,6 +505,14 @@
                                     <li class="news-item news-item--second">
                                         <div class="news-item__media">
                                             <img src="./assets/img/zagl.png" alt="News Item Preview">
+                                            <button class="btn-reset news-item--media__btn">
+                                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.39052 5.1221L1.47885 0.806647C0.812478 0.44317 0 0.925483 0 1.68454V10.3155C0 11.0745 0.812477 11.5568 1.47885 11.1934L9.39052 6.8779C10.0854 6.49888 10.0854 5.50112 9.39052 5.1221Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </button>
                                         </div>
                                         <div class="news-item__bottom">
                                             <h6 class="news-item__title">
@@ -490,6 +539,14 @@
                                     <li class="news-item news-item--second">
                                         <div class="news-item__media">
                                             <img src="./assets/img/zagl.png" alt="News Item Preview">
+                                            <button class="btn-reset news-item--media__btn">
+                                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.39052 5.1221L1.47885 0.806647C0.812478 0.44317 0 0.925483 0 1.68454V10.3155C0 11.0745 0.812477 11.5568 1.47885 11.1934L9.39052 6.8779C10.0854 6.49888 10.0854 5.50112 9.39052 5.1221Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </button>
                                         </div>
                                         <div class="news-item__bottom">
                                             <h6 class="news-item__title">

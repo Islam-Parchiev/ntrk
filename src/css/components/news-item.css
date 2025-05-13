@@ -29,7 +29,7 @@ height: 158px;
 .news-item--media__btn:hover {
     background-color: var(--primary-primary-700);
 }
-.news-item--media {
+.news-item__media {
     position: relative;
 }
 .news-item.news-item--media  .news-item--media__btn {

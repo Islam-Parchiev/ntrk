@@ -25,7 +25,7 @@
                 <div class="header__top_inner">
                     <div class="header__media">
                         <div class="header__media_tabs">
-                            <button class="btn-reset header__media_tab active" data-tab="tab1">
+                            <button class="btn-reset header__media_tab active" data-tab="tv">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="4" y="8" width="12" height="8" rx="2" stroke-width="1.5" />
@@ -34,7 +34,7 @@
                                 </svg>
                                 ТВ
                             </button>
-                            <button class="btn-reset header__media_tab" data-tab="tab2">
+                            <button class="btn-reset header__media_tab" data-tab="radio">
                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -48,7 +48,7 @@
                                 Радио
                             </button>
                         </div>
-                        <div class="header__media_content  header__media_content--video active" id="tab1">
+                        <div class="header__media_content  header__media_content--video active" id="tv">
 
                             <video poster="./assets/img/preview.png" class="header__media_video" id="videoOne">
                                 <source src="./assets/test.mp4" type="video/mp4" />
@@ -117,7 +117,7 @@
                                 </h6>
                             </div>
                         </div>
-                        <div class="header__media_content header__media_content--radio" id="tab2">
+                        <div class="header__media_content header__media_content--radio" id="radio">
                             <div class="radio__inner">
                                 <div class="radio-content">
                                     <span>102.4 FM</span>
@@ -163,9 +163,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="header__schedule_slider">
-
-
+                            <div class="header__schedule_slider" data-schedule="tv">
                                 <ul class="list-reset header__schedule_list schedule-list schedule-wrapper">
                                     <li class="schedule-list__item schedule-slide">
                                         <time>12:00</time>
@@ -201,7 +199,42 @@
                                     </li>
                                 </ul>
                             </div>
-
+                            <div class="header__schedule_slider" data-schedule="radio">
+                                <ul class="list-reset header__schedule_list schedule-list schedule-wrapper">
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>12:00</time>
+                                        <a href="#">Приятно познакомиться1</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>12:40</time>
+                                        <a href="#">Спортивная Ингушетия2</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>13:00</time>
+                                        <a href="#">Новости 244</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>13:20</time>
+                                        <a href="#">Хроника происшествий3</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>14:20</time>
+                                        <a href="#">Ваше здоровье5</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>12:00</time>
+                                        <a href="#">Приятно познакомиться136</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>12:00</time>
+                                        <a href="#">Приятно познакомиться147</a>
+                                    </li>
+                                    <li class="schedule-list__item schedule-slide">
+                                        <time>12:00</time>
+                                        <a href="#">Приятно познакомиться15</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
