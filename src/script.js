@@ -12,7 +12,7 @@ const fullscreenButton = document.getElementById("fullScreenVideo");
 const slSwiper = document.querySelector('.swiper');
 const popularItemVIdeo = document.querySelectorAll('.popular-item__media');
 const popularItenVideoBtn = document.querySelectorAll('.popular-item__media_btn');
-const headerScheduleSlider = document.querySelector(".header__schedule_slider");
+const headerScheduleSliders = document.querySelectorAll(".header__schedule_slider");
 if (slSwiper) {
 
 
@@ -34,41 +34,62 @@ if (slSwiper) {
 
   });
 }
-if (headerScheduleSlider) {
+if (headerScheduleSliders) {
+ 
+    // const scheduleSlider = new Swiper(headerScheduleSlider, {
+    //   // Optional parameters
+    //   direction: 'horizontal',
+    //   loop: false,
+    //   slideClass: "schedule-slide",
+    //   wrapperClass: "schedule-wrapper",
+    //   slidesPerView: 5,
+    //   slidesPerGroup: 3,
+    //   slidesPerGroupSkip: 1,
+    //   spaceBetween: 20,
+    //   // Navigation arrows
+    //   navigation: {
+    //     nextEl: '.schedule-navigation__btn--next',
+    //     prevEl: '.schedule-navigation__btn--prev',
+    //   },
+      
+    // });
+    headerScheduleSliders.forEach((slider)=> {
+      new Swiper(slider, {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: false,
+          slideClass: "schedule-slide",
+          wrapperClass: "schedule-wrapper",
+          slidesPerView: 5,
+          slidesPerGroup: 3,
+          slidesPerGroupSkip: 1,
+          spaceBetween: 20,
+          // Navigation arrows
+          navigation: {
+            nextEl: '.schedule-navigation__btn--next',
+            prevEl: '.schedule-navigation__btn--prev',
+          },
+          
+        });
+    })
 
-  const scheduleSlider = new Swiper(headerScheduleSlider, {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
-    slideClass: "schedule-slide",
-    wrapperClass: "schedule-wrapper",
-    slidesPerView: 5,
-    slidesPerGroup: 3,
-    slidesPerGroupSkip: 1,
-    spaceBetween: 20,
-    // Navigation arrows
-    navigation: {
-      nextEl: '.schedule-navigation__btn--next',
-      prevEl: '.schedule-navigation__btn--prev',
-    },
-
-  });
 }
 const tabBtns = document.querySelectorAll(".header__media_tab");
 const tabs = document.querySelectorAll(".header__media_content");
-
+const scheduleLists = document.querySelectorAll(".header__schedule_slider");
 function showTab(tabId) {
 
   tabBtns.forEach(button => button.classList.remove('active'));
   tabs.forEach(panel => panel.classList.remove('active'));
-
+  scheduleLists.forEach(list=>list.classList.remove('active'));
 
   const tabButton = document.querySelector(`button[data-tab="${tabId}"]`);
   const tabPanel = document.getElementById(tabId);
-
-  if (tabButton && tabPanel) {
+  const scheduleList = document.querySelector(`div[data-schedule="${tabId}"]`);
+  if (tabButton && tabPanel && scheduleList) {
     tabButton.classList.add('active');
     tabPanel.classList.add('active');
+    scheduleList.classList.add('active');
   }
 }
 tabBtns.forEach(button => {
@@ -80,7 +101,7 @@ tabBtns.forEach(button => {
 
 
 
-showTab('tab1');
+showTab('tv');
 
 function videoCustom() {
   const videoEl = document.querySelector('.header__media_video');
