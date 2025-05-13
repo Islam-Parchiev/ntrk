@@ -13,6 +13,8 @@
 }
 .tab:hover {
     background: var(--neutral-neutral-100);
+    border-bottom: 2px solid var(--primary-primary-500);
+    margin-bottom: -2px;
 }
 .tab a {
     font-family: var(--font-family);
@@ -23,10 +25,8 @@ color: var(--neutral-neutral-500);
 }
 .tab.active {
     border-bottom: 2px solid var(--primary-primary-500);
+    margin-bottom: -2px;
 }
 .tab.active a {
     color: var(--bw-black);
-}
-.tab:hover {
-    border-bottom: 2px solid var(--primary-primary-500);
 }
