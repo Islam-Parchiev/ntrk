@@ -4,16 +4,18 @@
     justify-content: center;
     gap: 16px;
     height: 300px;
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
 }
+
 .main-news__image {
     border-radius: 12px;
-/* max-width: 532px; */
-flex-basis: 532px;
-flex-shrink: 1;
-flex-grow: 0;
-height: 100%;
+    /* max-width: 532px; */
+    flex-basis: 532px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    height: 100%;
 }
+
 .main-news__image img {
     border-radius: 12px;
     display: block;
@@ -21,6 +23,7 @@ height: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .main-news__info {
     text-align: left;
     display: flex;
@@ -28,45 +31,52 @@ height: 100%;
     align-items: start;
     gap: 12px;
     flex-basis: 356px;
-flex-shrink: 1;
-flex-grow: 0;
+    flex-shrink: 1;
+    flex-grow: 0;
 }
-.main-news__title a{
-font-weight: 600;
-font-size: 20px;
-line-height: 140%;
-color: var(--bw-black);
-cursor: pointer;
-font-family: var(--font-family);
+
+.main-news__title a {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--bw-black);
+    cursor: pointer;
+    font-family: var(--font-family);
 }
-.main-news__title:hover > a{
+
+.main-news__title:hover>a {
     color: var(--primary-primary-500);
 }
-.main-news__paragraph {
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-color: var(--bw-black);
 
-font-family: var(--font-family);
+.main-news__paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bw-black);
+
+    font-family: var(--font-family);
 }
+
 .main-news__bottom time {
-font-weight: 500;
-font-size: 12px;
-line-height: 167%;
-color: var(--neutral-neutral-500);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 167%;
+    color: var(--neutral-neutral-500);
 }
+
 .main-news__views span {
-font-weight: 500;
-font-size: 12px;
-line-height: 167%;
-color: var(--neutral-neutral-500);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 167%;
+    color: var(--neutral-neutral-500);
 }
+
 .main-news__bottom {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .main-news__views {
     display: inline-flex;
     align-items: start;
