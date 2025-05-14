@@ -194,7 +194,12 @@
     line-height: 156%;
     color: var(--neutral-neutral-300);
 }
-
+.radio-slider__navigation {
+    position: absolute;
+    z-index: 10;
+    bottom: 19px;
+    left: 1%;
+}
 
 /* popular: */
 .popular {

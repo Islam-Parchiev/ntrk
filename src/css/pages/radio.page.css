@@ -1,100 +1,21 @@
-.radio__wrapper {
-    display: flex;
-    align-items: start;
-    gap: 30px;
-    padding-top: 2%;
-}
 
-.radio__content--left {
-    max-width: 904px;
-    width: 100%;
-}
-
-.radio__player {
-    width: 100%;
-    height: 146px;
-    border-radius: 12px;
-    overflow: hidden;
+.radio-slider {
     position: relative;
-    background: var(--primary-primary-500);
+    width: 904px;
+    overflow: hidden;
+    height: 520px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
 }
 
-.radio__player_info {
+.radio-slider__wrapper {
     width: 100%;
     height: 100%;
     display: flex;
-    padding-top: 24px;
-    justify-content: center;
-    gap: 10px;
-}
-
-.radio__player_info span {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 122%;
-    color: var(--bw-white);
-}
-
-.radio__player_info svg {
-    fill: #fff;
-}
-
-.radio__player_controls {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    padding: 20px 12px;
-    height: 48px;
-    background: rgba(26, 26, 26, 0.6);
-    border-top: 2px solid var(--primary-primary-300);
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 10px;
-}
-
-.radio__status {
-    border-radius: 4px;
-    padding: 4px 8px;
-    background: var(--primary-primary-500);
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 167%;
-    color: var(--bw-white);
 }
 
 
-
-
-.equalizer {
-    width: 48px;
-    height: 48px;
-}
-
-.equalizer path {
-    fill: #fff;
-    /* Используем текущий цвет текста */
-}
-
-/* Анимируем каждый столбик индивидуально */
-.equalizer path:nth-child(1) {
-    animation: bar-animation 1.5s infinite ease-in-out;
-}
-
-@keyframes bar-animation {
-
-    0%,
-    100% {
-        transform: scaleY(0.5);
-        transform-origin: bottom;
-    }
-
-    50% {
-        transform: scaleY(1);
-        transform-origin: bottom;
-    }
+.radio-slider__slide {
+    flex-shrink: 0;
 }
