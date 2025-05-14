@@ -1,3 +1,4 @@
+const input = document.querySelector('.range-input');
 const radioSlider = new Swiper(".radio-slider", {
     // Optional parameters
     direction: 'horizontal',
@@ -19,22 +20,26 @@ const radioSlider = new Swiper(".radio-slider", {
     },
 
 });
+var softSlider = document.getElementById('slider-round');
+
+noUiSlider.create(softSlider, {
+    start: [1],
+    range: {
+        'min': [1],
+        'max': [4000]
+    }
+});
 
 
-// const swiper = new Swiper(slSwiper, {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-//     // If we need pagination
-//     pagination: {
-//       el: '.swiper-pagination',
-//       type: "fraction"
-//     },
+// Из слайдера в input
+softSlider.noUiSlider.on('update', function (values, handle) {
+    input.value = values[handle];
+    console.log(values[handle]);
+});
 
-//     // Navigation arrows
-//     navigation: {
-//       nextEl: '.slider-btn--prev',
-//       prevEl: '.slider-btn--next',
-//     },
+// Из input в слайдер
+input.addEventListener('change', function () {
+    softSlider.noUiSlider.set(this.value);
+    console.log(this.value);
+});
 
-//   });

@@ -57,7 +57,8 @@
 .player__volume {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
+    width: 100px;
 }
 
 .player__mute svg {

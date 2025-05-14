@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/vendor/normalize.css">
     <link rel="stylesheet" href="./css/vendor/swiper.min.css">
+    <link rel="stylesheet" href="./css/vendor/nouislider.css">
     <link rel="stylesheet" href="./css/vendor/video.css">
     <link rel="stylesheet" href="./css/settings.css">
     <link rel="stylesheet" href="./css/components/header.css">
@@ -817,9 +818,8 @@
                                                         </path>
                                                     </svg>
                                                 </button>
-                                                <div class="player__volume_range">
-                                                    <input type="range">
-                                                </div>
+                                                <input type="range" class="range-input">
+                                                <div class="slider-styled" id="slider-round"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -1081,6 +1081,7 @@
         </div>
     </footer>
     <script src="./js/swiper.min.js"></script>
+    <script src="./js/nouislider.js"></script>
     <script defer src="./js/radio-slider.js"></script>
     <script defer src="./script.js"></script>
 </body>
