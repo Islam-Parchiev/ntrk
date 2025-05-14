@@ -1,5 +1,31 @@
 .radio__content_inner {
     padding-bottom: 5%;
+    display: flex;
+    align-items: start;
+}
+
+.radio__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 122%;
+    color: var(--bw-black);
+}
+
+.radio__next {
+    padding-top: 30px;
+}
+
+.radio__programs {
+    padding-top: 3%;
+}
+
+.radio__next_title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--bw-black);
 }
 
 .radio-slider {
