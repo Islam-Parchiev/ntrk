@@ -24,6 +24,7 @@ var softSlider = document.getElementById('slider-round');
 
 noUiSlider.create(softSlider, {
     start: [1],
+    connect:'lower',
     range: {
         'min': [1],
         'max': [4000]
@@ -43,3 +44,29 @@ input.addEventListener('change', function () {
     console.log(this.value);
 });
 
+
+
+// const slider = document.getElementById('volume-slider');
+// const volumeValue = document.getElementById('volume-value');
+
+// noUiSlider.create(slider, {
+//   start: [50], // Начальное значение громкости
+//   range: {
+//     'min': 0,
+//     'max': 100
+//   },
+//   orientation: 'horizontal', // Горизонтальное расположение
+//   direction: 'ltr', // Направление слева направо
+//   connect: 'lower', // Заполнять слева
+//   step: 1,        // Шаг изменения громкости
+//   tooltips: false,  // Отключаем тултипы (не нужны в этом примере)
+// });
+
+// // Обновление значения громкости при изменении положения ползунка
+// slider.noUiSlider.on('update', function (values, handle) {
+//   const volume = parseInt(values[handle]);
+//   volumeValue.textContent = volume;
+
+//   // Здесь можно добавить код для установки громкости видео/аудио
+//   // Например: myAudio.volume = volume / 100;
+// });

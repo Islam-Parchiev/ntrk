@@ -80,14 +80,12 @@
     border: 1px dashed #ffffff;
 }
 
-#slider-round {
+/* #slider-round {
     height: 4px;
-    background: #0cdb69;
-}
+    background: #c00000;
+} */
 
-#slider-round .noUi-connect {
-    background: #c0392b;
-}
+
 
 #slider-round .noUi-handle {
     height: 10px;
@@ -108,8 +106,4 @@
     width: 0;
     height: 0;
     background: transparent;
-}
-
-.noUi-connects {
-    background: #ff4444 !important;
 }
