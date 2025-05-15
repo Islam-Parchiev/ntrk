@@ -23,11 +23,11 @@ const radioSlider = new Swiper(".radio-slider", {
 var softSlider = document.getElementById('slider-round');
 
 noUiSlider.create(softSlider, {
-    start: [1],
+    start: [30],
     connect:'lower',
     range: {
-        'min': [1],
-        'max': [4000]
+        'min': [0],
+        'max': [100]
     }
 });
 
@@ -70,3 +70,63 @@ input.addEventListener('change', function () {
 //   // Здесь можно добавить код для установки громкости видео/аудио
 //   // Например: myAudio.volume = volume / 100;
 // });
+
+
+// Инициализация аудио
+const audio = document.getElementById('audio');
+const slider = document.getElementById('audio-slider');
+
+// Инициализация слайдера
+noUiSlider.create(slider, {
+  start: 0,
+  connect: [true, false], // Только прогресс-бар
+  range: {
+    'min': 0,
+    'max': 100
+  },
+  behaviour: 'tap-drag', // Поведение слайдера
+  step: 0.1,
+  format: {
+    to: function(value) {
+      return value;
+    },
+    from: function(value) {
+      return value;
+    }
+  }
+});
+
+// Обновление слайдера при воспроизведении
+audio.addEventListener('timeupdate', () => {
+  const progress = (audio.currentTime / audio.duration) * 100;
+  slider.noUiSlider.set(progress);
+});
+
+// Перемотка при взаимодействии со слайдером
+slider.noUiSlider.on('slide', (values) => {
+  const seekTime = (values[0] * audio.duration) / 100;
+  audio.currentTime = seekTime;
+});
+
+// Форматирование времени
+function formatTime(seconds) {
+  const minutes = Math.floor(seconds / 60);
+  seconds = Math.floor(seconds % 60);
+  return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+}
+
+// Обновление времени
+audio.addEventListener('timeupdate', () => {
+  document.querySelector('.current-time').textContent = formatTime(audio.currentTime);
+  document.querySelector('.duration').textContent = formatTime(audio.duration);
+});
+
+// Инициализация продолжительности трека
+audio.addEventListener('loadedmetadata', () => {
+  slider.noUiSlider.updateOptions({
+    range: {
+      'min': 0,
+      'max': audio.duration
+    }
+  });
+});

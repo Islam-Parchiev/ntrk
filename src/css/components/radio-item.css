@@ -51,12 +51,10 @@
 
 .radio-item__progress_bar {
     display: block;
-    ;
     height: 4px;
     max-width: 160px;
     width: 100%;
     background: var(--neutral-neutral-300);
-    opacity: 0.6;
 }
 
 .radio-item__title {
@@ -75,4 +73,92 @@
     font-size: 12px;
     line-height: 167%;
     color: var(--neutral-neutral-500);
+}
+
+.radio-item__play_btn--stop-svg {
+    display: none;
+}
+.radio-item__play_btn.active .radio-item__play_btn--stop-svg {
+    display: block;
+}
+.radio-item__play_btn.active .radio-item__play_btn--play-svg {
+    display: none;
+}
+
+.radio-item__progress_bar {
+    position: relative;
+}
+.radio-item__progress_bar::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    height: 100%;
+    width: 50%;
+    background: var(--primary-primary-500);
+}
+
+
+/* Стили для noUiSlider */
+#audio-slider {
+    width: 300px;
+    margin: 20px 0;
+  }
+  
+  /* Кастомизация слайдера */
+#audio-slider .noUi-target {
+    background: #ddd;
+    border: none;
+    box-shadow: none;
+  }
+  
+#audio-slider .noUi-connect {
+    background: #4CAF50;
+  }
+  
+#audio-slider  .noUi-handle {
+    width: 15px;
+    height: 15px;
+    right: -8px !important;
+    background: #4CAF50;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  
+  #audio-slider .noUi-handle:before, .noUi-handle:after {
+    display: none;
+  }
+
+
+  /* Стили для noUiSlider */
+#audio-slider {
+  width: 300px;
+  margin: 20px 0;
+}
+
+/* Кастомизация слайдера */
+.noUi-target {
+  background: #ddd;
+  border: none;
+  box-shadow: none;
+}
+
+.noUi-connect {
+  background: #4CAF50;
+}
+
+.noUi-handle {
+  width: 15px;
+  height: 15px;
+  right: -8px !important;
+  background: #4CAF50;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.noUi-handle:before, .noUi-handle:after {
+  display: none;
 }

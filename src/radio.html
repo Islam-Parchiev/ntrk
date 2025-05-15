@@ -466,262 +466,28 @@
                                     </div>
                                     <div class="radio-item__bottom">
                                         <div class="radio-item__nav">
-                                            <audio src="./assets/test.mp3"></audio>
+                                            <audio id="audio" src="./assets/test.mp3"></audio>
                                             <button class="btn-reset radio-item__play_btn">
-                                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                                <svg class="radio-item__play_btn--play-svg" width="12" height="14" viewBox="0 0 12 14" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M11.3648 6.11953L1.4741 0.793746C0.807869 0.435006 0 0.917542 0 1.67422V12.3258C0 13.0825 0.807868 13.565 1.4741 13.2063L11.3648 7.88047C12.066 7.5029 12.066 6.4971 11.3648 6.11953Z"
                                                         fill="#545454" />
                                                 </svg>
+                                                <svg class="radio-item__play_btn--stop-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="6" y="4" width="4" height="16" rx="1" fill="#14AB28" />
+                                                    <rect x="14" y="4" width="4" height="16" rx="1" fill="#14AB28" />
+                                                  </svg>
                                             </button>
                                             <div class="radio-item__progress">
-                                                <div class="radio-item__progress_bar">
+                                                <!-- <div id="audio-slider" class="radio-item__progress_bar">
+
+                                                </div> -->
+                                                <div id="audio-slider">
 
                                                 </div>
                                                 <div class="radio-item__timer">
-                                                    <span>01:46</span>
-                                                </div>
-                                            </div>
-                                            <button class="btn-reset radio-item__download">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M5 14V17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17V14"
-                                                        stroke="#545454" stroke-width="2" />
-                                                    <path d="M12 3V15" stroke="#545454" stroke-width="2" />
-                                                    <path d="M17 10L12 15L7 10" stroke="#545454" stroke-width="2" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="radio-item__info">
-                                            <h6 class="radio-item__title">
-                                                С началом весны участились случаи возгорания сухой травы и сжигания
-                                                мусора.
-                                            </h6>
-                                            <div class="radio-item__meta">
-                                                <time>1 апр, 18:35</time>
-                                                <div class="radio-item__views">
-                                                    <img src="./assets/img/Subtract.svg" alt="Subtract">
-                                                    <span>12</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="radio-item">
-                                    <div class="radio-item__image">
-                                        <img src="./assets/img/rditem.png" alt="Radio item">
-                                    </div>
-                                    <div class="radio-item__bottom">
-                                        <div class="radio-item__nav">
-                                            <button class="btn-reset radio-item__play_btn">
-                                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M11.3648 6.11953L1.4741 0.793746C0.807869 0.435006 0 0.917542 0 1.67422V12.3258C0 13.0825 0.807868 13.565 1.4741 13.2063L11.3648 7.88047C12.066 7.5029 12.066 6.4971 11.3648 6.11953Z"
-                                                        fill="#545454" />
-                                                </svg>
-                                            </button>
-                                            <div class="radio-item__progress">
-                                                <div class="radio-item__progress_bar">
-
-                                                </div>
-                                                <div class="radio-item__timer">
-                                                    <span>01:46</span>
-                                                </div>
-                                            </div>
-                                            <button class="btn-reset radio-item__download">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M5 14V17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17V14"
-                                                        stroke="#545454" stroke-width="2" />
-                                                    <path d="M12 3V15" stroke="#545454" stroke-width="2" />
-                                                    <path d="M17 10L12 15L7 10" stroke="#545454" stroke-width="2" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="radio-item__info">
-                                            <h6 class="radio-item__title">
-                                                С началом весны участились случаи возгорания сухой травы и сжигания
-                                                мусора.
-                                            </h6>
-                                            <div class="radio-item__meta">
-                                                <time>1 апр, 18:35</time>
-                                                <div class="radio-item__views">
-                                                    <img src="./assets/img/Subtract.svg" alt="Subtract">
-                                                    <span>12</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="radio-item">
-                                    <div class="radio-item__image">
-                                        <img src="./assets/img/rditem.png" alt="Radio item">
-                                    </div>
-                                    <div class="radio-item__bottom">
-                                        <div class="radio-item__nav">
-                                            <button class="btn-reset radio-item__play_btn">
-                                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M11.3648 6.11953L1.4741 0.793746C0.807869 0.435006 0 0.917542 0 1.67422V12.3258C0 13.0825 0.807868 13.565 1.4741 13.2063L11.3648 7.88047C12.066 7.5029 12.066 6.4971 11.3648 6.11953Z"
-                                                        fill="#545454" />
-                                                </svg>
-                                            </button>
-                                            <div class="radio-item__progress">
-                                                <div class="radio-item__progress_bar">
-
-                                                </div>
-                                                <div class="radio-item__timer">
-                                                    <span>01:46</span>
-                                                </div>
-                                            </div>
-                                            <button class="btn-reset radio-item__download">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M5 14V17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17V14"
-                                                        stroke="#545454" stroke-width="2" />
-                                                    <path d="M12 3V15" stroke="#545454" stroke-width="2" />
-                                                    <path d="M17 10L12 15L7 10" stroke="#545454" stroke-width="2" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="radio-item__info">
-                                            <h6 class="radio-item__title">
-                                                С началом весны участились случаи возгорания сухой травы и сжигания
-                                                мусора.
-                                            </h6>
-                                            <div class="radio-item__meta">
-                                                <time>1 апр, 18:35</time>
-                                                <div class="radio-item__views">
-                                                    <img src="./assets/img/Subtract.svg" alt="Subtract">
-                                                    <span>12</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="radio-item">
-                                    <div class="radio-item__image">
-                                        <img src="./assets/img/rditem.png" alt="Radio item">
-                                    </div>
-                                    <div class="radio-item__bottom">
-                                        <div class="radio-item__nav">
-                                            <button class="btn-reset radio-item__play_btn">
-                                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M11.3648 6.11953L1.4741 0.793746C0.807869 0.435006 0 0.917542 0 1.67422V12.3258C0 13.0825 0.807868 13.565 1.4741 13.2063L11.3648 7.88047C12.066 7.5029 12.066 6.4971 11.3648 6.11953Z"
-                                                        fill="#545454" />
-                                                </svg>
-                                            </button>
-                                            <div class="radio-item__progress">
-                                                <div class="radio-item__progress_bar">
-
-                                                </div>
-                                                <div class="radio-item__timer">
-                                                    <span>01:46</span>
-                                                </div>
-                                            </div>
-                                            <button class="btn-reset radio-item__download">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M5 14V17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17V14"
-                                                        stroke="#545454" stroke-width="2" />
-                                                    <path d="M12 3V15" stroke="#545454" stroke-width="2" />
-                                                    <path d="M17 10L12 15L7 10" stroke="#545454" stroke-width="2" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="radio-item__info">
-                                            <h6 class="radio-item__title">
-                                                С началом весны участились случаи возгорания сухой травы и сжигания
-                                                мусора.
-                                            </h6>
-                                            <div class="radio-item__meta">
-                                                <time>1 апр, 18:35</time>
-                                                <div class="radio-item__views">
-                                                    <img src="./assets/img/Subtract.svg" alt="Subtract">
-                                                    <span>12</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="radio-item">
-                                    <div class="radio-item__image">
-                                        <img src="./assets/img/rditem.png" alt="Radio item">
-                                    </div>
-                                    <div class="radio-item__bottom">
-                                        <div class="radio-item__nav">
-                                            <button class="btn-reset radio-item__play_btn">
-                                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M11.3648 6.11953L1.4741 0.793746C0.807869 0.435006 0 0.917542 0 1.67422V12.3258C0 13.0825 0.807868 13.565 1.4741 13.2063L11.3648 7.88047C12.066 7.5029 12.066 6.4971 11.3648 6.11953Z"
-                                                        fill="#545454" />
-                                                </svg>
-                                            </button>
-                                            <div class="radio-item__progress">
-                                                <div class="radio-item__progress_bar">
-
-                                                </div>
-                                                <div class="radio-item__timer">
-                                                    <span>01:46</span>
-                                                </div>
-                                            </div>
-                                            <button class="btn-reset radio-item__download">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M5 14V17C5 18.1046 5.89543 19 7 19H17C18.1046 19 19 18.1046 19 17V14"
-                                                        stroke="#545454" stroke-width="2" />
-                                                    <path d="M12 3V15" stroke="#545454" stroke-width="2" />
-                                                    <path d="M17 10L12 15L7 10" stroke="#545454" stroke-width="2" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="radio-item__info">
-                                            <h6 class="radio-item__title">
-                                                С началом весны участились случаи возгорания сухой травы и сжигания
-                                                мусора.
-                                            </h6>
-                                            <div class="radio-item__meta">
-                                                <time>1 апр, 18:35</time>
-                                                <div class="radio-item__views">
-                                                    <img src="./assets/img/Subtract.svg" alt="Subtract">
-                                                    <span>12</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="radio-item">
-                                    <div class="radio-item__image">
-                                        <img src="./assets/img/rditem.png" alt="Radio item">
-                                    </div>
-                                    <div class="radio-item__bottom">
-                                        <div class="radio-item__nav">
-
-                                            <button class="btn-reset radio-item__play_btn">
-                                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M11.3648 6.11953L1.4741 0.793746C0.807869 0.435006 0 0.917542 0 1.67422V12.3258C0 13.0825 0.807868 13.565 1.4741 13.2063L11.3648 7.88047C12.066 7.5029 12.066 6.4971 11.3648 6.11953Z"
-                                                        fill="#545454" />
-                                                </svg>
-                                            </button>
-                                            <div class="radio-item__progress">
-                                                <div class="radio-item__progress_bar">
-
-                                                </div>
-                                                <div class="radio-item__timer">
-                                                    <span>01:46</span>
+                                                    <span id="duration" class="duration">00:00</span>
                                                 </div>
                                             </div>
                                             <button class="btn-reset radio-item__download">
@@ -1086,6 +852,7 @@
     <script src="./js/nouislider.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/distribute/nouislider.min.js"></script> -->
     <script defer src="./js/radio-slider.js"></script>
+    <script defer src="./js/radio.js"></script>
     <script defer src="./script.js"></script>
 </body>
 
