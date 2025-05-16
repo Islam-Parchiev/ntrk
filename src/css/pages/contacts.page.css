@@ -12,6 +12,7 @@
 }
 .contacts__address {
     padding-top: 5%;
+    font-style: normal;
 }
 .contacts__address_list {
     display: flex;

@@ -29,6 +29,7 @@
 }
 
 .footer__info {
+    font-style: normal;
     max-width: 480px;
     display: flex;
     flex-direction: column;
@@ -65,6 +66,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 156%;
+    text-wrap: nowrap;
     color: var(--bw-white);
 }
 
@@ -98,7 +100,9 @@
     line-height: 167%;
     color: var(--neutral-neutral-300);
 }
-
+.footer__inner--bottom address {
+    font-style: normal;
+}
 .footer__inner--bottom address a {
     font-family: var(--font-family);
     font-weight: 500;

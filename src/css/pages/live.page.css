@@ -6,10 +6,10 @@
 }
 .live__title {
     font-family: var(--font-family);
-font-weight: 600;
-font-size: 36px;
-line-height: 122%;
-color: var(--bw-black);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 122%;
+    color: var(--bw-black);
 }
 .live-content__left {
     max-width: 904px;

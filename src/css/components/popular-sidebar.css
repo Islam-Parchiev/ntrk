@@ -1,6 +1,5 @@
 .popular-sidebar {
     width: 100%;
-    font-family: var(--font-family);
     height: 100%;
     max-height: 880px;
     background: var(--primary-primary-100);
@@ -10,6 +9,7 @@ overflow-y: scroll;
 }
 .popular-sidebar__title {
     
+    font-family: var(--font-family);
     font-weight: 600;
     font-size: 18px;
     line-height: 156%;
@@ -30,10 +30,11 @@ overflow-y: scroll;
 }
 .popular-sidebar__item_text {
     
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-color: var(--bw-black);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bw-black);
 }
 .popular-sidebar__item_text:hover {
     color: var(--primary-primary-500);

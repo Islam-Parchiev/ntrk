@@ -7,16 +7,15 @@ const radioSlider = new Swiper(".radio-slider", {
         el: '.swiper-pagination',
         type: "fraction"
     },
-    slideClass: "radio-slider__slide",
+    slideClass: "radio-slide",
     wrapperClass: "radio-slider__wrapper",
     slidesPerView: 1,
     slidesPerGroup: 1,
     slidesPerGroupSkip: 1,
-    spaceBetween: 20,
     // Navigation arrows
     navigation: {
-        nextEl: '.radio-slider__btn--next',
-        prevEl: '.radio-slider__btn--prev',
+        nextEl: '.radio-slider-btn--next',
+        prevEl: '.radio-slider-btn--prev',
     },
 
 });

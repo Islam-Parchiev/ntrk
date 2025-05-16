@@ -109,6 +109,7 @@
     font-size: 16px;
     line-height: 150%;
     color: var(--bw-white);
+    font-family: var(--font-family);
 }
 
 .programs-slide__btns {
@@ -552,3 +553,4 @@
 .main-transfers__inner {
     padding-bottom: 5%;
 }
+

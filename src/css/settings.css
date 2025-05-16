@@ -17,7 +17,7 @@
   --neutral-neutral-200: #e0e0e0;
   --neutral-neutral-800: #2e2e2e;
   --font-family: "Golos Text", sans-serif;
-  --second-family: "SF Pro Display", sans-serif;
+  --second-family: -apple-system, "SF Pro Display", sans-serif; /* Системный шрифт Apple */
   --third-family: "Roboto", sans-serif;
   --font3: "Inter", sans-serif;
 }

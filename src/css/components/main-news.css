@@ -37,6 +37,7 @@ font-size: 20px;
 line-height: 140%;
 color: var(--bw-black);
 cursor: pointer;
+font-family: var(--font-family);
 }
 .main-news__title:hover > a{
     color: var(--primary-primary-500);
@@ -46,6 +47,8 @@ font-weight: 400;
 font-size: 16px;
 line-height: 150%;
 color: var(--bw-black);
+
+font-family: var(--font-family);
 }
 .main-news__bottom time {
 font-weight: 500;

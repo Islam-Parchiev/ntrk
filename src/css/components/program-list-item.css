@@ -9,7 +9,8 @@
     max-width: 904px;
     min-height: 72px;
     max-height: 160px;
-    background: var(--neutral-neutral-100)
+    background: var(--neutral-neutral-100);
+    font-family: var(--font-family);
 }
 
 .programListItem time {
