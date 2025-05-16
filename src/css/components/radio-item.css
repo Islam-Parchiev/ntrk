@@ -139,13 +139,13 @@
 }
 
 /* Кастомизация слайдера */
-.noUi-target {
+.radio-item .noUi-target {
   background: #ddd;
   border: none;
   box-shadow: none;
 }
 
-.noUi-connect {
+.radio-item .noUi-connect {
   background: #4CAF50;
 }
 
@@ -161,4 +161,13 @@
 
 .noUi-handle:before, .noUi-handle:after {
   display: none;
+}
+.radio-item__progress .noUi-target {
+  height: 4px;
+  max-width: 159px;
+  cursor: pointer;
+  width: 100%;
+}
+.radio-item .noUi-handle {
+  display: none !important;
 }
