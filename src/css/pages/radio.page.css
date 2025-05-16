@@ -171,6 +171,7 @@ color: var(--bw-white);
 }
 
 .radio-slider {
+    position: relative;
     overflow: hidden;
     max-width: 904px;
     width: 100%;
@@ -231,4 +232,20 @@ height: 100%;
 }
 .radio-slide__paragraph {
     margin-top: 30px;
+}
+.radio-slider-navigation {
+    position: absolute;
+    z-index: 10;
+    bottom: 5%;
+    left: 52px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.radio-slider-pagination {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+color: var(--neutral-neutral-300);
 }

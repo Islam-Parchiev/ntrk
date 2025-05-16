@@ -4,7 +4,7 @@ const radioSlider = new Swiper(".radio-slider", {
     direction: 'horizontal',
     loop: true,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.radio-slider-pagination',
         type: "fraction"
     },
     slideClass: "radio-slide",
