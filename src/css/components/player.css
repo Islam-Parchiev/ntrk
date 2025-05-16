@@ -106,3 +106,12 @@
     display: flex;
     gap: 20px;
 }
+.play-svg {
+    display: none;
+}
+.player__controls_btn--play.active .play-svg {
+    display: block;
+}
+.player__controls_btn--play.active .pause-svg {
+    display: none;
+}

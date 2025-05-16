@@ -1,3 +1,6 @@
+const playerAudio = document.querySelector(".player__controls > audio");
+const playBtn = document.querySelector(".player__controls_btn--play");
+const muteAudio = document.querySelector(".player__mute");
 const input = document.querySelector('.range-input');
 const radioSlider = new Swiper(".radio-slider", {
     // Optional parameters
@@ -22,11 +25,12 @@ const radioSlider = new Swiper(".radio-slider", {
 var softSlider = document.getElementById('slider-round');
 
 noUiSlider.create(softSlider, {
-    start: [30],
+    start: [1],
     connect:'lower',
+    step: 0.01,
     range: {
-        'min': [0],
-        'max': [100]
+        'min': [0.0],
+        'max': [1]
     }
 });
 
@@ -34,6 +38,7 @@ noUiSlider.create(softSlider, {
 // Из слайдера в input
 softSlider.noUiSlider.on('update', function (values, handle) {
     input.value = values[handle];
+    playerAudio.volume=values[handle];
     console.log(values[handle]);
 });
 
@@ -44,7 +49,25 @@ input.addEventListener('change', function () {
 });
 
 
+playBtn.addEventListener("click",()=> {
+    if(playBtn.classList.contains("active")) {
+        playBtn.classList.remove("active");
+        playerAudio.pause();
+    }else {
+        playBtn.classList.add("active");
+        playerAudio.play();
+    }
+})
+muteAudio.addEventListener("click",(e)=> {
+    if(e.target.classList.contains("popular-item__media_btn") || e.target.nodeName === "path" || e.target.nodeName === "svg"){
 
+        if(playerAudio.muted===true) {
+            playerAudio.muted=false
+        }else {
+            playerAudio.muted=true
+        }
+    }
+})
 // const slider = document.getElementById('volume-slider');
 // const volumeValue = document.getElementById('volume-value');
 
