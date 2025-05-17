@@ -413,29 +413,62 @@
                 <div class="news__inner">
                     <div class="tabs">
                         <ul class="list-reset tabs__list">
-                            <li class="tab active">
-                                <a href="#">Все</a>
+                            <li class="tab active" data-tab="one">
+                                <span>Все</span>
                             </li>
-                            <li class="tab">
-                                <a href="#">Общество</a>
+                            <li class="tab" data-tab="two">
+                                <span>Общество</span>
                             </li>
-                            <li class="tab">
-                                <a href="#">Экономика</a>
+                            <li class="tab" data-tab="3">
+                                <span>Экономика</span>
                             </li>
-                            <li class="tab">
-                                <a href="#">Политика</a>
+                            <li class="tab" data-tab="4">
+                                <span>Политика</span>
                             </li>
-                            <li class="tab">
-                                <a href="#">Туризм</a>
+                            <li class="tab" data-tab="5">
+                                <span>Туризм</span>
                             </li>
-                            <li class="tab">
-                                <a href="#">Развлечения</a>
+                            <li class="tab" data-tab="6">
+                                <span>Развлечения</span>
                             </li>
                         </ul>
                     </div>
                     <div class="news__main">
                         <div class="news__grid">
                             <div class="grid__item grid__one">
+                                <div class="tab-content active" data-tab-content="one">
+
+                               
+                                <article class="main-news">
+                                    <div class="main-news__image">
+                                        <img src="./assets/img/newsone.png" alt="Main news image">
+                                    </div>
+                                    <div class="main-news__info">
+                                        <h4 class="main-news__title">
+                                            <a href="#"> Более 40 мест для размещения туристов создали в Ингушетии1</a>
+                                        </h4>
+                                        <div class="main-news__text">
+                                            <p class="main-news__paragraph">
+                                                В Ингушетии появилось более 40 мест для размещения туристов в
+                                                мини-отелях в 2023-2024 годах, сообщил председатель комитета по туризму
+                                                республики Магомед Цуроев во вторник.
+                                            </p>
+                                        </div>
+                                        <div class="main-news__bottom">
+                                            <time>Вчера, 21:34</time>
+                                            <div class="main-news__views">
+                                                <div class="news-views__icon">
+                                                    <img src="./assets/img/Subtract.svg" alt="Eye icon">
+                                                </div>
+                                                <span>34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="tab-content" data-tab-content="two">
+
+                               
                                 <article class="main-news">
                                     <div class="main-news__image">
                                         <img src="./assets/img/newsone.png" alt="Main news image">
@@ -462,6 +495,7 @@
                                         </div>
                                     </div>
                                 </article>
+                            </div>
                             </div>
                             <div class="grid__item grid__two">
                                 <!-- SideBar -->
@@ -712,6 +746,158 @@
                                 </div>
                             </div>
                             <div class="grid__item grid__three">
+                                <div class="tab-content active" data-tab-content="one">
+
+                                
+                                <div class="news-block">
+                                    <ul class="list-reset news-block__list">
+                                        <li class="news-item news-item--media">
+                                            <div class="news-item__media">
+                                                <img src="./assets/img/zagl.png" alt="News Item Preview">
+                                                <button class="btn-reset news-item--media__btn">
+                                                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.39052 5.1221L1.47885 0.806647C0.812478 0.44317 0 0.925483 0 1.68454V10.3155C0 11.0745 0.812477 11.5568 1.47885 11.1934L9.39052 6.8779C10.0854 6.49888 10.0854 5.50112 9.39052 5.1221Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="news-item__bottom">
+                                                <h6 class="news-item__title">
+                                                    <a href="#">С началом весны участились случаи возгорания сухой травы
+                                                        и сжигания мусора.1</a>
+                                                </h6>
+                                                <div class="news-item__info">
+                                                    <time class="news-item_time">
+                                                        19 сен, 21:34
+                                                    </time>
+                                                    <div class="news-item_views">
+                                                        <div class="item-views__icon">
+                                                            <img src="./assets/img/Subtract.svg" alt="Eye icon">
+                                                        </div>
+                                                        <span>99</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="news-item">
+                                            <div class="news-item__media">
+                                                <img src="./assets/img/zagl.png" alt="News Item Preview">
+                                            </div>
+                                            <div class="news-item__bottom">
+                                                <h6 class="news-item__title">
+                                                    <a href="#">С началом весны участились случаи возгорания сухой травы
+                                                        и сжигания мусора.</a>
+                                                </h6>
+                                                <div class="news-item__info">
+                                                    <time class="news-item_time">
+                                                        19 сен, 21:34
+                                                    </time>
+                                                    <div class="news-item_views">
+                                                        <div class="item-views__icon">
+                                                            <img src="./assets/img/Subtract.svg" alt="Eye icon">
+                                                        </div>
+                                                        <span>99</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="news-item">
+                                            <div class="news-item__media">
+                                                <img src="./assets/img/zagl.png" alt="News Item Preview">
+                                            </div>
+                                            <div class="news-item__bottom">
+                                                <h6 class="news-item__title">
+                                                    <a href="#">С началом весны участились случаи возгорания сухой травы
+                                                        и сжигания мусора.</a>
+                                                </h6>
+                                                <div class="news-item__info">
+                                                    <time class="news-item_time">
+                                                        19 сен, 21:34
+                                                    </time>
+                                                    <div class="news-item_views">
+                                                        <div class="item-views__icon">
+                                                            <img src="./assets/img/Subtract.svg" alt="Eye icon">
+                                                        </div>
+                                                        <span>99</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="news-item">
+                                            <div class="news-item__media">
+                                                <img src="./assets/img/zagl.png" alt="News Item Preview">
+                                            </div>
+                                            <div class="news-item__bottom">
+                                                <h6 class="news-item__title">
+                                                    <a href="#">С началом весны участились случаи возгорания сухой травы
+                                                        и сжигания мусора.</a>
+                                                </h6>
+                                                <div class="news-item__info">
+                                                    <time class="news-item_time">
+                                                        19 сен, 21:34
+                                                    </time>
+                                                    <div class="news-item_views">
+                                                        <div class="item-views__icon">
+                                                            <img src="./assets/img/Subtract.svg" alt="Eye icon">
+                                                        </div>
+                                                        <span>99</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="news-item">
+                                            <div class="news-item__media">
+                                                <img src="./assets/img/zagl.png" alt="News Item Preview">
+                                            </div>
+                                            <div class="news-item__bottom">
+                                                <h6 class="news-item__title">
+                                                    <a href="#">С началом весны участились случаи возгорания сухой травы
+                                                        и сжигания мусора.</a>
+                                                </h6>
+                                                <div class="news-item__info">
+                                                    <time class="news-item_time">
+                                                        19 сен, 21:34
+                                                    </time>
+                                                    <div class="news-item_views">
+                                                        <div class="item-views__icon">
+                                                            <img src="./assets/img/Subtract.svg" alt="Eye icon">
+                                                        </div>
+                                                        <span>99</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="news-item">
+                                            <div class="news-item__media">
+                                                <img src="./assets/img/zagl.png" alt="News Item Preview">
+                                            </div>
+                                            <div class="news-item__bottom">
+                                                <h6 class="news-item__title">
+                                                    <a href="#">С началом весны участились случаи возгорания сухой травы
+                                                        и сжигания мусора.</a>
+                                                </h6>
+                                                <div class="news-item__info">
+                                                    <time class="news-item_time">
+                                                        19 сен, 21:34
+                                                    </time>
+                                                    <div class="news-item_views">
+                                                        <div class="item-views__icon">
+                                                            <img src="./assets/img/Subtract.svg" alt="Eye icon">
+                                                        </div>
+                                                        <span>99</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-content" data-tab-content="two">
+
+                                
                                 <div class="news-block">
                                     <ul class="list-reset news-block__list">
                                         <li class="news-item news-item--media">
@@ -857,6 +1043,7 @@
 
                                     </ul>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -1400,6 +1587,7 @@
     <script src="./js/video.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script defer src="./js/transfers.js"></script>
+    <script src="./js/tabs.js"></script>
     <script defer src="./script.js"></script>
 </body>
 

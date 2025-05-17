@@ -16,7 +16,7 @@
     border-bottom: 2px solid var(--primary-primary-500);
     margin-bottom: -2px;
 }
-.tab a {
+.tab span {
     font-family: var(--font-family);
 font-weight: 600;
 font-size: 14px;
@@ -27,6 +27,6 @@ color: var(--neutral-neutral-500);
     border-bottom: 2px solid var(--primary-primary-500);
     margin-bottom: -2px;
 }
-.tab.active a {
+.tab.active span {
     color: var(--bw-black);
 }

@@ -11,7 +11,6 @@ const unmuteButton = document.getElementById("unmuteVideo");
 const fullscreenButton = document.getElementById("fullScreenVideo");
 const slSwiper = document.querySelector('.swiper');
 const popularItemVIdeo = document.querySelectorAll('.popular-item__media');
-const popularItenVideoBtn = document.querySelectorAll('.popular-item__media_btn');
 const headerScheduleSliders = document.querySelectorAll(".header__schedule_slider");
 if (slSwiper) {
 
@@ -262,5 +261,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
-// popularItemVIdeo, popularItenVideoBtn
