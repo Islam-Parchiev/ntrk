@@ -1,7 +1,6 @@
 .transferItem {
     width: 280px;
     height: 222px;
-    position: relative;
 }
 
 .transferItem_media::before {

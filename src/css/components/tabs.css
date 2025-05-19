@@ -16,6 +16,7 @@
 .tab {
     cursor: pointer;
     padding: 8px 20px;
+    transition: background 0.3s ease-in-out;
 }
 
 .tab:hover {
@@ -32,6 +33,7 @@
     font-size: 14px;
     line-height: 143%;
     color: var(--neutral-neutral-500);
+    transition: color 0.3s ease-in-out;
 }
 
 .tab.active {

@@ -4,8 +4,8 @@
 }
 
 .transfer-hero {
-    height: 90vh;
-    background-image: url('./../assets/transferbg.jpg');
+    height: 680px;
+    background-image: url('./../../assets/transferbg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    
+
 }
 
 .transfer-hero__info time {
@@ -78,7 +78,7 @@
 }
 
 .releases__title {
-    
+
     font-weight: 600;
     font-size: 36px;
     line-height: 122%;
@@ -96,7 +96,7 @@
 }
 
 .releases-item__title a {
-    
+
     font-weight: 600;
     font-size: 14px;
     line-height: 143%;
@@ -105,7 +105,7 @@
 }
 
 .releases-item time {
-    
+
     font-weight: 500;
     font-size: 12px;
     line-height: 167%;
@@ -137,6 +137,10 @@
     transform: translate(-50%, -50%);
 }
 
+.releases-item__play-btn.hidden {
+    display: none;
+}
+
 .releases-item__timeline {
     position: absolute;
     z-index: 10;
@@ -147,7 +151,7 @@
     height: 28px;
     background: rgba(26, 26, 26, 0.8);
 
-    
+
     font-weight: 500;
     font-size: 12px;
     line-height: 167%;
