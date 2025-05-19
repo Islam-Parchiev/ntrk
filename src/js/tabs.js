@@ -1,6 +1,6 @@
 const tabContent = document.querySelectorAll(".tab-content");
-const tabsS = document.querySelectorAll(".tab");
-
+const tabsS = document.querySelectorAll("li[data-tab]");
+const menuTabItems = document.querySelectorAll("li[data-menutab]")
 
 function showTabT(tabId) {
 
@@ -24,6 +24,23 @@ tabsS.forEach(item => {
   });
 });
 
+function menuTabs(tabId) {
 
+  menuTabItems.forEach(button => button.classList.remove('active'));
 
-showTabT('two');
+const tabButton = document.querySelector(`li[data-menutab="${tabId}"]`);
+
+if (tabButton) {
+  tabButton.classList.add("active");
+}
+}
+menuTabItems.forEach(item => {
+item.addEventListener('click', () => {
+  const tabId = item.dataset.menutab;
+  console.log(tabId);
+  menuTabs(tabId);
+});
+});
+
+menuTabs('one')
+showTabT('one');

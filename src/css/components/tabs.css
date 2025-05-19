@@ -3,6 +3,10 @@
     width: 100%;
     border-bottom: 1px solid var(--neutral-neutral-200);
 }
+.menu-tabs {
+    border-bottom: 1px solid var(--neutral-neutral-700);
+}
+
 .tabs__list {
     display: flex;
     align-items: center;
@@ -29,4 +33,21 @@ color: var(--neutral-neutral-500);
 }
 .tab.active span {
     color: var(--bw-black);
+}
+.menu-tab.active span {
+    color: var(--neutral-neutral-200);
+}
+.menu-tab span{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 143%;
+color: var(--neutral-neutral-500);
+}
+.menu__results span {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: var(--neutral-neutral-300);
 }
