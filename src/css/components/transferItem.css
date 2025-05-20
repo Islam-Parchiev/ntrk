@@ -5,7 +5,6 @@
 
 .transferItem_media::before {
     content: "";
-    display: none;
     position: absolute;
     z-index: 9;
     width: 100%;
@@ -13,11 +12,14 @@
     left: 0;
     top: 0;
     background: var(--bw-black);
-    opacity: 0.35;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 .transferItem:hover .transferItem_media::before {
-    display: block;
+    visibility: visible;
+    opacity: 0.35;
 }
 
 .transferItem_media {
@@ -50,6 +52,7 @@
     font-size: 12px;
     line-height: 167%;
     color: var(--primary-primary-500);
+    transition: color 0.3s ease-in-out;
 }
 
 .transferItem:hover .transferItem_count {
