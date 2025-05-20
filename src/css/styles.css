@@ -340,7 +340,7 @@
     height: 100vh;
     left: 0;
     top: 0;
-    z-index: 888;
+    z-index: 10008;
     transform: scaleY(0);
     background: var(--neutral-neutral-900);
     transform-origin: top;
