@@ -64,3 +64,11 @@
     line-height: 150%;
     color: var(--neutral-neutral-300);
 }
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}

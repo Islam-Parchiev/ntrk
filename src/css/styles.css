@@ -567,18 +567,16 @@
     font-size: 18px;
     line-height: 156%;
     color: var(--primary-primary-500);
+    transition: color 0.2s ease-in-out;
+    
+}
+
+.main-transfers__all:hover {
+    color: var(--bw-black);
 }
 
 .main-transfers__inner {
     padding-bottom: 5%;
-}
-
-.tab-content {
-    display: none;
-}
-
-.tab-content.active {
-    display: block;
 }
 
 .menu-list {
