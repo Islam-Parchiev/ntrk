@@ -22,7 +22,7 @@ const radioSlider = new Swiper(".radio-slider", {
     },
 
 });
-var softSlider = document.getElementById('slider-round');
+let softSlider = document.getElementById('slider-round');
 
 noUiSlider.create(softSlider, {
     start: [1],
