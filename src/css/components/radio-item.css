@@ -1,144 +1,156 @@
 .radio__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .radio-item {
-    width: 280px;
+  width: 280px;
 }
 
 .radio-item__bottom {
-    padding-top: 2%;
+  padding-top: 2%;
 }
 
 .radio-item__image {
-    width: 100%;
-    height: 158px;
-    border-radius: 12px;
-    overflow: hidden;
+  width: 100%;
+  height: 158px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .radio-item__image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .radio-item__nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
 }
 
 .radio-item__progress {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
 
 .radio-item__timer span {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 143%;
-    color: var(--neutral-neutral-700);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--neutral-neutral-700);
 }
 
 .radio-item__progress_bar {
-    display: block;
-    height: 4px;
-    max-width: 160px;
-    width: 100%;
-    background: var(--neutral-neutral-300);
+  display: block;
+  height: 4px;
+  max-width: 160px;
+  width: 100%;
+  background: var(--neutral-neutral-300);
 }
 
 .radio-item__title {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 156%;
-    color: var(--bw-black);
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    /* Макс. число строк */
-    overflow: hidden;
-    width: 100%;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* Макс. число строк */
+  overflow: hidden;
+  width: 100%;
+}
+.radio-item__title a{
+  color:currentColor;
+}
+.radio-item__title {
+  color: var(--bw-black);
 }
 
+.radio-item__title:hover {
+  color: var(--primary-primary-500);
+}
 .radio-item__meta {
-    display: flex;
-    gap: 15px;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 167%;
-    color: var(--neutral-neutral-500);
+  display: flex;
+  gap: 15px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 167%;
+  color: var(--neutral-neutral-500);
 }
 
 .radio-item__play_btn--stop-svg {
-    display: none;
+  display: none;
 }
+
 .radio-item__play_btn.active .radio-item__play_btn--stop-svg {
-    display: block;
+  display: block;
 }
+
 .radio-item__play_btn.active .radio-item__play_btn--play-svg {
-    display: none;
+  display: none;
 }
 
 .radio-item__progress_bar {
-    position: relative;
+  position: relative;
 }
+
 .radio-item__progress_bar::before {
-    content:"";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    height: 100%;
-    width: 50%;
-    background: var(--primary-primary-500);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100%;
+  width: 50%;
+  background: var(--primary-primary-500);
 }
 
 
 /* Стили для noUiSlider */
 #audio-slider {
-    width: 300px;
-    margin: 20px 0;
-  }
-  
-  /* Кастомизация слайдера */
+  width: 300px;
+  margin: 20px 0;
+}
+
+/* Кастомизация слайдера */
 #audio-slider .noUi-target {
-    background: #ddd;
-    border: none;
-    box-shadow: none;
-  }
-  
+  background: #ddd;
+  border: none;
+  box-shadow: none;
+}
+
 #audio-slider .noUi-connect {
-    background: #4CAF50;
-  }
-  
-#audio-slider  .noUi-handle {
-    width: 15px;
-    height: 15px;
-    right: -8px !important;
-    background: #4CAF50;
-    border: none;
-    box-shadow: none;
-    cursor: pointer;
-  }
-  
-  #audio-slider .noUi-handle:before, .noUi-handle:after {
-    display: none;
-  }
+  background: #4CAF50;
+}
+
+#audio-slider .noUi-handle {
+  width: 15px;
+  height: 15px;
+  right: -8px !important;
+  background: #4CAF50;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+#audio-slider .noUi-handle:before,
+.noUi-handle:after {
+  display: none;
+}
 
 
-  /* Стили для noUiSlider */
+/* Стили для noUiSlider */
 #audio-slider {
   width: 300px;
   margin: 20px 0;
@@ -165,15 +177,18 @@
   cursor: pointer;
 }
 
-.noUi-handle:before, .noUi-handle:after {
+.noUi-handle:before,
+.noUi-handle:after {
   display: none;
 }
+
 .radio-item__progress .noUi-target {
   height: 4px;
   max-width: 159px;
   cursor: pointer;
   width: 100%;
 }
+
 .radio-item .noUi-handle {
   display: none !important;
 }
