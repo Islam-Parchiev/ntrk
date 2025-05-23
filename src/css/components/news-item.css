@@ -76,10 +76,15 @@
 }
 
 .news-item__title a {
+    width: 100%;
     font-weight: 600;
     font-size: 18px;
     line-height: 156%;
     color: var(--bw-black);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Макс. число строк */
+    overflow: hidden;
 }
 
 .news-item__descr {
@@ -89,7 +94,14 @@
     line-height: 150%;
     color: var(--bw-black);
 }
-
+.news-item__descr p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* Макс. число строк */
+    overflow: hidden;
+    width: 100%;
+}
 .news-item__info {
     font-weight: 500;
     font-size: 12px;

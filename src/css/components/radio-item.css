@@ -63,6 +63,12 @@
     font-size: 18px;
     line-height: 156%;
     color: var(--bw-black);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* Макс. число строк */
+    overflow: hidden;
+    width: 100%;
 }
 
 .radio-item__meta {
