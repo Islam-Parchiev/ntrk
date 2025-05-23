@@ -5,7 +5,7 @@ const menu = document.querySelector(".menu");
 const navigators = document.querySelectorAll(".menu > .navigator");
 const body = document.querySelector('.body');
 const menuitem = navigators.length;
-const video = document.getElementById("videoOne");
+const videoO = document.getElementById("videoOne");
 const muteButton = document.getElementById("muteVideo");
 const unmuteButton = document.getElementById("unmuteVideo");
 const fullscreenButton = document.getElementById("fullScreenVideo");
@@ -35,23 +35,6 @@ if (slSwiper) {
 }
 if (headerScheduleSliders) {
 
-  // const scheduleSlider = new Swiper(headerScheduleSlider, {
-  //   // Optional parameters
-  //   direction: 'horizontal',
-  //   loop: false,
-  //   slideClass: "schedule-slide",
-  //   wrapperClass: "schedule-wrapper",
-  //   slidesPerView: 5,
-  //   slidesPerGroup: 3,
-  //   slidesPerGroupSkip: 1,
-  //   spaceBetween: 20,
-  //   // Navigation arrows
-  //   navigation: {
-  //     nextEl: '.schedule-navigation__btn--next',
-  //     prevEl: '.schedule-navigation__btn--prev',
-  //   },
-
-  // });
   headerScheduleSliders.forEach((slider) => {
     new Swiper(slider, {
       // Optional parameters
@@ -156,12 +139,12 @@ function toggleFullscreen(element) {
 function toggleMute() {
 
   muteButton.addEventListener("click", () => {
-    video.muted = true;
+    videoO.muted = true;
     unmuteButton.classList.remove("hidden");
     muteButton.classList.add("hidden");
   })
   unmuteButton.addEventListener("click", () => {
-    video.muted = false;
+    videoO.muted = false;
     muteButton.classList.remove("hidden");
     unmuteButton.classList.add("hidden");
   })
@@ -171,7 +154,7 @@ function toggleMute() {
 
 toggleMute()
 fullscreenButton.addEventListener("click", function () {
-  toggleFullscreen(video);
+  toggleFullscreen(videoO);
 });
 videoCustom()
 
@@ -244,9 +227,6 @@ popularItemVIdeo.forEach(item => {
   })
 })
 
-//   swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal
-// swiper-pagination-current
-// swiper-pagination-total
 document.addEventListener('DOMContentLoaded', function () {
   const p = document.getElementById("my-player"); // Use getElementById!
   if (p) {
