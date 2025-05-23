@@ -5,6 +5,8 @@ const video = document.querySelector(".video-news__video-tag");
 const videoMediaTag = document.querySelector(".video-news__media");
 const videoDescription = document.querySelector(".video-news__media_description");
 const input = document.querySelector(".video-navigation__range-input");
+const currentEl = document.querySelector(".video-navigation__timeline_current");
+const durationEl = document.querySelector(".video-navigation__timeline_duration");
 if (playBtn && video) {
     playBtn.addEventListener("click", () => {
 
@@ -92,7 +94,7 @@ noUiSlider.create(progressBar, {
 videoPlayer.addEventListener('timeupdate', () => {
     const progress = (videoPlayer.currentTime / videoPlayer.duration) * 100;
     progressBar.noUiSlider.set(progress);
-
+    currentEl.textContent = formatTime(videoPlayer.currentTime);
 
 });
 progressBar.noUiSlider.on('slide', values => {
@@ -101,6 +103,9 @@ progressBar.noUiSlider.on('slide', values => {
 });
 
 
+window.addEventListener('DOMContentLoaded', () => {
+    durationEl.textContent = formatTime(videoPlayer.duration);
+})
 videoPlayer.addEventListener('loadedmetadata', () => {
     durationEl.textContent = formatTime(videoPlayer.duration);
     progressBar.noUiSlider.updateOptions({
@@ -110,6 +115,11 @@ videoPlayer.addEventListener('loadedmetadata', () => {
         }
     });
 });
+
+
+
+
+
 playVideoBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("popular-item__media_btn") || e.target.nodeName === "path" || e.target.nodeName === "rect" || e.target.nodeName === "svg") {
         if (playVideoBtn.classList.contains("played")) {
