@@ -18,9 +18,6 @@
     color: var(--bw-black);
 }
 
-.single-news__social svg {
-    fill: var(--bw-black);
-}
 
 .single-news__info {
     font-family: var(--font-family);
@@ -30,11 +27,6 @@
     color: var(--neutral-neutral-500);
 }
 
-.single-news__socials {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
 .single-news__bottom {
     display: flex;

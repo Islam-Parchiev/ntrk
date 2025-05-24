@@ -1,0 +1,9 @@
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social svg {
+    fill: var(--bw-black);
+}

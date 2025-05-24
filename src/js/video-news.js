@@ -1,4 +1,6 @@
+const playVideoBtn = document.querySelector(".video-navigation__btn");
 const playBtn = document.querySelector(".video-news__play-btn");
+const videoNavigation = document.querySelector(".video-navigation");
 const videoNewsFullScreenBtn = document.querySelector(".video-navigation__fullscreen");
 const videoNewsMuteBtn = document.querySelector(".video-navigation__sound_btn");
 const video = document.querySelector(".video-news__video-tag");
@@ -13,6 +15,8 @@ if (playBtn && video) {
         video.play();
         playBtn.classList.add("hidden");
         videoDescription.classList.add("hidden");
+        videoNavigation.classList.remove("hidden");
+        playVideoBtn.classList.add("played");
     })
 }
 
@@ -75,7 +79,6 @@ input.addEventListener('change', function () {
 
 const videoPlayer = document.querySelector('.video-news__video-tag');
 const progressBar = document.querySelector('.video-navigation__progress');
-const playVideoBtn = document.querySelector(".video-navigation__btn");
 noUiSlider.create(progressBar, {
     start: 0,
     connect: [true, false],
