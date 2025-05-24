@@ -2,6 +2,8 @@ const tabContent = document.querySelectorAll(".tab-content");
 const tabsS = document.querySelectorAll("li[data-tab]");
 const menuTabItems = document.querySelectorAll("li[data-menutab]")
 
+const programTabItems = document.querySelectorAll("li[data-program-tab]")
+const programTabContents =document.querySelectorAll(".program-tab-content");
 function showTabT(tabId) {
 
     tabsS.forEach(button => button.classList.remove('active'));
@@ -42,5 +44,27 @@ item.addEventListener('click', () => {
 });
 });
 
+function programTabs(tabId) {
+
+    programTabItems.forEach(item => item.classList.remove('active'));
+    programTabContents.forEach(content => content.classList.remove('active'));
+
+  const tabButton = document.querySelector(`li[data-program-tab="${tabId}"]`);
+  console.log(tabButton);
+  const tabC = document.querySelector(`div[data-program-tab-content="${tabId}"]`);
+  console.log(tabC);
+  if (tabButton && tabC) {
+    tabC.classList.add('active');
+    tabButton.classList.add('active');
+  }
+}
+programTabItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const tabId = item.dataset.programTab;
+    console.log(tabId);
+    programTabs(tabId);
+  });
+});
 menuTabs('one')
 showTabT('one');
+programTabs(2);
