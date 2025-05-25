@@ -357,31 +357,34 @@
                             Передачи
                         </h1>
                         <div class="news-content__tabs_wrapper">
-                            <div class="tabs">
-                                <ul class="list-reset tabs__list">
-                                    <li class="tab active">
-                                        <a href="#">Все</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a href="#">Развлечение</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a href="#">Образование</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a href="#">Религия</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a href="#">Социум</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a href="#">Экономика</a>
-                                    </li>
-                                </ul>
-                            </div>
+                           <div class="tabs">
+                        <ul class="list-reset tabs__list">
+                            <li class="tab active" data-tab="1">
+                                <span>Все</span>
+                            </li>
+                            <li class="tab" data-tab="2">
+                                <span>Развлечение</span>
+                            </li>
+                            <li class="tab" data-tab="3">
+                                <span>Образование</span>
+                            </li>
+                            <li class="tab" data-tab="4">
+                                <span>Религия</span>
+                            </li>
+                            <li class="tab" data-tab="5">
+                                <span>Социум</span>
+                            </li>
+                            <li class="tab" data-tab="6">
+                                <span>Экономика</span>
+                            </li>
+                        </ul>
+                    </div>
                         </div>
                     </div>
                     <div class="transfers__bottom">
+                             <div class="tab-content active" data-tab-content="1">
+
+
                         <ul class="list-reset transfers__list">
 
                             <li class="transferItem">
@@ -455,6 +458,84 @@
 
 
                         </ul>
+                        </div>  
+                           <div class="tab-content active" data-tab-content="2">
+
+
+                        <ul class="list-reset transfers__list">
+
+                            <li class="transferItem">
+                                <div class="transferItem_media">
+                                    <video class="video-js vjs-theme-city transfer__video transfer__video_btn--small"
+                                        controls>
+                                        <source src="./assets/test.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a
+                                            web browser that
+                                            <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                                supports HTML5 video
+                                            </a>
+                                        </p>
+                                    </video>
+                                </div>
+                                <h6 class="transferItem_title">
+                                    <a href="#">Неявное интервью</a>
+                                </h6>
+                                <span class="transferItem_count">24 выпуска1</span>
+                            </li>
+
+                            <li class="transferItem">
+                                <div class="transferItem_media">
+                                    <video class="video-js vjs-theme-city transfer__video transfer__video_btn--small"
+                                        controls>
+                                        <source src="./assets/test.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a
+                                            web browser that
+                                            <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                                supports HTML5 video
+                                            </a>
+                                        </p>
+                                    </video>
+                                    <button class="btn-reset play-btn transferItem_media_btn play-btn--small">
+                                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.92 6.1398C15.2533 6.9096 15.2533 8.8341 13.92 9.6039L3.92999 15.3716C2.59666 16.1414 0.929998 15.1792 0.929998 13.6396L0.929998 2.10411C0.929998 0.564513 2.59667 -0.397735 3.93 0.372065L13.92 6.1398Z"
+                                                fill="#70E780" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h6 class="transferItem_title">
+                                    <a href="#">Неявное интервью</a>
+                                </h6>
+                                <span class="transferItem_count">24 выпуска</span>
+                            </li>
+
+
+                            <li class="transferItem">
+                                <div class="transferItem_media">
+                                    <video class="video-js vjs-theme-city transfer__video transfer__video_btn--small"
+                                        controls>
+                                        <source src="./assets/test.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a
+                                            web browser that
+                                            <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                                supports HTML5 video
+                                            </a>
+                                        </p>
+                                    </video>
+                                </div>
+                                <h6 class="transferItem_title">
+                                    <a href="#">Неявное интервью</a>
+                                </h6>
+                                <span class="transferItem_count">24 выпуска</span>
+                            </li>
+
+
+                        </ul>
+                        </div>  
                     </div>
                 </div>
             </div>
@@ -587,6 +668,7 @@
     <script src="./js/video.js"></script>
     <script src="./js/dropdown.js"></script>
     <script src="./js/transfers.js"></script>
+    <script src="./js/tabs.js"></script>
     <script defer src="./script.js"></script>
 </body>
 

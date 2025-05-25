@@ -4,6 +4,9 @@ const menuTabItems = document.querySelectorAll("li[data-menutab]")
 
 const programTabItems = document.querySelectorAll("li[data-program-tab]")
 const programTabContents =document.querySelectorAll(".program-tab-content");
+
+const transferTabItems = document.querySelectorAll("li[data-program-tab]")
+const transferTabContents =document.querySelectorAll(".program-tab-content");
 function showTabT(tabId) {
 
     tabsS.forEach(button => button.classList.remove('active'));
@@ -65,6 +68,7 @@ programTabItems.forEach(item => {
     programTabs(tabId);
   });
 });
-menuTabs('one')
-showTabT('one');
-programTabs(2);
+
+menuTabs(1)
+showTabT(1);
+programTabs(1);

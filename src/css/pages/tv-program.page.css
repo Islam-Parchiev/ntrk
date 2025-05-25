@@ -74,3 +74,26 @@
 .program-tab-content.active {
     display: block;
 }
+
+.tab {
+    cursor: pointer;
+    padding: 8px 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+.tab:hover {
+    background: var(--neutral-neutral-100);
+}
+
+.tab:hover span {
+    color: var(--bw-black);
+}
+
+.tab.active {
+    border-bottom: 2px solid var(--primary-primary-500);
+    margin-bottom: -2px;
+}
+
+.tab.active span {
+    color: var(--bw-black);
+}
