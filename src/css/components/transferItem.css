@@ -65,6 +65,7 @@
 }
 
 /* .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
+
     content: "";
     background-image: url("./../../assets/play.svg");
     background-repeat: no-repeat;
@@ -92,3 +93,7 @@
 .transfer__video .vjs-control-bar {
    z-index: 100;
 } */
+
+.transferItem.transferItem--index {
+    display: block;
+}
