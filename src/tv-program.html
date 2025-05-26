@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Golos Text -->
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <!-- Golos Text -->
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
 
-<!-- Inter -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Inter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
-<!-- Roboto -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/vendor/normalize.css">
     <link rel="stylesheet" href="./css/vendor/swiper.min.css">
     <link rel="stylesheet" href="./css/settings.css">
@@ -539,39 +542,34 @@
                                     </svg>
                                 </button>
                                 <ul class="list-reset ProgramTabBar__list">
-                                    <li class="ProgramTabBar__item active" data-program-tab="1">
+                                    <li class="ProgramTabBar__item active" data-tab="1">
                                         <time>9 апр</time>
                                         <span>Ср</span>
                                     </li>
-                                    <li class="ProgramTabBar__item" data-program-tab="2">
+                                    <li class="ProgramTabBar__item" data-tab="2">
                                         <time>10 апр</time>
                                         <span>Чт</span>
                                     </li>
-                                    <li class="ProgramTabBar__item" data-program-tab="3">
+                                    <li class="ProgramTabBar__item" data-tab="3">
                                         <time>11 апр</time>
                                         <span>Пт</span>
                                     </li>
-                                    <li class="ProgramTabBar__item" data-program-tab="4">
+                                    <li class="ProgramTabBar__item" data-tab="4">
                                         <time>12 апр</time>
                                         <span>Сб</span>
                                     </li>
-                                    <li class="ProgramTabBar__item" data-program-tab="5">
+                                    <li class="ProgramTabBar__item" data-tab="5">
                                         <time>13 апр</time>
                                         <span>Вс</span>
                                     </li>
-                                    <li class="ProgramTabBar__item" data-program-tab="6">
+                                    <li class="ProgramTabBar__item" data-tab="6">
                                         <time>14 апр</time>
                                         <span>Пн</span>
                                     </li>
-                                    <li class="ProgramTabBar__item" data-program-tab="7">
+                                    <li class="ProgramTabBar__item" data-tab="7">
                                         <time>15 апр</time>
                                         <span>Вт</span>
                                     </li>
-                                    <li class="ProgramTabBar__item" data-program-tab="8">
-                                        <time>16 апр</time>
-                                        <span>Ср</span>
-                                    </li>
-                                    
                                 </ul>
 
                                 <button class="btn-reset ProgramTabBar__btn ProgramTabBar__btn--next">
@@ -582,11 +580,11 @@
                                 </button>
 
                             </div>
-                            <div class="program-tab-content active" data-program-tab-content="1">
 
-                            
+
+
                             <div class="programList">
-                                <div class="programListItem programListItem--third">
+                                <div class="programListItem programListItem--third" data-category="1">
                                     <time datetime="2025-04-1 05:00">05:00</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -594,17 +592,19 @@
                                             <span class="programListItem__age">12+</span>
                                         </h6>
                                         <span class="programListItem__type">
-                                          Интервью
+                                            Интервью
                                         </span>
                                         <p class="programListItem__text">
-                                           Необычный формат беседы, где герой раскрывается через непрямые вопросы, неожиданные темы и нестандартный подход. Без заготовленных сценариев – только искренность, эмоции и неожиданные повороты в разговоре.
+                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
+                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
+                                            только искренность, эмоции и неожиданные повороты в разговоре.
                                         </p>
                                     </div>
                                     <div class="programListItem__media">
                                         <img src="./assets/img/transfer1.png" alt="Program item image">
                                     </div>
                                 </div>
-                                <div class="programListItem">
+                                <div class="programListItem" data-category="1">
                                     <time datetime="2025-04-1 06:30">06:30</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -621,7 +621,7 @@
                                         <img src="./assets/poster.jpg" alt="Program item image">
                                     </div>
                                 </div>
-                                <div class="programListItem">
+                                <div class="programListItem" data-category="1">
                                     <time datetime="2025-04-1 06:30">06:30</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -637,7 +637,7 @@
                                         <img src="./assets/poster.jpg" alt="Program item image">
                                     </div>
                                 </div>
-                                <div class="programListItem programListItem--second">
+                                <div class="programListItem programListItem--second" data-category="1">
                                     <time datetime="2025-04-1 08:00">08:00</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -653,11 +653,11 @@
                                         <img src="./assets/poster.jpg" alt="Program item image">
                                     </div>
                                 </div>
-                                <div class="programListItem">
+                                <div class="programListItem" data-category="2">
                                     <time datetime="2025-04-1 08:25">08:25</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
-                                           Эздел
+                                            Эздел
                                             <span class="programListItem__age"></span>
                                         </h6>
                                         <span class="programListItem__type">
@@ -670,7 +670,7 @@
                                         <img src="./assets/poster.jpg" alt="Program item image">
                                     </div>
                                 </div>
-                                <div class="programListItem  programListItem--third">
+                                <div class="programListItem  programListItem--third" data-category="2">
                                     <time datetime="2025-04-1 10:00">10:00</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -678,17 +678,19 @@
                                             <span class="programListItem__age">0+</span>
                                         </h6>
                                         <span class="programListItem__type">
-                                           Мультфильм
+                                            Мультфильм
                                         </span>
                                         <p class="programListItem__text">
-                                            Добрый и веселый мультфильм о дружбе необычного зверька Чебурашки и мудрого Крокодила Гены. Вместе они помогают другим, преодолевают трудности и противостоят проделкам.
+                                            Добрый и веселый мультфильм о дружбе необычного зверька Чебурашки и
+                                            мудрого Крокодила Гены. Вместе они помогают другим, преодолевают
+                                            трудности и противостоят проделкам.
                                         </p>
                                     </div>
                                     <div class="programListItem__media">
                                         <img src="./assets/img/chb.png" alt="Чебурашка и крокодил Гена">
                                     </div>
                                 </div>
-                                <div class="programListItem programListItem--third">
+                                <div class="programListItem programListItem--third" data-category="3">
                                     <time datetime="2025-04-1 10:35">10:35</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -699,14 +701,17 @@
                                             Передача
                                         </span>
                                         <p class="programListItem__text">
-                                          Популярная ингушская передача, в которой обсуждаются важные темы культуры, традиций и современности. Гости делятся мнениями, рассказывают истории и поднимают актуальные вопросы, сохраняя атмосферу живого и содержательного диалога
+                                            Популярная ингушская передача, в которой обсуждаются важные темы
+                                            культуры, традиций и современности. Гости делятся мнениями, рассказывают
+                                            истории и поднимают актуальные вопросы, сохраняя атмосферу живого и
+                                            содержательного диалога
                                         </p>
                                     </div>
                                     <div class="programListItem__media">
                                         <img src="./assets/img/kch.png" alt="Кхоанен уйлаш">
                                     </div>
                                 </div>
-                                <div class="programListItem">
+                                <div class="programListItem" data-category="4">
                                     <time datetime="2025-04-1 12:00">12:00</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -723,7 +728,7 @@
                                         <img src="./assets/poster.jpg" alt="Program item image">
                                     </div>
                                 </div>
-                                <div class="programListItem  programListItem--second">
+                                <div class="programListItem  programListItem--second" data-category="5">
                                     <time datetime="2025-04-1 12:30">12:30</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -734,14 +739,14 @@
                                             Передача
                                         </span>
                                         <p class="programListItem__text">
-                                            
+
                                         </p>
                                     </div>
                                     <div class="programListItem__media">
                                         <img src="./assets/poster.jpg" alt="Program item image">
                                     </div>
                                 </div>
-                                <div class="programListItem programListItem--third">
+                                <div class="programListItem programListItem--third" data-category="5">
                                     <time datetime="2025-04-1 13:00">13:00</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -752,14 +757,17 @@
                                             Передача
                                         </span>
                                         <p class="programListItem__text">
-                                            Вдохновляющая передача о талантливых и целеустремлённых детях, добившихся успеха в разных сферах. Герои делятся своими историями, мечтами и достижениями, доказывая, что возраст – не преграда для больших свершений.
+                                            Вдохновляющая передача о талантливых и целеустремлённых детях,
+                                            добившихся успеха в разных сферах. Герои делятся своими историями,
+                                            мечтами и достижениями, доказывая, что возраст – не преграда для больших
+                                            свершений.
                                         </p>
                                     </div>
                                     <div class="programListItem__media">
                                         <img src="./assets/img/ttt.png" alt=" Жизнь Замечательных Детей">
                                     </div>
                                 </div>
-                                <div class="programListItem">
+                                <div class="programListItem" data-category="1">
                                     <time datetime="2025-04-1 14:00">14:00</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -770,12 +778,12 @@
                                             Передача
                                         </span>
                                         <p class="programListItem__text">
-                                           
+
                                         </p>
                                     </div>
-                                    
+
                                 </div>
-                                <div class="programListItem  programListItem--second">
+                                <div class="programListItem  programListItem--second" data-category="1">
                                     <time datetime="2025-04-1 15:00">15:00</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -786,14 +794,14 @@
                                             Новости
                                         </span>
                                         <p class="programListItem__text">
-                                           
+
                                         </p>
                                     </div>
                                     <div class="programListItem__media">
                                         <img src="./assets/poster.jpg" alt="Program item image">
                                     </div>
                                 </div>
-                                <div class="programListItem programListItem--third">
+                                <div class="programListItem programListItem--third" data-category="1">
                                     <time>06:30</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -804,14 +812,17 @@
                                             Новости
                                         </span>
                                         <p class="programListItem__text">
-                                            Информационная передача, рассказывающая о последних событиях, чрезвычайных ситуациях и резонансных инцидентах. Репортажи с места событий, комментарии экспертов и оперативные сводки помогают зрителям быть в курсе актуальных происшествий.
+                                            Информационная передача, рассказывающая о последних событиях,
+                                            чрезвычайных ситуациях и резонансных инцидентах. Репортажи с места
+                                            событий, комментарии экспертов и оперативные сводки помогают зрителям
+                                            быть в курсе актуальных происшествий.
                                         </p>
                                     </div>
                                     <div class="programListItem__media">
                                         <img src="./assets/poster.jpg" alt="Program item image">
                                     </div>
                                 </div>
-                                <div class="programListItem">
+                                <div class="programListItem" data-category="2">
                                     <time>06:30</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -831,7 +842,7 @@
                                         <img src="./assets/poster.jpg" alt="Program item image">
                                     </div>
                                 </div>
-                                <div class="programListItem  programListItem--second">
+                                <div class="programListItem  programListItem--second" data-category="3">
                                     <time>06:30</time>
                                     <div class="programListItem__info">
                                         <h6 class="programListItem__title">
@@ -852,313 +863,8 @@
                                     </div>
                                 </div>
                             </div>
-                            </div>
-                             <div class="program-tab-content" data-program-tab-content="2">
 
-                            
-                            <div class="programList">
-                                <div class="programListItem programListItem--third">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem  programListItem--second">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Новости
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem programListItem--third">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem  programListItem--second">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Новости
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem programListItem--third">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem  programListItem--second">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Новости
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem programListItem--third">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem  programListItem--second">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Новости
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem programListItem--third">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Передача
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                                <div class="programListItem  programListItem--second">
-                                    <time>06:30</time>
-                                    <div class="programListItem__info">
-                                        <h6 class="programListItem__title">
-                                            Беркате вахара наькъаш
-                                            <span class="programListItem__age">12+</span>
-                                        </h6>
-                                        <span class="programListItem__type">
-                                            Новости
-                                        </span>
-                                        <p class="programListItem__text">
-                                            Необычный формат беседы, где герой раскрывается через непрямые вопросы,
-                                            неожиданные темы и нестандартный подход. Без заготовленных сценариев –
-                                            только искренность, эмоции и неожиданные повороты в разговоре.
-                                        </p>
-                                    </div>
-                                    <div class="programListItem__media">
-                                        <img src="./assets/poster.jpg" alt="Program item image">
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
+
                         </div>
                         <div class="single-news__right-block tvProgram__right">
                             <div class="ads-block">
@@ -1237,27 +943,44 @@
                                 </li>
                                 <li class="footer__socials_item">
                                     <a href="#">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3686 7.76115C14.3624 8.61073 10.3529 10.3691 4.33993 13.0364C3.36352 13.4317 2.85204 13.8184 2.80548 14.1966C2.72678 14.8357 3.51285 15.0873 4.58328 15.43C4.72889 15.4766 4.87975 15.5249 5.03442 15.5761C6.08756 15.9246 7.50421 16.3324 8.24067 16.3486C8.90871 16.3633 9.65432 16.0829 10.4775 15.5074C16.0956 11.6463 18.9957 9.6947 19.1777 9.65263C19.3062 9.62294 19.4842 9.58562 19.6048 9.69476C19.7254 9.8039 19.7135 10.0106 19.7008 10.066C19.6229 10.404 16.5373 13.3247 14.9404 14.8362C14.4426 15.3073 14.0895 15.6416 14.0174 15.7179C13.8557 15.8889 13.6909 16.0506 13.5325 16.2061C12.5541 17.1664 11.8204 17.8865 13.5731 19.0624C14.4154 19.6275 15.0894 20.0948 15.7618 20.5611C16.4961 21.0702 17.2285 21.578 18.1762 22.2105C18.4176 22.3716 18.6482 22.539 18.8728 22.702C19.7274 23.3223 20.4951 23.8795 21.4436 23.7907C21.9948 23.739 22.5641 23.2114 22.8532 21.6377C23.5366 17.9185 24.8797 9.86033 25.1901 6.53973C25.2173 6.24881 25.1831 5.87648 25.1556 5.71303C25.1281 5.54959 25.0707 5.31671 24.862 5.14433C24.6149 4.94017 24.2334 4.89711 24.0628 4.90017C23.287 4.91409 22.0967 5.33546 16.3686 7.76115Z" fill="#BDBDBD" />
-                                          </svg>
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.3686 7.76115C14.3624 8.61073 10.3529 10.3691 4.33993 13.0364C3.36352 13.4317 2.85204 13.8184 2.80548 14.1966C2.72678 14.8357 3.51285 15.0873 4.58328 15.43C4.72889 15.4766 4.87975 15.5249 5.03442 15.5761C6.08756 15.9246 7.50421 16.3324 8.24067 16.3486C8.90871 16.3633 9.65432 16.0829 10.4775 15.5074C16.0956 11.6463 18.9957 9.6947 19.1777 9.65263C19.3062 9.62294 19.4842 9.58562 19.6048 9.69476C19.7254 9.8039 19.7135 10.0106 19.7008 10.066C19.6229 10.404 16.5373 13.3247 14.9404 14.8362C14.4426 15.3073 14.0895 15.6416 14.0174 15.7179C13.8557 15.8889 13.6909 16.0506 13.5325 16.2061C12.5541 17.1664 11.8204 17.8865 13.5731 19.0624C14.4154 19.6275 15.0894 20.0948 15.7618 20.5611C16.4961 21.0702 17.2285 21.578 18.1762 22.2105C18.4176 22.3716 18.6482 22.539 18.8728 22.702C19.7274 23.3223 20.4951 23.8795 21.4436 23.7907C21.9948 23.739 22.5641 23.2114 22.8532 21.6377C23.5366 17.9185 24.8797 9.86033 25.1901 6.53973C25.2173 6.24881 25.1831 5.87648 25.1556 5.71303C25.1281 5.54959 25.0707 5.31671 24.862 5.14433C24.6149 4.94017 24.2334 4.89711 24.0628 4.90017C23.287 4.91409 22.0967 5.33546 16.3686 7.76115Z"
+                                                fill="#BDBDBD" />
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="footer__socials_item">
                                     <a href="#">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M23.8 8.39995C24.9598 8.39995 25.9 7.45973 25.9 6.29993C25.9 5.14015 24.9598 4.19995 23.8 4.19995C22.6402 4.19995 21.7 5.14015 21.7 6.29993C21.7 7.45973 22.6402 8.39995 23.8 8.39995Z" fill="#BDBDBD" />
-                                            <path d="M17.8415 7.69995H3.5V23.8H7.4917V18.562H15.1405L18.6303 23.8H23.1L19.2517 18.5379C20.4468 18.3448 21.3073 17.8862 21.8332 17.162C22.359 16.4379 22.6219 15.2792 22.6219 13.7345V12.5275C22.6219 11.6103 22.5263 10.8862 22.359 10.331C22.1917 9.77581 21.9049 9.29309 21.4986 8.85858C21.0683 8.44824 20.5903 8.15858 20.0166 7.96548C19.443 7.7965 18.7259 7.69995 17.8415 7.69995ZM17.1961 15.0137H7.4917V11.2482H17.1961C17.7459 11.2482 18.1283 11.3448 18.3195 11.5138C18.5108 11.6827 18.6303 11.9965 18.6303 12.4551V13.8069C18.6303 14.2896 18.5108 14.6034 18.3195 14.7723C18.1283 14.9413 17.7459 15.0137 17.1961 15.0137Z" fill="#BDBDBD" />
-                                          </svg>
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.8 8.39995C24.9598 8.39995 25.9 7.45973 25.9 6.29993C25.9 5.14015 24.9598 4.19995 23.8 4.19995C22.6402 4.19995 21.7 5.14015 21.7 6.29993C21.7 7.45973 22.6402 8.39995 23.8 8.39995Z"
+                                                fill="#BDBDBD" />
+                                            <path
+                                                d="M17.8415 7.69995H3.5V23.8H7.4917V18.562H15.1405L18.6303 23.8H23.1L19.2517 18.5379C20.4468 18.3448 21.3073 17.8862 21.8332 17.162C22.359 16.4379 22.6219 15.2792 22.6219 13.7345V12.5275C22.6219 11.6103 22.5263 10.8862 22.359 10.331C22.1917 9.77581 21.9049 9.29309 21.4986 8.85858C21.0683 8.44824 20.5903 8.15858 20.0166 7.96548C19.443 7.7965 18.7259 7.69995 17.8415 7.69995ZM17.1961 15.0137H7.4917V11.2482H17.1961C17.7459 11.2482 18.1283 11.3448 18.3195 11.5138C18.5108 11.6827 18.6303 11.9965 18.6303 12.4551V13.8069C18.6303 14.2896 18.5108 14.6034 18.3195 14.7723C18.1283 14.9413 17.7459 15.0137 17.1961 15.0137Z"
+                                                fill="#BDBDBD" />
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="footer__socials_item">
                                     <a href="#">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M14 25C14.1509 20.0758 14.278 17.8282 16.0253 16.0253C17.8282 14.278 20.0758 14.1589 25 14C25 18.4397 24.9841 21.7596 23.3957 23.3957C21.7596 24.9841 18.5906 25 14 25Z" fill="#BDBDBD" />
-                                            <path d="M4.60433 23.3957C3.01588 21.7596 3 18.4397 3 14C7.92417 14.1509 10.1718 14.278 11.9747 16.0253C13.722 17.8282 13.8411 20.0758 14 25C9.40938 25 6.24043 24.9841 4.60433 23.3957Z" fill="#BDBDBD" />
-                                            <path d="M4.60433 4.60433C6.24043 3.01588 9.41733 3 14 3C13.8491 7.92417 13.722 10.1718 11.9747 11.9747C10.1718 13.722 7.92417 13.8411 3 14C3 9.56029 3.01588 6.24043 4.60433 4.60433Z" fill="#BDBDBD" />
-                                            <path d="M14 3C14.1509 7.92417 14.278 10.1718 16.0253 11.9747C17.8282 13.722 20.0758 13.8411 25 14C25 9.56029 24.9841 6.24043 23.3957 4.60433C21.7596 3.01588 18.5906 3 14 3Z" fill="#BDBDBD" />
-                                          </svg>
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14 25C14.1509 20.0758 14.278 17.8282 16.0253 16.0253C17.8282 14.278 20.0758 14.1589 25 14C25 18.4397 24.9841 21.7596 23.3957 23.3957C21.7596 24.9841 18.5906 25 14 25Z"
+                                                fill="#BDBDBD" />
+                                            <path
+                                                d="M4.60433 23.3957C3.01588 21.7596 3 18.4397 3 14C7.92417 14.1509 10.1718 14.278 11.9747 16.0253C13.722 17.8282 13.8411 20.0758 14 25C9.40938 25 6.24043 24.9841 4.60433 23.3957Z"
+                                                fill="#BDBDBD" />
+                                            <path
+                                                d="M4.60433 4.60433C6.24043 3.01588 9.41733 3 14 3C13.8491 7.92417 13.722 10.1718 11.9747 11.9747C10.1718 13.722 7.92417 13.8411 3 14C3 9.56029 3.01588 6.24043 4.60433 4.60433Z"
+                                                fill="#BDBDBD" />
+                                            <path
+                                                d="M14 3C14.1509 7.92417 14.278 10.1718 16.0253 11.9747C17.8282 13.722 20.0758 13.8411 25 14C25 9.56029 24.9841 6.24043 23.3957 4.60433C21.7596 3.01588 18.5906 3 14 3Z"
+                                                fill="#BDBDBD" />
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
@@ -1294,8 +1017,6 @@
         </div>
     </footer>
     <script src="./js/swiper.min.js"></script>
-    <script src="./js/dropdown.js"></script>
-    <script src="./js/tabs.js"></script>
     <script src="./js/tv-pr.js"></script>
     <script defer src="./script.js"></script>
 </body>

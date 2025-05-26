@@ -1,5 +1,3 @@
-  const tabss = document.querySelectorAll('.tab');
-
   function filterNews(category) {
       const newsItems = document.querySelectorAll('li[data-category]');
       console.log(category);
