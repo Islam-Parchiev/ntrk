@@ -1,4 +1,5 @@
 .tvProgram__main {
+    padding-top: 30px;
     display: flex;
     align-items: start;
     gap: 30px;
@@ -7,6 +8,7 @@
 
 .tvProgram__inner {
     padding-bottom: 10%;
+    padding-top: 60px;
 }
 
 .tvProgram__title {

@@ -1,121 +1,125 @@
 .filters.active {
   display: flex;
 }
+
 .filters {
-  margin-top: 1%;
+  margin-top: 30px;
   display: none;
   align-items: center;
   gap: 20px;
 }
+
 /* Dropdown */
 .dropdown {
-    position: relative;
-border-radius: 12px;
+  position: relative;
+  border-radius: 12px;
 
-min-width: 148px;
-height: 40px;
-margin-top: 5%;
-  }
-  
-  /* Dropdown Button */
-  .dropdown__button {
-    padding: 12px 34px 12px 16px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-    line-height: 18px;
-    color: #444444;
-    width: 100%;
-    text-align: left;
-    background: #ffffff;
-    border: 1px solid var(--neutral-neutral-300);
-    border-radius: 12px;
-    height: 40px;
-    cursor: pointer;
-  }
-  
-  /* Dropdown Button Arrow */
-  .dropdown__button::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 15px;
-    background: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.875 5.625L7.5 11.25L13.125 5.625' stroke='%23444444' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 100% 100% no-repeat;
-    pointer-events: none;
-    transition: 200ms ease;
-  }
-  
-  /* Active Button Arrow */
-  .dropdown__button_active::after {
-    transform: translateY(-50%) rotate(-180deg);
-  }
-  
-  /* Dropdown List */
-  .dropdown__list {
-    margin: 0;
-    list-style-type: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    box-shadow: 0px 10px 20px 0px rgba(136, 145, 157, 0.3);
-    border: 1px solid #e6eaed;
-    border-radius: 12px;
-    padding: 4px;
-    background: #ffffff;
-    overflow: hidden;
-    width: 100%;
-    z-index: 1;
-    opacity: 0;
-    visibility: hidden;
-    transition: 200ms ease;
-  }
-  
-  /* Visible List */
-  .dropdown__list_visible {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  /* Dropdown List Item */
-  .dropdown__list-item {
-    margin: 0;
-    padding: 0;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 15px;
-    line-height: 18px;
-    color: #444444;
-    transition: 200ms ease;
-  }
-  
-  /* Active List Item */
-  .dropdown__list-item_active {
-    font-family: var(--font-family);
-font-weight: 600;
-font-size: 14px;
-line-height: 143%;
-color: #303030;
-  }
-  
-  /* Hover List Item */
-  .dropdown__list-item:hover {
-
-    color: #000000;
-  }
-  
-  /* Hidden Input */
-  .dropdown__input_hidden {
-    display: none;
-  }
-.filter-item__title {
-  font-family: var(--font-family);
-font-weight: 600;
-font-size: 14px;
-line-height: 143%;
-color: var(--neutral-neutral-700);
+  min-width: 148px;
+  height: 40px;
+  margin-top: 5%;
 }
 
+/* Dropdown Button */
+.dropdown__button {
+  padding: 12px 34px 12px 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--neutral-neutral-500);
+  width: 100%;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid var(--neutral-neutral-300);
+  border-radius: 12px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Dropdown Button Arrow */
+.dropdown__button::after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 15px;
+  background: url("../../assets/svg/dropdownIcon.svg") 100% 100% no-repeat;
+  pointer-events: none;
+  transition: 200ms ease;
+}
+
+/* Active Button Arrow */
+.dropdown__button_active::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+/* Dropdown List */
+.dropdown__list {
+  margin: 0;
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 10px 20px 0px rgba(136, 145, 157, 0.3);
+  border: 1px solid #e6eaed;
+  border-radius: 12px;
+  padding: 4px;
+  background: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 200ms ease;
+}
+
+/* Visible List */
+.dropdown__list_visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Dropdown List Item */
+.dropdown__list-item {
+  margin: 0;
+  padding: 0;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 18px;
+  color: #444444;
+  transition: 200ms ease;
+}
+
+/* Active List Item */
+.dropdown__list-item_active {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  color: #303030;
+}
+
+/* Hover List Item */
+.dropdown__list-item:hover {
+
+  color: #000000;
+}
+
+/* Hidden Input */
+.dropdown__input_hidden {
+  display: none;
+}
+
+.filter-item__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--neutral-neutral-700);
+}

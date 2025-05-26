@@ -141,6 +141,7 @@
                                             fill="white" />
                                     </svg>
                                 </div>
+
                                 <div class="radio-overlay">
                                     <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +152,60 @@
                                     </h6>
                                 </div>
                             </div>
+                            <div class="overlay">
+                                <div class="overlay__inner">
+                                    <div class="video-custom-controls">
+                                        <button
+                                            class="btn-reset video-custom-controls__btn video-custom-controls__btn--mute hidden"
+                                            id="muteVideo">
+                                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M7.32429 0.536043L3 4.4998V4.49994H1C0.447715 4.49994 0 4.94765 0 5.49994V10.4999C0 11.0522 0.447715 11.4999 1 11.4999H3V11.4998L7.32426 15.4639C7.96566 16.0519 9 15.5969 9 14.7267V1.27321C9 0.403119 7.9657 -0.0518867 7.32429 0.536043ZM17.293 4.29297C17.6835 3.90244 18.3165 3.90244 18.707 4.29297C19.0976 4.68349 19.0976 5.31651 18.707 5.70703L16.4141 8L18.707 10.293C19.0976 10.6835 19.0976 11.3165 18.707 11.707C18.3165 12.0976 17.6835 12.0976 17.293 11.707L15 9.41406L12.707 11.707C12.3165 12.0976 11.6835 12.0976 11.293 11.707C10.9024 11.3165 10.9024 10.6835 11.293 10.293L13.5859 8L11.293 5.70703C10.9024 5.31651 10.9024 4.68349 11.293 4.29297C11.6835 3.90244 12.3165 3.90244 12.707 4.29297L15 6.58594L17.293 4.29297Z" />
+                                            </svg>
 
+                                        </button>
+                                        <button
+                                            class="btn-reset video-custom-controls__btn video-custom-controls__btn--unmute"
+                                            id="unmuteVideo">
+
+                                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M7.32429 0.536043L3 4.4998V4.49994H1C0.447715 4.49994 0 4.94765 0 5.49994V10.4999C0 11.0522 0.447715 11.4999 1 11.4999H3V11.4998L7.32426 15.4639C7.96566 16.0519 9 15.5969 9 14.7267V1.27321C9 0.403119 7.9657 -0.0518867 7.32429 0.536043ZM11 5C12.6569 5 14 6.34315 14 8C14 9.65685 12.6569 11 11 11V5ZM11 3C13.7614 3 16 5.23858 16 8C16 10.7614 13.7614 13 11 13V15C14.866 15 18 11.866 18 8C18 4.13401 14.866 1 11 1V3Z" />
+                                            </svg>
+                                        </button>
+                                        <button
+                                            class="btn-reset video-custom-controls__btn video-custom-controls__btn--play"
+                                            id="play">
+                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.3648 6.11953L1.4741 0.793746C0.807869 0.435006 0 0.917542 0 1.67422V12.3258C0 13.0825 0.807868 13.565 1.4741 13.2063L11.3648 7.88047C12.066 7.5029 12.066 6.4971 11.3648 6.11953Z" />
+                                            </svg>
+
+                                        </button>
+                                        <button
+                                            class="btn-reset video-custom-controls__btn video-custom-controls__btn--pause hidden"
+                                            id="pause">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="6" y="4" width="4" height="16" rx="1" />
+                                                <rect x="14" y="4" width="4" height="16" rx="1" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn-reset video-custom-controls__btn" id="fullScreenVideo">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 1H15C16.1046 1 17 1.89543 17 3V6M6 1H3C1.89543 1 1 1.89543 1 3V6M1 12V15C1 16.1046 1.89543 17 3 17H6M12 17H15C16.1046 17 17 16.1046 17 15V12"
+                                                    stroke-width="2" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="header__schedule">
@@ -347,37 +401,160 @@
                         </label>
                     </div>
                     <div class="menu__results">
+                        <span>Результаты поиска</span>
+                        <div class="tabs menu-tabs">
+                            <ul class="list-reset tabs__list">
+                                <li class="tab menu-tab active" data-menutab="one">
+                                    <span>Все</span>
+                                </li>
+                                <li class="tab menu-tab" data-menutab="two">
+                                    <span>Общество</span>
+                                </li>
+                                <li class="tab menu-tab" data-menutab="3">
+                                    <span>Экономика</span>
+                                </li>
+                                <li class="tab menu-tab" data-menutab="4">
+                                    <span>Политика</span>
+                                </li>
+                                <li class="tab menu-tab" data-menutab="5">
+                                    <span>Туризм</span>
+                                </li>
+                                <li class="tab menu-tab" data-menutab="6">
+                                    <span>Развлечения</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-list">
+                            <div class="menu-news menu-news--media">
+                                <div class="menu-news__media">
+                                    <img src="./assets/video-news-prev.jpg" alt="menu news image">
+                                </div>
+                                <div class="menu-news__info">
+                                    <h6 class="menu-news__title">
+                                        <a href="#">В Карабулаке и Джейрахе прошли продовольственные ярмарки,
+                                            приуроченные к
+                                            священному месяцу Рамадан.</a>
+                                    </h6>
+                                    <div class="menu-news__text">
+                                        <p>В Карабулаке и Джейрахе состоялись продовольственные ярмарки, приуроченные к
+                                            священному месяцу Рамадан. </p>
+                                    </div>
+                                    <div class="menu-news__meta">
+                                        <time>19 сен, 21:34</time>
+                                        <div class="menu-news__views">
+                                            <div class="menu-news__icon">
+                                                <svg width="18" height="12" viewBox="0 0 18 12"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99998 0C14.0312 0 16.9533 4.44092 17.7656 5.875C17.921 6.14927 17.9148 6.47693 17.7461 6.74316C16.907 8.0657 13.9914 12 8.99998 12C4.00872 11.9999 1.0939 8.06568 0.254863 6.74316C0.086031 6.47689 0.078957 6.14935 0.234355 5.875C1.04653 4.44117 3.96865 0.000143146 8.99998 0ZM8.99998 3C7.34324 3.00013 5.99998 4.34323 5.99998 6C5.99998 7.65677 7.34324 8.99987 8.99998 9C10.6568 9 12 7.65685 12 6C12 4.34315 10.6568 3 8.99998 3Z" />
+                                                </svg>
+                                            </div>
+                                            <span>99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-news">
+                                <div class="menu-news__media">
+                                    <img src="./assets/video-news-prev.jpg" alt="menu news image">
+                                </div>
+                                <div class="menu-news__info">
+                                    <h6 class="menu-news__title">
+                                        <a href="#">В Карабулаке и Джейрахе прошли продовольственные ярмарки,
+                                            приуроченные к
+                                            священному месяцу Рамадан.</a>
+                                    </h6>
+                                    <div class="menu-news__text">
+                                        <p>В Карабулаке и Джейрахе состоялись продовольственные ярмарки, приуроченные к
+                                            священному месяцу Рамадан. </p>
+                                    </div>
+                                    <div class="menu-news__meta">
+                                        <time>19 сен, 21:34</time>
+                                        <div class="menu-news__views">
+                                            <div class="menu-news__icon">
+                                                <svg width="18" height="12" viewBox="0 0 18 12"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99998 0C14.0312 0 16.9533 4.44092 17.7656 5.875C17.921 6.14927 17.9148 6.47693 17.7461 6.74316C16.907 8.0657 13.9914 12 8.99998 12C4.00872 11.9999 1.0939 8.06568 0.254863 6.74316C0.086031 6.47689 0.078957 6.14935 0.234355 5.875C1.04653 4.44117 3.96865 0.000143146 8.99998 0ZM8.99998 3C7.34324 3.00013 5.99998 4.34323 5.99998 6C5.99998 7.65677 7.34324 8.99987 8.99998 9C10.6568 9 12 7.65685 12 6C12 4.34315 10.6568 3 8.99998 3Z" />
+                                                </svg>
+                                            </div>
+                                            <span>99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-news menu-news--media">
+                                <div class="menu-news__media">
+                                    <video src="./assets/test.mp4" poster="./assets/poster.jpg"></video>
+                                    <button class="btn-reset menu-news__play-btn">
+                                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.39052 5.1221L1.47885 0.806647C0.812478 0.44317 0 0.925483 0 1.68454V10.3155C0 11.0745 0.812477 11.5568 1.47885 11.1934L9.39052 6.8779C10.0854 6.49888 10.0854 5.50112 9.39052 5.1221Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="menu-news__info">
+                                    <h6 class="menu-news__title">
+                                        <a href="#">В Карабулаке и Джейрахе прошли продовольственные ярмарки,
+                                            приуроченные к
+                                            священному месяцу Рамадан.</a>
+                                    </h6>
+                                    <div class="menu-news__text">
+                                        <p>В Карабулаке и Джейрахе состоялись продовольственные ярмарки, приуроченные к
+                                            священному месяцу Рамадан. </p>
+                                    </div>
+                                    <div class="menu-news__meta">
+                                        <time>19 сен, 21:34</time>
+                                        <div class="menu-news__views">
+                                            <div class="menu-news__icon">
+                                                <svg width="18" height="12" viewBox="0 0 18 12"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99998 0C14.0312 0 16.9533 4.44092 17.7656 5.875C17.921 6.14927 17.9148 6.47693 17.7461 6.74316C16.907 8.0657 13.9914 12 8.99998 12C4.00872 11.9999 1.0939 8.06568 0.254863 6.74316C0.086031 6.47689 0.078957 6.14935 0.234355 5.875C1.04653 4.44117 3.96865 0.000143146 8.99998 0ZM8.99998 3C7.34324 3.00013 5.99998 4.34323 5.99998 6C5.99998 7.65677 7.34324 8.99987 8.99998 9C10.6568 9 12 7.65685 12 6C12 4.34315 10.6568 3 8.99998 3Z" />
+                                                </svg>
+                                            </div>
+                                            <span>99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
+    <!-- data-tab="all" -->
+    <!-- data-category="society" -->
     <main class="news-page" data-main>
         <section class="news-content">
             <div class="container">
                 <div class="news-content__inner">
                     <div class="news-content__top">
-                        <h1 class="news-page__title">Новости</h1>
+                        <h1 class="page-title">Новости</h1>
                         <div class="news-content__tabs_wrapper">
                             <div class="tabs">
                                 <ul class="list-reset tabs__list">
-                                    <li class="tab active" data-tab="one">
+                                    <li class="tab" data-tab="all">
                                         <span>Все</span>
                                     </li>
-                                    <li class="tab" data-tab="two">
+                                    <li class="tab" data-tab="society">
                                         <span>Общество</span>
                                     </li>
-                                    <li class="tab" data-tab="3">
+                                    <li class="tab" data-tab="economy">
                                         <span>Экономика</span>
                                     </li>
-                                    <li class="tab" data-tab="4">
+                                    <li class="tab" data-tab="policy">
                                         <span>Политика</span>
                                     </li>
-                                    <li class="tab" data-tab="5">
+                                    <li class="tab" data-tab="tourism">
                                         <span>Туризм</span>
                                     </li>
-                                    <li class="tab" data-tab="6">
+                                    <li class="tab" data-tab="entertainment">
                                         <span>Развлечения</span>
                                     </li>
                                 </ul>
@@ -449,7 +626,7 @@
                     </div>
                     <div class="news-content__bottom">
                         <div class="news-content__left">
-                            <div class="tab-content" data-tab-content="one">
+                  
 
 
                                 <div class="news-content__left_top">
@@ -490,7 +667,7 @@
                                 </div>
                                 <div class="news-content__news-block">
                                     <ul class="list-reset news-block__list news-block__list--second">
-                                        <li class="news-item news-item--second news-item--media">
+                                        <li class="news-item news-item--second news-item--media active" data-category="society">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/zagl.png"
                                                     alt="С началом весны участились случаи возгорания сухой травы и сжигания мусора.">
@@ -535,7 +712,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="news-item news-item--second">
+                                        <li class="news-item news-item--second" data-category="economy">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/newsItem2.png"
                                                     alt="В Карабулаке и Джейрахе прошли продовольственные ярмарки, приуроченные к священному месяцу Рамадан.">
@@ -575,7 +752,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="news-item news-item--second news-item--media">
+                                        <li class="news-item news-item--second news-item--media" data-category="policy">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/newsItem3.png"
                                                     alt="7 апреля в кампусе “Школы 21” в Магасе начнётся седьмой отборочный «бассейн».">
@@ -617,7 +794,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="news-item news-item--second">
+                                        <li class="news-item news-item--second" data-category="tourism">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/newsItem4.png"
                                                     alt="В НИИ прошел семинар, посвященный 255-летию добровольного вхождения Ингушетии в состав России.">
@@ -658,7 +835,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="news-item news-item--second">
+                                        <li class="news-item news-item--second" data-category="entertainment">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/newsItem5.png"
                                                     alt="Зелимхан Бакаев включен в окончательный состав сборной России">
@@ -698,7 +875,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="news-item news-item--second news-item--media">
+                                        <li class="news-item news-item--second news-item--media" data-category="entertainment">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/newsItem6.png"
                                                     alt="Комфорт и безопасность: новые автобусы уже вышли на маршруты">
@@ -742,9 +919,9 @@
                                         </li>
 
                                     </ul>
-                                </div>
+                              
                             </div>
-                            <div class="tab-content" data-tab-content="two">
+                            <div class="tab-content" data-tab-content="2">
 
 
                                 <div class="news-content__left_top">
@@ -1223,27 +1400,44 @@
                                 </li>
                                 <li class="footer__socials_item">
                                     <a href="#">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3686 7.76115C14.3624 8.61073 10.3529 10.3691 4.33993 13.0364C3.36352 13.4317 2.85204 13.8184 2.80548 14.1966C2.72678 14.8357 3.51285 15.0873 4.58328 15.43C4.72889 15.4766 4.87975 15.5249 5.03442 15.5761C6.08756 15.9246 7.50421 16.3324 8.24067 16.3486C8.90871 16.3633 9.65432 16.0829 10.4775 15.5074C16.0956 11.6463 18.9957 9.6947 19.1777 9.65263C19.3062 9.62294 19.4842 9.58562 19.6048 9.69476C19.7254 9.8039 19.7135 10.0106 19.7008 10.066C19.6229 10.404 16.5373 13.3247 14.9404 14.8362C14.4426 15.3073 14.0895 15.6416 14.0174 15.7179C13.8557 15.8889 13.6909 16.0506 13.5325 16.2061C12.5541 17.1664 11.8204 17.8865 13.5731 19.0624C14.4154 19.6275 15.0894 20.0948 15.7618 20.5611C16.4961 21.0702 17.2285 21.578 18.1762 22.2105C18.4176 22.3716 18.6482 22.539 18.8728 22.702C19.7274 23.3223 20.4951 23.8795 21.4436 23.7907C21.9948 23.739 22.5641 23.2114 22.8532 21.6377C23.5366 17.9185 24.8797 9.86033 25.1901 6.53973C25.2173 6.24881 25.1831 5.87648 25.1556 5.71303C25.1281 5.54959 25.0707 5.31671 24.862 5.14433C24.6149 4.94017 24.2334 4.89711 24.0628 4.90017C23.287 4.91409 22.0967 5.33546 16.3686 7.76115Z" fill="#BDBDBD" />
-                                          </svg>
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.3686 7.76115C14.3624 8.61073 10.3529 10.3691 4.33993 13.0364C3.36352 13.4317 2.85204 13.8184 2.80548 14.1966C2.72678 14.8357 3.51285 15.0873 4.58328 15.43C4.72889 15.4766 4.87975 15.5249 5.03442 15.5761C6.08756 15.9246 7.50421 16.3324 8.24067 16.3486C8.90871 16.3633 9.65432 16.0829 10.4775 15.5074C16.0956 11.6463 18.9957 9.6947 19.1777 9.65263C19.3062 9.62294 19.4842 9.58562 19.6048 9.69476C19.7254 9.8039 19.7135 10.0106 19.7008 10.066C19.6229 10.404 16.5373 13.3247 14.9404 14.8362C14.4426 15.3073 14.0895 15.6416 14.0174 15.7179C13.8557 15.8889 13.6909 16.0506 13.5325 16.2061C12.5541 17.1664 11.8204 17.8865 13.5731 19.0624C14.4154 19.6275 15.0894 20.0948 15.7618 20.5611C16.4961 21.0702 17.2285 21.578 18.1762 22.2105C18.4176 22.3716 18.6482 22.539 18.8728 22.702C19.7274 23.3223 20.4951 23.8795 21.4436 23.7907C21.9948 23.739 22.5641 23.2114 22.8532 21.6377C23.5366 17.9185 24.8797 9.86033 25.1901 6.53973C25.2173 6.24881 25.1831 5.87648 25.1556 5.71303C25.1281 5.54959 25.0707 5.31671 24.862 5.14433C24.6149 4.94017 24.2334 4.89711 24.0628 4.90017C23.287 4.91409 22.0967 5.33546 16.3686 7.76115Z"
+                                                fill="#BDBDBD" />
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="footer__socials_item">
                                     <a href="#">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M23.8 8.39995C24.9598 8.39995 25.9 7.45973 25.9 6.29993C25.9 5.14015 24.9598 4.19995 23.8 4.19995C22.6402 4.19995 21.7 5.14015 21.7 6.29993C21.7 7.45973 22.6402 8.39995 23.8 8.39995Z" fill="#BDBDBD" />
-                                            <path d="M17.8415 7.69995H3.5V23.8H7.4917V18.562H15.1405L18.6303 23.8H23.1L19.2517 18.5379C20.4468 18.3448 21.3073 17.8862 21.8332 17.162C22.359 16.4379 22.6219 15.2792 22.6219 13.7345V12.5275C22.6219 11.6103 22.5263 10.8862 22.359 10.331C22.1917 9.77581 21.9049 9.29309 21.4986 8.85858C21.0683 8.44824 20.5903 8.15858 20.0166 7.96548C19.443 7.7965 18.7259 7.69995 17.8415 7.69995ZM17.1961 15.0137H7.4917V11.2482H17.1961C17.7459 11.2482 18.1283 11.3448 18.3195 11.5138C18.5108 11.6827 18.6303 11.9965 18.6303 12.4551V13.8069C18.6303 14.2896 18.5108 14.6034 18.3195 14.7723C18.1283 14.9413 17.7459 15.0137 17.1961 15.0137Z" fill="#BDBDBD" />
-                                          </svg>
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.8 8.39995C24.9598 8.39995 25.9 7.45973 25.9 6.29993C25.9 5.14015 24.9598 4.19995 23.8 4.19995C22.6402 4.19995 21.7 5.14015 21.7 6.29993C21.7 7.45973 22.6402 8.39995 23.8 8.39995Z"
+                                                fill="#BDBDBD" />
+                                            <path
+                                                d="M17.8415 7.69995H3.5V23.8H7.4917V18.562H15.1405L18.6303 23.8H23.1L19.2517 18.5379C20.4468 18.3448 21.3073 17.8862 21.8332 17.162C22.359 16.4379 22.6219 15.2792 22.6219 13.7345V12.5275C22.6219 11.6103 22.5263 10.8862 22.359 10.331C22.1917 9.77581 21.9049 9.29309 21.4986 8.85858C21.0683 8.44824 20.5903 8.15858 20.0166 7.96548C19.443 7.7965 18.7259 7.69995 17.8415 7.69995ZM17.1961 15.0137H7.4917V11.2482H17.1961C17.7459 11.2482 18.1283 11.3448 18.3195 11.5138C18.5108 11.6827 18.6303 11.9965 18.6303 12.4551V13.8069C18.6303 14.2896 18.5108 14.6034 18.3195 14.7723C18.1283 14.9413 17.7459 15.0137 17.1961 15.0137Z"
+                                                fill="#BDBDBD" />
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="footer__socials_item">
                                     <a href="#">
-                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M14 25C14.1509 20.0758 14.278 17.8282 16.0253 16.0253C17.8282 14.278 20.0758 14.1589 25 14C25 18.4397 24.9841 21.7596 23.3957 23.3957C21.7596 24.9841 18.5906 25 14 25Z" fill="#BDBDBD" />
-                                            <path d="M4.60433 23.3957C3.01588 21.7596 3 18.4397 3 14C7.92417 14.1509 10.1718 14.278 11.9747 16.0253C13.722 17.8282 13.8411 20.0758 14 25C9.40938 25 6.24043 24.9841 4.60433 23.3957Z" fill="#BDBDBD" />
-                                            <path d="M4.60433 4.60433C6.24043 3.01588 9.41733 3 14 3C13.8491 7.92417 13.722 10.1718 11.9747 11.9747C10.1718 13.722 7.92417 13.8411 3 14C3 9.56029 3.01588 6.24043 4.60433 4.60433Z" fill="#BDBDBD" />
-                                            <path d="M14 3C14.1509 7.92417 14.278 10.1718 16.0253 11.9747C17.8282 13.722 20.0758 13.8411 25 14C25 9.56029 24.9841 6.24043 23.3957 4.60433C21.7596 3.01588 18.5906 3 14 3Z" fill="#BDBDBD" />
-                                          </svg>
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14 25C14.1509 20.0758 14.278 17.8282 16.0253 16.0253C17.8282 14.278 20.0758 14.1589 25 14C25 18.4397 24.9841 21.7596 23.3957 23.3957C21.7596 24.9841 18.5906 25 14 25Z"
+                                                fill="#BDBDBD" />
+                                            <path
+                                                d="M4.60433 23.3957C3.01588 21.7596 3 18.4397 3 14C7.92417 14.1509 10.1718 14.278 11.9747 16.0253C13.722 17.8282 13.8411 20.0758 14 25C9.40938 25 6.24043 24.9841 4.60433 23.3957Z"
+                                                fill="#BDBDBD" />
+                                            <path
+                                                d="M4.60433 4.60433C6.24043 3.01588 9.41733 3 14 3C13.8491 7.92417 13.722 10.1718 11.9747 11.9747C10.1718 13.722 7.92417 13.8411 3 14C3 9.56029 3.01588 6.24043 4.60433 4.60433Z"
+                                                fill="#BDBDBD" />
+                                            <path
+                                                d="M14 3C14.1509 7.92417 14.278 10.1718 16.0253 11.9747C17.8282 13.722 20.0758 13.8411 25 14C25 9.56029 24.9841 6.24043 23.3957 4.60433C21.7596 3.01588 18.5906 3 14 3Z"
+                                                fill="#BDBDBD" />
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
@@ -1281,7 +1475,7 @@
     </footer>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/dropdown.js"></script>
-    <script src="./js/tabs.js"></script>
+    <script src="./js/news-filter.js"></script>
     <script defer src="./script.js"></script>
 </body>
 

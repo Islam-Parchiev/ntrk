@@ -17,7 +17,8 @@
   --neutral-neutral-200: #e0e0e0;
   --neutral-neutral-800: #2e2e2e;
   --font-family: "Golos Text", sans-serif;
-  --second-family: -apple-system, "SF Pro Display", sans-serif; /* Системный шрифт Apple */
+  --second-family: -apple-system, "SF Pro Display", sans-serif;
+  /* Системный шрифт Apple */
   --third-family: "Roboto", sans-serif;
   --font3: "Inter", sans-serif;
 }
@@ -44,6 +45,15 @@ img {
 
 .is-hidden {
   display: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 .btn-reset {
@@ -159,4 +169,12 @@ img {
 .play-btn--small {
   width: 52px;
   height: 52px;
+}
+
+.page-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  color: var(--bw-black);
 }

@@ -44,7 +44,7 @@ overflow-y: scroll;
     gap: 15px;
 }
 .popular-sidebar__item_time {
-    
+    font-family: var(--font-family);
 font-weight: 500;
 font-size: 12px;
 line-height: 167%;
@@ -52,7 +52,7 @@ color: var(--primary-primary-500);
 }
 .popular-sidebar__item_views {
 
-
+    font-family: var(--font-family);
 font-weight: 500;
 font-size: 12px;
 line-height: 167%;

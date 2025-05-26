@@ -11,6 +11,9 @@
 }
 
 .transfers__top {
-    padding-top: 3%;
+    padding-top: 60px;
 }
 
+.news-content__tabs_wrapper {
+    padding-top: 30px;
+}

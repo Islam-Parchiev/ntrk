@@ -1,3 +1,11 @@
+.single-news__paragraph {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--neutral-neutral-700);
+}
+
 .video-news-page {
     font-family: var(--font-family);
 }
@@ -13,6 +21,7 @@
 }
 
 .video-news__paragraph {
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -44,9 +53,11 @@
     height: 100px;
     padding: 8% 5%;
 }
+
 .video-news__media_description.hidden {
     display: none;
 }
+
 .video-news__media_description time {
     font-weight: 400;
     font-size: 14px;
@@ -104,9 +115,11 @@
 .video-news__play-btn svg path {
     fill: var(--primary-primary-300);
 }
+
 .video-news__play-btn.hidden {
     display: none;
 }
+
 .video-navigation {
     position: absolute;
     bottom: 0;
@@ -114,6 +127,7 @@
     width: 100%;
     height: 48px;
 }
+
 .video-navigation.hidden {
     display: none;
 }

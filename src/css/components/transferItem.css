@@ -1,6 +1,11 @@
 .transferItem {
     width: 280px;
     height: 222px;
+    display: none;
+}
+
+.transferItem.active {
+    display: block;
 }
 
 .transferItem_media::before {
@@ -59,7 +64,7 @@
     color: var(--bw-black);
 }
 
-.video-js .vjs-big-play-button .vjs-icon-placeholder::before {
+/* .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
     content: "";
     background-image: url("./../../assets/play.svg");
     background-repeat: no-repeat;
@@ -86,5 +91,4 @@
 }
 .transfer__video .vjs-control-bar {
    z-index: 100;
-}
-
+} */

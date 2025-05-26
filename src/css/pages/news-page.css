@@ -3,12 +3,12 @@
 }
 
 .news-content__inner {
-    padding-top: 3%;
+    padding-top: 60px;
     padding-bottom: 10%;
 }
 
 .news-content__tabs_wrapper {
-    padding-top: 1%;
+    padding-top: 30px;
     display: flex;
     align-items: end;
 
@@ -27,13 +27,6 @@
 
 .news-content__filters_btn:hover {
     background: var(--neutral-neutral-100);
-}
-
-.news-page__title {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 122%;
-    color: var(--bw-black);
 }
 
 .news-content__bottom {

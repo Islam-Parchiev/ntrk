@@ -89,6 +89,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    font-family:  var(--font-family);
 }
 
 .main-news:hover .main-news__bottom time {

@@ -1,18 +1,13 @@
+.live__inner {
+    padding-top: 60px;
+}
 .live-content {
+    padding-top: 30px;
     display: flex;
     gap: 30px;
     justify-content: start;
-    padding-bottom: 5%;
+    padding-bottom: 80px;
 }
-
-.live__title {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 122%;
-    color: var(--bw-black);
-}
-
 .live-content__left {
     max-width: 904px;
 }
