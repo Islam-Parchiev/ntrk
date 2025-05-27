@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="./css/components/socials.css">
     <link rel="stylesheet" href="./css/components/main-news.css">
     <link rel="stylesheet" href="./css/components/news-item.css">
+    <link rel="stylesheet" href="./css/components/video-player.css">
     <link rel="stylesheet" href="./css/components/video-navigation.css">
     <link rel="stylesheet" href="./css/components/footer.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -612,8 +613,8 @@
                                 С введением в эксплуатацию новых автобусов на городских маршрутах, пассажиры могут
                                 рассчитывать на значительно повышенный уровень комфорта и безопасности.
                             </p>
-                            <div class="video-news__media">
-                                <video class="video-news__video-tag" src="./assets/test.mp4"
+                              <div class="video-player">
+                                <video class="video-player__video-tag" src="./assets/test.mp4"
                                     poster="./assets/video-news-prev.jpg"></video>
                                 <div class="video-navigation hidden">
                                     <div class="video-navigation__progress"></div>
@@ -675,13 +676,13 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="video-news__media_description">
-                                    <h2 class="video-news__media_title">
+                                <div class="video-player__media_description">
+                                    <h2 class="video-player__media_title">
                                         Новые автобусы уже вышли на маршруты
                                     </h2>
                                     <time>04:35</time>
                                 </div>
-                                <button class="btn-reset video-news__play-btn">
+                                <button class="btn-reset video-player__play-btn">
                                     <svg width="88" height="88" viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="44" cy="44" r="44" />
                                         <path
@@ -1307,10 +1308,10 @@
             </div>
         </div>
     </footer>
-
+<script src="./js/video.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/nouislider.js"></script>
-    <script src="./js/video-news.js"></script>
+    <script src="./js/video-player.js"></script>
 
     <script defer src="./script.js"></script>
 </body>

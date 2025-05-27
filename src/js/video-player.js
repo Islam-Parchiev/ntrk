@@ -1,11 +1,11 @@
 const playVideoBtn = document.querySelector(".video-navigation__btn");
-const playBtn = document.querySelector(".video-news__play-btn");
+const playBtn = document.querySelector(".video-player__play-btn");
 const videoNavigation = document.querySelector(".video-navigation");
 const videoNewsFullScreenBtn = document.querySelector(".video-navigation__fullscreen");
 const videoNewsMuteBtn = document.querySelector(".video-navigation__sound_btn");
-const video = document.querySelector(".video-news__video-tag");
-const videoMediaTag = document.querySelector(".video-news__media");
-const videoDescription = document.querySelector(".video-news__media_description");
+const video = document.querySelector(".video-player__video-tag");
+const videoMediaTag = document.querySelector(".video-player__media");
+const videoDescription = document.querySelector(".video-player__media_description");
 const input = document.querySelector(".video-navigation__range-input");
 const currentEl = document.querySelector(".video-navigation__timeline_current");
 const durationEl = document.querySelector(".video-navigation__timeline_duration");
@@ -77,7 +77,7 @@ input.addEventListener('change', function () {
 
 
 
-const videoPlayer = document.querySelector('.video-news__video-tag');
+const videoPlayer = document.querySelector('.video-player__video-tag');
 const progressBar = document.querySelector('.video-navigation__progress');
 noUiSlider.create(progressBar, {
     start: 0,
@@ -124,7 +124,7 @@ videoPlayer.addEventListener('loadedmetadata', () => {
 
 
 playVideoBtn.addEventListener("click", (e) => {
-    if (e.target.classList.contains("popular-item__media_btn") || e.target.nodeName === "path" || e.target.nodeName === "rect" || e.target.nodeName === "svg") {
+    if (e.target.classList.contains("video-navigation__btn") || e.target.nodeName === "path" || e.target.nodeName === "rect" || e.target.nodeName === "svg") {
         if (playVideoBtn.classList.contains("played")) {
             playVideoBtn.classList.remove("played");
             videoPlayer.pause();
