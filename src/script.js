@@ -62,7 +62,7 @@ function showTab(tabId) {
   tabs.forEach(panel => panel.classList.remove('active'));
   scheduleLists.forEach(list => list.classList.remove('active'));
 
-  const tabButton = document.querySelector(`button[data-tab="${tabId}"]`);
+  const tabButton = document.querySelector(`button[data-media-tab="${tabId}"]`);
   const tabPanel = document.getElementById(tabId);
   const scheduleList = document.querySelector(`div[data-schedule="${tabId}"]`);
   if (tabButton && tabPanel && scheduleList) {
@@ -73,7 +73,7 @@ function showTab(tabId) {
 }
 tabBtns.forEach(button => {
   button.addEventListener('click', () => {
-    const tabId = button.dataset.tab;
+    const tabId = button.dataset.mediaTab;
     showTab(tabId);
   });
 });
