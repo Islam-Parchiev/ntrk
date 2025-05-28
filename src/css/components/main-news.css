@@ -1,10 +1,14 @@
 .main-news {
-    display: flex;
+    display: none;
     align-items: start;
     justify-content: center;
     gap: 16px;
     height: 300px;
     /* font-family: var(--font-family); */
+}
+
+.main-news.active {
+    display: flex;
 }
 
 .main-news__image {
@@ -89,7 +93,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-family:  var(--font-family);
+    font-family: var(--font-family);
 }
 
 .main-news:hover .main-news__bottom time {

@@ -1,5 +1,5 @@
   function filterNews(category) {
-      const newsItems = document.querySelectorAll('li[data-category]');
+      const newsItems = document.querySelectorAll('[data-category]');
       console.log(category);
       newsItems.forEach(item => item.classList.remove('active'));
       if (category === 'all') {
@@ -14,7 +14,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-      if (!window.location.pathname.split("/").find((item) => item === "tv-program.html")) {
+      if (window.location.pathname.split("/").find((item) => item === "tv-program.html")) {
           filterNews('1');
           document.querySelector('[data-tab="1"]').classList.add('active');
         }else {
