@@ -1,3 +1,7 @@
+.contacts__contacts {
+    padding-top: 60px;
+}
+
 .contacts__page {
     font-family: var(--font-family);
 }
@@ -5,6 +9,7 @@
     padding-bottom: 5%;
 }
 .contacts__inner {
+    padding-top: 30px;
     display: flex;
     align-items: start;
     padding-bottom: 10%;

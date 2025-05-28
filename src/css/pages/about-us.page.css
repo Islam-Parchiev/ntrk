@@ -1,4 +1,8 @@
+.about-us__content {
+    padding-top: 60px;
+}
 .about-us__inner {
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -70,7 +74,7 @@
 }
 
 .director__image {
-    border-radius: 12px;
+    border-radius: 27px;
     width: 100%;
     height: 333px;
     overflow: hidden;
@@ -81,7 +85,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 27px;
 }
 
 .director__name {

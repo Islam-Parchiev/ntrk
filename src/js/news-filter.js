@@ -14,9 +14,14 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-      document.querySelector('[data-tab="all"]').classList.add('active');
+      if (!window.location.pathname.split("/").find((item) => item === "tv-program.html")) {
+          filterNews('1');
+          document.querySelector('[data-tab="1"]').classList.add('active');
+        }else {
+          document.querySelector('[data-tab="all"]').classList.add('active');
 
-      filterNews('all');
+          filterNews('all');
+        }
   });
 
   document.querySelectorAll('.tab').forEach(button => {
