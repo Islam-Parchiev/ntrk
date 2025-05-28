@@ -43,7 +43,7 @@
     grid-column: 3 span;
     grid-row: span 5;
     min-height: 535px;
-    pb  
+    pb
 }
 
 
@@ -489,9 +489,13 @@
 }
 
 .menu-news {
-    display: flex;
+    display: none;
     align-items: start;
     gap: 20px;
+}
+
+.menu-news.active {
+    display: flex;
 }
 
 .menu-news__media {

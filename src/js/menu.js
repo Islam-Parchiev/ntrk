@@ -39,3 +39,39 @@ menuCloseBtn.addEventListener("click", function () {
         }
     }
 });
+
+
+function menuFilters(category) {
+    const newsItems = document.querySelectorAll('[data-menu-category]');
+    console.log(category);
+    newsItems.forEach(item => item.classList.remove('active'));
+    if (category === 'all') {
+        newsItems.forEach(item => item.classList.add('active'));
+    } else {
+        newsItems.forEach(item => {
+            if (item.dataset.menuCategory === category) {
+                item.classList.add("active");
+            }
+        })
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.location.pathname.split("/").find((item) => item === "tv-program.html")) {
+        menuFilters('1');
+        document.querySelector('[data-menutab="1"]').classList.add('active');
+      }else {
+        document.querySelector('[data-menutab="all"]').classList.add('active');
+
+        menuFilters('all');
+      }
+});
+
+document.querySelectorAll('[data-menutab]').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll('[data-menutab]').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        const category = button.dataset.menutab;
+        menuFilters(category);
+    });
+});

@@ -17,16 +17,16 @@
       if (window.location.pathname.split("/").find((item) => item === "tv-program.html")) {
           filterNews('1');
           document.querySelector('[data-tab="1"]').classList.add('active');
-        }else {
+      } else {
           document.querySelector('[data-tab="all"]').classList.add('active');
 
           filterNews('all');
-        }
+      }
   });
 
-  document.querySelectorAll('.tab').forEach(button => {
+  document.querySelectorAll('[data-tab]').forEach(button => {
       button.addEventListener('click', () => {
-          document.querySelectorAll('.tab').forEach(btn => btn.classList.remove('active'));
+          document.querySelectorAll('[data-tab]').forEach(btn => btn.classList.remove('active'));
           button.classList.add('active');
           const category = button.dataset.tab;
           filterNews(category);

@@ -13,9 +13,11 @@
     height: 254px;
     font-family: var(--font-family);
 }
+
 .news-item.active {
     display: block;
 }
+
 .news-item__media {
     border-radius: 12px;
     overflow: hidden;
@@ -86,7 +88,8 @@
     color: var(--bw-black);
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; /* Макс. число строк */
+    -webkit-line-clamp: 2;
+    /* Макс. число строк */
     overflow: hidden;
 }
 
@@ -97,6 +100,7 @@
     line-height: 150%;
     color: var(--bw-black);
 }
+
 .news-item__descr p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -105,6 +109,7 @@
     overflow: hidden;
     width: 100%;
 }
+
 .news-item__info {
     font-weight: 500;
     font-size: 12px;
@@ -150,9 +155,11 @@
     gap: 3%;
     align-items: start;
 }
+
 .news-item--second.active {
     display: flex;
 }
+
 .news-item--second>.news-item__media {
     width: 350px;
     height: 100%;
