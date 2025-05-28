@@ -103,8 +103,8 @@ h6 {
   max-width: 1230px;
 }
 
-.main.active {
-  padding-top: 135px;
+body.active {
+  padding-top: 240px;
 }
 
 .dis-scroll {

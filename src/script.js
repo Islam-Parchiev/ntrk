@@ -160,15 +160,17 @@ videoCustom()
 
 function fixHeaderOnScroll() {
   const header = document.querySelector('.header');
-  const main = document.querySelector('main[data-main]');
+ const body = document.querySelector("body");
   if (!window.location.pathname.split("/").find((item) => item === "watch.html")) {
 
     if (window.pageYOffset > 600) {
       header.classList.add("fixed");
-      main.classList.add("active");
+      header.classList.add("animate");
+      body.classList.add("active");
     } else {
       header.classList.remove("fixed");
-      main.classList.remove("active");
+      header.classList.remove("animate");
+      body.classList.remove("active");
     }
   }
 }
