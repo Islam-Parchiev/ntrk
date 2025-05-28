@@ -25,7 +25,8 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 10px;
+    gap: 24px;
+    padding-top: 20px;
 }
 
 .releases__list--releases {
