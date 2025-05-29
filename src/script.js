@@ -2,9 +2,9 @@
 const body = document.querySelector('.body');
 
 const videoO = document.getElementById("videoOne");
-const muteButton = document.getElementById("muteVideo");
-const unmuteButton = document.getElementById("unmuteVideo");
-const fullscreenButton = document.getElementById("fullScreenVideo");
+const muteButton = document.querySelector('[data-id="muteVideo"]');
+const unmuteButton = document.querySelector('[data-id="unmuteVideo"]');
+const fullscreenButton = document.querySelector('[data-id="fullScreenVideo"]');
 const slSwiper = document.querySelector('.swiper');
 const popularItemVIdeo = document.querySelectorAll('.popular-item__media');
 const headerScheduleSliders = document.querySelectorAll(".header__schedule_slider");
@@ -84,8 +84,8 @@ showTab('tv');
 
 function videoCustom() {
   const videoEl = document.querySelector('.header__media_video');
-  const playBtn = document.querySelector('#play');
-  const pauseBtn = document.querySelector("#pause");
+  const playBtn = document.querySelector('[data-id="play"]');
+  const pauseBtn = document.querySelector('[data-id="pause"]');
 
   playBtn.addEventListener("click", () => {
     videoEl.play();

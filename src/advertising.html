@@ -29,7 +29,7 @@
                 <div class="header__top_inner">
                     <div class="header__media">
                         <div class="header__media_tabs">
-                            <button class="btn-reset header__media_tab active" data-tab="tv">
+                            <button class="btn-reset header__media_tab active" data-media-tab="tv">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="4" y="8" width="12" height="8" rx="2" stroke-width="1.5" />
@@ -38,7 +38,7 @@
                                 </svg>
                                 ТВ
                             </button>
-                            <button class="btn-reset header__media_tab" data-tab="radio">
+                            <button class="btn-reset header__media_tab" data-media-tab="radio">
                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -62,7 +62,7 @@
                                     <div class="video-custom-controls">
                                         <button
                                             class="btn-reset video-custom-controls__btn video-custom-controls__btn--mute hidden"
-                                            id="muteVideo">
+                                            data-id="muteVideo">
                                             <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -72,7 +72,7 @@
                                         </button>
                                         <button
                                             class="btn-reset video-custom-controls__btn video-custom-controls__btn--unmute"
-                                            id="unmuteVideo">
+                                            data-id="unmuteVideo">
 
                                             <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +82,7 @@
                                         </button>
                                         <button
                                             class="btn-reset video-custom-controls__btn video-custom-controls__btn--play"
-                                            id="play">
+                                            data-id="play">
                                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -92,14 +92,14 @@
                                         </button>
                                         <button
                                             class="btn-reset video-custom-controls__btn video-custom-controls__btn--pause hidden"
-                                            id="pause">
+                                            data-id="pause">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <rect x="6" y="4" width="4" height="16" rx="1" />
                                                 <rect x="14" y="4" width="4" height="16" rx="1" />
                                             </svg>
                                         </button>
-                                        <button class="btn-reset video-custom-controls__btn" id="fullScreenVideo">
+                                        <button class="btn-reset video-custom-controls__btn" data-id="fullScreenVideo">
                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -148,7 +148,7 @@
                                     <div class="video-custom-controls">
                                         <button
                                             class="btn-reset video-custom-controls__btn video-custom-controls__btn--mute hidden"
-                                            id="muteVideo">
+                                            data-id="muteVideo">
                                             <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -158,7 +158,7 @@
                                         </button>
                                         <button
                                             class="btn-reset video-custom-controls__btn video-custom-controls__btn--unmute"
-                                            id="unmuteVideo">
+                                            data-id="unmuteVideo">
 
                                             <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -168,7 +168,7 @@
                                         </button>
                                         <button
                                             class="btn-reset video-custom-controls__btn video-custom-controls__btn--play"
-                                            id="play">
+                                            data-id="play">
                                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -178,14 +178,14 @@
                                         </button>
                                         <button
                                             class="btn-reset video-custom-controls__btn video-custom-controls__btn--pause hidden"
-                                            id="pause">
+                                            data-id="pause">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <rect x="6" y="4" width="4" height="16" rx="1" />
                                                 <rect x="14" y="4" width="4" height="16" rx="1" />
                                             </svg>
                                         </button>
-                                        <button class="btn-reset video-custom-controls__btn" id="fullScreenVideo">
+                                        <button class="btn-reset video-custom-controls__btn" data-id="fullScreenVideo">
                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -395,28 +395,28 @@
                         <span>Результаты поиска</span>
                         <div class="tabs menu-tabs">
                             <ul class="list-reset tabs__list">
-                                <li class="tab menu-tab active" data-menutab="one">
+                                <li class="tab menu-tab active" data-menutab="all">
                                     <span>Все</span>
                                 </li>
-                                <li class="tab menu-tab" data-menutab="two">
+                                <li class="tab menu-tab" data-menutab="society">
                                     <span>Общество</span>
                                 </li>
-                                <li class="tab menu-tab" data-menutab="3">
+                                <li class="tab menu-tab" data-menutab="economy">
                                     <span>Экономика</span>
                                 </li>
-                                <li class="tab menu-tab" data-menutab="4">
+                                <li class="tab menu-tab" data-menutab="policy">
                                     <span>Политика</span>
                                 </li>
-                                <li class="tab menu-tab" data-menutab="5">
+                                <li class="tab menu-tab" data-menutab="tourism">
                                     <span>Туризм</span>
                                 </li>
-                                <li class="tab menu-tab" data-menutab="6">
+                                <li class="tab menu-tab" data-menutab="entertainment">
                                     <span>Развлечения</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="menu-list">
-                            <div class="menu-news menu-news--media">
+                            <div class="menu-news menu-news--media" data-menu-category="society">
                                 <div class="menu-news__media">
                                     <img src="./assets/video-news-prev.jpg" alt="menu news image">
                                 </div>
@@ -445,7 +445,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="menu-news">
+                            <div class="menu-news" data-menu-category="economy">
                                 <div class="menu-news__media">
                                     <img src="./assets/video-news-prev.jpg" alt="menu news image">
                                 </div>
@@ -474,7 +474,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="menu-news menu-news--media">
+                            <div class="menu-news menu-news--media" data-menu-category="policy">
                                 <div class="menu-news__media">
                                     <video src="./assets/test.mp4" poster="./assets/poster.jpg"></video>
                                     <button class="btn-reset menu-news__play-btn">
@@ -511,7 +511,101 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <div class="menu-news menu-news--media" data-menu-category="tourism">
+                                <div class="menu-news__media">
+                                    <img src="./assets/video-news-prev.jpg" alt="menu news image">
+                                </div>
+                                <div class="menu-news__info">
+                                    <h6 class="menu-news__title">
+                                        <a href="#">В Карабулаке и Джейрахе прошли продовольственные ярмарки,
+                                            приуроченные к
+                                            священному месяцу Рамадан.</a>
+                                    </h6>
+                                    <div class="menu-news__text">
+                                        <p>В Карабулаке и Джейрахе состоялись продовольственные ярмарки, приуроченные к
+                                            священному месяцу Рамадан. </p>
+                                    </div>
+                                    <div class="menu-news__meta">
+                                        <time>19 сен, 21:34</time>
+                                        <div class="menu-news__views">
+                                            <div class="menu-news__icon">
+                                                <svg width="18" height="12" viewBox="0 0 18 12"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99998 0C14.0312 0 16.9533 4.44092 17.7656 5.875C17.921 6.14927 17.9148 6.47693 17.7461 6.74316C16.907 8.0657 13.9914 12 8.99998 12C4.00872 11.9999 1.0939 8.06568 0.254863 6.74316C0.086031 6.47689 0.078957 6.14935 0.234355 5.875C1.04653 4.44117 3.96865 0.000143146 8.99998 0ZM8.99998 3C7.34324 3.00013 5.99998 4.34323 5.99998 6C5.99998 7.65677 7.34324 8.99987 8.99998 9C10.6568 9 12 7.65685 12 6C12 4.34315 10.6568 3 8.99998 3Z" />
+                                                </svg>
+                                            </div>
+                                            <span>99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-news" data-menu-category="entertainment">
+                                <div class="menu-news__media">
+                                    <img src="./assets/video-news-prev.jpg" alt="menu news image">
+                                </div>
+                                <div class="menu-news__info">
+                                    <h6 class="menu-news__title">
+                                        <a href="#">В Карабулаке и Джейрахе прошли продовольственные ярмарки,
+                                            приуроченные к
+                                            священному месяцу Рамадан.</a>
+                                    </h6>
+                                    <div class="menu-news__text">
+                                        <p>В Карабулаке и Джейрахе состоялись продовольственные ярмарки, приуроченные к
+                                            священному месяцу Рамадан. </p>
+                                    </div>
+                                    <div class="menu-news__meta">
+                                        <time>19 сен, 21:34</time>
+                                        <div class="menu-news__views">
+                                            <div class="menu-news__icon">
+                                                <svg width="18" height="12" viewBox="0 0 18 12"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99998 0C14.0312 0 16.9533 4.44092 17.7656 5.875C17.921 6.14927 17.9148 6.47693 17.7461 6.74316C16.907 8.0657 13.9914 12 8.99998 12C4.00872 11.9999 1.0939 8.06568 0.254863 6.74316C0.086031 6.47689 0.078957 6.14935 0.234355 5.875C1.04653 4.44117 3.96865 0.000143146 8.99998 0ZM8.99998 3C7.34324 3.00013 5.99998 4.34323 5.99998 6C5.99998 7.65677 7.34324 8.99987 8.99998 9C10.6568 9 12 7.65685 12 6C12 4.34315 10.6568 3 8.99998 3Z" />
+                                                </svg>
+                                            </div>
+                                            <span>99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-news menu-news--media" data-menu-category="entertainment">
+                                <div class="menu-news__media">
+                                    <video src="./assets/test.mp4" poster="./assets/poster.jpg"></video>
+                                    <button class="btn-reset menu-news__play-btn">
+                                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.39052 5.1221L1.47885 0.806647C0.812478 0.44317 0 0.925483 0 1.68454V10.3155C0 11.0745 0.812477 11.5568 1.47885 11.1934L9.39052 6.8779C10.0854 6.49888 10.0854 5.50112 9.39052 5.1221Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="menu-news__info">
+                                    <h6 class="menu-news__title">
+                                        <a href="#">В Карабулаке и Джейрахе прошли продовольственные ярмарки,
+                                            приуроченные к
+                                            священному месяцу Рамадан.</a>
+                                    </h6>
+                                    <div class="menu-news__text">
+                                        <p>В Карабулаке и Джейрахе состоялись продовольственные ярмарки, приуроченные к
+                                            священному месяцу Рамадан. </p>
+                                    </div>
+                                    <div class="menu-news__meta">
+                                        <time>19 сен, 21:34</time>
+                                        <div class="menu-news__views">
+                                            <div class="menu-news__icon">
+                                                <svg width="18" height="12" viewBox="0 0 18 12"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.99998 0C14.0312 0 16.9533 4.44092 17.7656 5.875C17.921 6.14927 17.9148 6.47693 17.7461 6.74316C16.907 8.0657 13.9914 12 8.99998 12C4.00872 11.9999 1.0939 8.06568 0.254863 6.74316C0.086031 6.47689 0.078957 6.14935 0.234355 5.875C1.04653 4.44117 3.96865 0.000143146 8.99998 0ZM8.99998 3C7.34324 3.00013 5.99998 4.34323 5.99998 6C5.99998 7.65677 7.34324 8.99987 8.99998 9C10.6568 9 12 7.65685 12 6C12 4.34315 10.6568 3 8.99998 3Z" />
+                                                </svg>
+                                            </div>
+                                            <span>99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
