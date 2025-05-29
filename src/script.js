@@ -6,7 +6,8 @@ const muteButton = document.querySelector('[data-id="muteVideo"]');
 const unmuteButton = document.querySelector('[data-id="unmuteVideo"]');
 const fullscreenButton = document.querySelector('[data-id="fullScreenVideo"]');
 const slSwiper = document.querySelector('.swiper');
-const popularItemVIdeo = document.querySelectorAll('.popular-item__media');
+const popularItems = document.querySelectorAll('.popular-item');
+const popularItemInput = document.querySelector(".video-navigation__range-input");
 const headerScheduleSliders = document.querySelectorAll(".header__schedule_slider");
 if (slSwiper) {
 
@@ -173,8 +174,10 @@ function fixHeaderOnScroll() {
 window.addEventListener("scroll", fixHeaderOnScroll)
 
 
-console.log('tetaltmeamm');
-popularItemVIdeo.forEach(item => {
+
+popularItems.forEach(item => {
+  const videoTag = item.querySelector(".popular-item__media_video-tag");
+  item.querySelector(".popular-item__media_timeline").textContent=formatTime(videoTag.duration)
   item.addEventListener("click", (e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -184,7 +187,7 @@ popularItemVIdeo.forEach(item => {
     }
     if (e.target.classList.contains("popular-item__media_btn") || e.target.nodeName === "path" || e.target.nodeName === "svg") {
 
-
+      console.log('dddsa');
       item.querySelector(".popular-item__media_video-tag").play()
       item.classList.add("btn-hidden")
     }
@@ -206,4 +209,43 @@ document.addEventListener('DOMContentLoaded', function () {
       playbackRates: [0.5, 1, 1.5, 2],
     });
   }
+});
+function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    seconds = Math.floor(seconds % 60);
+    return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+}
+
+let softSlider = document.getElementById('video-navigation__slider-round');
+
+noUiSlider.create(softSlider, {
+    start: [0],
+    connect: 'lower',
+    step: 0.01,
+    range: {
+        'min': [0.0],
+        'max': [1]
+    }
+});
+
+
+// Из слайдера в input
+softSlider.noUiSlider.on('update', function (values, handle) {
+    input.value = values[handle];
+    video.volume = values[handle];
+    console.log(values[handle]);
+    if (video.volume === 0) {
+        console.log("000")
+        videoNewsMuteBtn.classList.add('muted');
+        video.muted = true;
+    } else {
+        videoNewsMuteBtn.classList.remove('muted');
+        video.muted = false;
+    }
+});
+
+// Из input в слайдер
+input.addEventListener('change', function () {
+    softSlider.noUiSlider.set(this.value);
+    console.log(this.value);
 });

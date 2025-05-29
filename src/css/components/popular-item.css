@@ -7,9 +7,6 @@
     gap: 10px;
 }
 
-.popular-item__media.btn-hidden .popular-item__media_btn {
-    display: none;
-}
 
 .popular-item__media {
     position: relative;
@@ -98,4 +95,10 @@
 
 .popular-item:hover .popular-item__time {
     color: var(--bw-black);
+}
+.popular-item.btn-hidden .popular-item__media_btn {
+    display: none;
+}
+.popular-item.btn-hidden .popular-item__media_timeline {
+    display: none;
 }
