@@ -8,37 +8,43 @@ window.addEventListener("DOMContentLoaded", () => {
     }
     // const popularItemInput = document.querySelector(".video-navigation__range-input");
     popularItems.forEach(item => {
+
         const videoTag = item.querySelector(".popular-item__media_video-tag");
         const input = item.querySelector(".video-navigation__range-input");
         const videoNewsMuteBtn = item.querySelector(".video-navigation__sound_btn");
         const video = item.querySelector(".popular-item__media_video-tag");
+        const progressBar = item.querySelector('.video-navigation__progress');
+        const playBtn = item.querySelector('.popular-item__media_btn');
+        const videoNavigationPlayBtn = item.querySelector(".video-navigation__btn");
+        const currentEl = item.querySelector(".video-navigation__timeline_current");
+        const durationEl = item.querySelector(".video-navigation__timeline_duration");
         let softSlider = item.querySelector('#video-navigation__slider-round');
-        item.querySelector(".popular-item__media_timeline").textContent = formatTime(videoTag.duration)
-        item.addEventListener("click", (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            if (item.classList.contains("btn-hidden")) {
 
-                item.querySelector(".popular-item__media_video-tag").pause();
+        item.querySelector(".popular-item__media_timeline").textContent = formatTime(videoTag.duration)
+        playBtn.addEventListener("click", () => {
+            if (item.classList.contains("btn-hidden")) {
+                videoTag.pause();
                 item.classList.remove("played");
             }
-            if (e.target.classList.contains("popular-item__media_btn") || e.target.nodeName === "path" || e.target.nodeName === "svg") {
 
-                console.log('dddsa');
-                item.querySelector(".popular-item__media_video-tag").play();
-                item.classList.add("played");
-                item.querySelector('.popular-item__video-navigation').classList.remove("hidden");
-                item.classList.add("btn-hidden")
-            }
+            item.querySelector(".popular-item__media_video-tag").play();
+            item.classList.add("played");
+            item.querySelector('.popular-item__video-navigation').classList.remove("hidden");
+            item.classList.add("btn-hidden")
+
 
         })
-
-        item.querySelector(".video-navigation__timeline_duration").textContent = formatTime(videoTag.duration);
-        videoTag.addEventListener('timeupdate', () => {
-            item.querySelector(".video-navigation__timeline_current").textContent = formatTime(videoTag.currentTime);
-
-        });
-
+        videoNavigationPlayBtn.addEventListener("click", () => {
+            console.log('test');
+            if (item.classList.contains("played")) {
+                videoTag.pause();
+                item.classList.remove("played")
+            } else {
+                videoTag.play();
+                item.classList.add("played")
+            }
+        })
+        durationEl.textContent = formatTime(videoTag.duration);
         noUiSlider.create(softSlider, {
             start: [0],
             connect: 'lower',
@@ -67,6 +73,41 @@ window.addEventListener("DOMContentLoaded", () => {
         input.addEventListener('change', function () {
             softSlider.noUiSlider.set(this.value);
             console.log(this.value);
+        });
+
+        noUiSlider.create(progressBar, {
+            start: 0,
+            connect: [true, false],
+            range: {
+                'min': 0,
+                'max': 100
+            },
+            behaviour: 'tap-drag',
+            step: 0.1,
+            format: {
+                to: value => value,
+                from: value => value
+            }
+        });
+
+        videoTag.addEventListener('timeupdate', () => {
+            const progress = (videoTag.currentTime / videoTag.duration) * 100;
+            progressBar.noUiSlider.set(progress);
+            currentEl.textContent = formatTime(videoTag.currentTime);
+
+        });
+        progressBar.noUiSlider.on('slide', values => {
+            const seekTime = (values[0] * videoTag.duration) / 100;
+            videoTag.currentTime = seekTime;
+        });
+        videoTag.addEventListener('loadedmetadata', () => {
+            durationEl.textContent = formatTime(videoTag.duration);
+            progressBar.noUiSlider.updateOptions({
+                range: {
+                    'min': 0,
+                    'max': videoTag.duration
+                }
+            });
         });
     })
 

@@ -4,9 +4,14 @@ const videoO = document.getElementById("videoOne");
 const muteButton = document.querySelector('[data-id="muteVideo"]');
 const unmuteButton = document.querySelector('[data-id="unmuteVideo"]');
 const fullscreenButton = document.querySelector('[data-id="fullScreenVideo"]');
+const radio = document.querySelector('#radio');
+const fullscreenRadio = document.querySelector('[data-id="fullScreenRadio"]');
 const slSwiper = document.querySelector('.swiper');
 const headerScheduleSliders = document.querySelectorAll(".header__schedule_slider");
 
+fullscreenRadio.addEventListener('click', () => {
+  radio.requestFullscreen();
+})
 if (slSwiper) {
 
 
@@ -188,4 +193,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-

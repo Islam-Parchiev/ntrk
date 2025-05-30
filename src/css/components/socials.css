@@ -4,6 +4,15 @@
     gap: 20px;
 }
 
+.social {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .social svg {
     fill: var(--bw-black);
 }
