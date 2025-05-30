@@ -117,3 +117,7 @@
 .popular-item.played .video-navigation__btn_svg--pause {
     display: block;
 }
+.popular-item .video-navigation {
+    bottom: 0;
+    height: auto;
+}
