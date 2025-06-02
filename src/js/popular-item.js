@@ -12,12 +12,12 @@ window.addEventListener("DOMContentLoaded", () => {
         const videoTag = item.querySelector(".popular-item__media_video-tag");
         const input = item.querySelector(".video-navigation__range-input");
         const videoNewsMuteBtn = item.querySelector(".video-navigation__sound_btn");
-        const video = item.querySelector(".popular-item__media_video-tag");
         const progressBar = item.querySelector('.video-navigation__progress');
         const playBtn = item.querySelector('.popular-item__media_btn');
         const videoNavigationPlayBtn = item.querySelector(".video-navigation__btn");
         const currentEl = item.querySelector(".video-navigation__timeline_current");
         const durationEl = item.querySelector(".video-navigation__timeline_duration");
+        const fullScreenBtn = item.querySelector(".video-navigation__fullscreen");
         let softSlider = item.querySelector('#video-navigation__slider-round');
 
         item.querySelector(".popular-item__media_timeline").textContent = formatTime(videoTag.duration)
@@ -35,7 +35,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
         })
         videoNavigationPlayBtn.addEventListener("click", () => {
-            console.log('test');
+           
             if (item.classList.contains("played")) {
                 videoTag.pause();
                 item.classList.remove("played")
@@ -57,23 +57,36 @@ window.addEventListener("DOMContentLoaded", () => {
         // Из слайдера в input
         softSlider.noUiSlider.on('update', function (values, handle) {
             input.value = values[handle];
-            video.volume = values[handle];
-            console.log(values[handle]);
-            if (video.volume === 0) {
-                console.log("000")
+            videoTag.volume = values[handle];
+        
+            if (videoTag.volume === 0) {
+       
                 videoNewsMuteBtn.classList.add('muted');
-                video.muted = true;
+                videoTag.muted = true;
             } else {
                 videoNewsMuteBtn.classList.remove('muted');
-                video.muted = false;
+                videoTag.muted = false;
             }
         });
 
         // Из input в слайдер
         input.addEventListener('change', function () {
             softSlider.noUiSlider.set(this.value);
-            console.log(this.value);
+       
         });
+
+
+        videoNewsMuteBtn.addEventListener("click",()=> {
+            if(videoNewsMuteBtn.classList.contains("muted")) {
+                videoTag.muted = false;
+                videoNewsMuteBtn.classList.remove('muted');
+                softSlider.noUiSlider.set(0.2);
+            }else {
+                  videoTag.muted = true;
+                videoNewsMuteBtn.classList.add('muted');
+                softSlider.noUiSlider.set(0);
+            }
+        })
 
         noUiSlider.create(progressBar, {
             start: 0,
@@ -102,6 +115,7 @@ window.addEventListener("DOMContentLoaded", () => {
         });
         videoTag.addEventListener('loadedmetadata', () => {
             durationEl.textContent = formatTime(videoTag.duration);
+             item.querySelector(".popular-item__media_timeline").textContent = formatTime(videoTag.duration)
             progressBar.noUiSlider.updateOptions({
                 range: {
                     'min': 0,
@@ -109,6 +123,19 @@ window.addEventListener("DOMContentLoaded", () => {
                 }
             });
         });
+
+        // Полноэкранный режим
+      fullScreenBtn.addEventListener('click', () => {
+    if (document.fullscreenElement) {
+        document
+            .exitFullscreen()
+            .then(() => console.log("Document Exited from Full screen mode"))
+            .catch((err) => console.error(err));
+    } else {
+        item.querySelector(".popular-item__media").requestFullscreen();
+    }
+
+})
     })
 
 

@@ -50,7 +50,7 @@ noUiSlider.create(softSlider, {
         'min': [0.0],
         'max': [1]
     }
-});
+});popular-item__media_timeline
 
 
 // Из слайдера в input
