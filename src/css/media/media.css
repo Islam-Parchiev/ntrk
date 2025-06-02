@@ -1,0 +1,14 @@
+@media(max-width:1000px) {
+    .header__list {
+        display: none;
+    }
+    .header__burger_btn {
+        display: flex;
+    }
+    .header__nav {
+        gap: 25px;
+    }
+    .menu {
+        height: 100%;
+    }
+}
