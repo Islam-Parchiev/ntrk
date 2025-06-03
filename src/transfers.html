@@ -17,12 +17,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/vendor/normalize.css">
     <link rel="stylesheet" href="./css/vendor/swiper.min.css">
-    <link rel="stylesheet" href="./css/vendor/video.css">
+
+
     <link rel="stylesheet" href="./css/pages/transfers.page.css">
-    <link rel="stylesheet" href="./css/components/transferItem.css">
-    <link rel="stylesheet" href="./css/popular-sidebar.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Новости</title>
+    <title>Передачи</title>
 </head>
 
 <body class="body transfers-page">
@@ -628,7 +627,7 @@
                         <div class="news-content__tabs_wrapper">
                             <div class="tabs">
                                 <ul class="list-reset tabs__list">
-                                    <li class="tab" data-tab="all">
+                                    <li class="tab active" data-tab="all">
                                         <span>Все</span>
                                     </li>
                                     <li class="tab" data-tab="society">
@@ -656,7 +655,7 @@
 
                         <ul class="list-reset transfers__list">
 
-                            <li class="transferItem" data-category="society">
+                            <li class="transferItem active" data-category="society">
                                 <div class="transferItem_media">
 
                                     <img src="./assets/img/transfer1.png" alt="Неявное интервью">
@@ -666,7 +665,7 @@
                                 </h6>
                                 <span class="transferItem_count">24 выпуска</span>
                             </li>
-                            <li class="transferItem" data-category="economy">
+                            <li class="transferItem active" data-category="economy">
                                 <div class="transferItem_media">
 
                                     <img src="./assets/img/transfer1.png" alt="Неявное интервью">
@@ -676,7 +675,7 @@
                                 </h6>
                                 <span class="transferItem_count">24 выпуска</span>
                             </li>
-                            <li class="transferItem" data-category="economy">
+                            <li class="transferItem active" data-category="economy">
                                 <div class="transferItem_media">
 
                                     <img src="./assets/img/transfer1.png" alt="Неявное интервью">
@@ -686,7 +685,7 @@
                                 </h6>
                                 <span class="transferItem_count">24 выпуска</span>
                             </li>
-                            <li class="transferItem" data-category="policy">
+                            <li class="transferItem active" data-category="policy">
                                 <div class="transferItem_media">
 
                                     <img src="./assets/img/transfer1.png" alt="Неявное интервью">
@@ -696,7 +695,7 @@
                                 </h6>
                                 <span class="transferItem_count">24 выпуска</span>
                             </li>
-                            <li class="transferItem" data-category="policy">
+                            <li class="transferItem active" data-category="policy">
                                 <div class="transferItem_media">
                                     <img src="./assets/img/transfer1.png" alt="Неявное интервью">
                                 </div>
@@ -705,17 +704,7 @@
                                 </h6>
                                 <span class="transferItem_count">24 выпуска</span>
                             </li>
-                            <li class="transferItem" data-category="tourism">
-                                <div class="transferItem_media">
-
-                                    <img src="./assets/img/transfer1.png" alt="Неявное интервью">
-                                </div>
-                                <h6 class="transferItem_title">
-                                    <a href="#">Неявное интервью</a>
-                                </h6>
-                                <span class="transferItem_count">24 выпуска</span>
-                            </li>
-                            <li class="transferItem" data-category="tourism">
+                            <li class="transferItem active" data-category="tourism">
                                 <div class="transferItem_media">
 
                                     <img src="./assets/img/transfer1.png" alt="Неявное интервью">
@@ -725,7 +714,17 @@
                                 </h6>
                                 <span class="transferItem_count">24 выпуска</span>
                             </li>
-                            <li class="transferItem" data-category="entertainment">
+                            <li class="transferItem active" data-category="tourism">
+                                <div class="transferItem_media">
+
+                                    <img src="./assets/img/transfer1.png" alt="Неявное интервью">
+                                </div>
+                                <h6 class="transferItem_title">
+                                    <a href="#">Неявное интервью</a>
+                                </h6>
+                                <span class="transferItem_count">24 выпуска</span>
+                            </li>
+                            <li class="transferItem active" data-category="entertainment">
                                 <div class="transferItem_media">
 
                                     <img src="./assets/img/transfer1.png" alt="Неявное интервью">
@@ -883,12 +882,8 @@
             </div>
         </div>
     </footer>
+    
     <script src="./js/swiper.min.js"></script>
-    <script src="./js/video.js"></script>
-    <script src="./js/dropdown.js"></script>
-    <script src="./js/transfers.js"></script>
-    <script defer src="./js/menu.js"></script>
-    <script src="./js/news-filter.js"></script>
     <script defer src="./script.js"></script>
 </body>
 
