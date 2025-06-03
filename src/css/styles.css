@@ -1982,10 +1982,9 @@ body.active {
   height: 4px;
   width: 100%;
   box-shadow: none;
-  background: var(--b&w-white);
   border-radius: 4px !important;
-  /* border: 1px solid #D3D3D3 !important; */
-  background: var(--bw-white);
+  border: 1px solid #D3D3D3 !important;
+  background: transparent;
 
 
 }
@@ -2017,7 +2016,7 @@ body.active {
   height: 10px;
   width: 10px;
   top: 50%;
-  transform: translateY(-40%);
+  transform: translateY(-50%);
   right: -9px;
   /* half the width */
   border-radius: 100%;
@@ -2026,14 +2025,9 @@ body.active {
 }
 
 #video-navigation__slider-round .noUi-origin {
-  background: red !important;
   height: 100% !important;
 }
 
-/* #video-navigation__slider-round .noUi-base .noUi-connect {
-    background: red !important;
-    height: 2px;
-} */
 
 .video-navigation__progress.noUi-target {
   width: 100%;
