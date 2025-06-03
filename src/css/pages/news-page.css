@@ -1,3 +1,5 @@
+
+
 .news-page {
     font-family: var(--font-family);
 }
@@ -51,6 +53,8 @@
 }
 
 .news-content__load-more_btn {
+    background: transparent;
+    cursor: pointer;
     margin-top: 32px;
     width: 100%;
     border: 2px solid var(--primary-primary-500);
@@ -73,6 +77,7 @@
 
 .news-content__load-more_btn:active {
     background-color: var(--primary-primary-700);
+    color: #fff;
 }
 
 .news-content__load-more_btn:disabled {

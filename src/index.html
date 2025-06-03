@@ -9,25 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
 
     <!-- Inter -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <!-- Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/vendor/normalize.css">
     <link rel="stylesheet" href="./css/vendor/swiper.min.css">
-    <link rel="stylesheet" href="./css/vendor/video.css">
-    <link rel="stylesheet" href="./css/components/popular-sidebar.css">
-    <link rel="stylesheet" href="./css/components/popular-item.css">
-    <link rel="stylesheet" href="./css/components/main-news.css">
-    <link rel="stylesheet" href="./css/components/transferItem.css">
-    <link rel="stylesheet" href="./css/components/news-item.css">
-    <link rel="stylesheet" href="./css/components/video-navigation.css">
-    <link rel="stylesheet" href="./css/media/media.css">
+    <link rel="stylesheet" href="./css/vendor/nouislider.css">
+
     <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="./css/pages/index.page.css">
+
+
+    <link rel="stylesheet" href="./css/media/media.css">
+
     <title>НТРК</title>
 </head>
 
@@ -409,22 +406,22 @@
                         <span>Результаты поиска</span>
                         <div class="tabs menu-tabs">
                             <ul class="list-reset tabs__list">
-                                <li class="tab menu-tab active" data-menutab="all">
+                                <li class="tab menu-tab active">
                                     <span>Все</span>
                                 </li>
-                                <li class="tab menu-tab" data-menutab="society">
+                                <li class="tab menu-tab">
                                     <span>Общество</span>
                                 </li>
-                                <li class="tab menu-tab" data-menutab="economy">
+                                <li class="tab menu-tab">
                                     <span>Экономика</span>
                                 </li>
-                                <li class="tab menu-tab" data-menutab="policy">
+                                <li class="tab menu-tab">
                                     <span>Политика</span>
                                 </li>
-                                <li class="tab menu-tab" data-menutab="tourism">
+                                <li class="tab menu-tab">
                                     <span>Туризм</span>
                                 </li>
-                                <li class="tab menu-tab" data-menutab="entertainment">
+                                <li class="tab menu-tab">
                                     <span>Развлечения</span>
                                 </li>
                             </ul>
@@ -634,22 +631,22 @@
                 <div class="news__inner">
                     <div class="tabs">
                         <ul class="list-reset tabs__list">
-                            <li class="tab" data-tab="all">
+                            <li class="tab active">
                                 <span>Все</span>
                             </li>
-                            <li class="tab" data-tab="society">
+                            <li class="tab">
                                 <span>Общество</span>
                             </li>
-                            <li class="tab" data-tab="economy">
+                            <li class="tab">
                                 <span>Экономика</span>
                             </li>
-                            <li class="tab" data-tab="policy">
+                            <li class="tab">
                                 <span>Политика</span>
                             </li>
-                            <li class="tab" data-tab="tourism">
+                            <li class="tab">
                                 <span>Туризм</span>
                             </li>
-                            <li class="tab" data-tab="entertainment">
+                            <li class="tab">
                                 <span>Развлечения</span>
                             </li>
                         </ul>
@@ -662,7 +659,7 @@
                             <div class="news-block">
 
                                 <ul class="list-reset news-block__list">
-                                    <li class="news-item" data-category="society">
+                                    <li class="news-item main-news-item">
                                         <a href="#">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/zagl.png"
@@ -709,7 +706,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="news-item news-item--media" data-category="society">
+                                    <li class="news-item news-item--media">
                                         <a href="news.html">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/zagl.png"
@@ -756,7 +753,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="news-item" data-category="economy">
+                                    <li class="news-item">
                                         <a href="news.html">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/newsItem2.png"
@@ -802,7 +799,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="news-item news-item--media" data-category="society">
+                                    <li class="news-item news-item--media">
                                         <a href="news.html">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/newsItem3.png"
@@ -848,7 +845,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="news-item" data-category="policy">
+                                    <li class="news-item">
                                         <a href="news.html">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/newsItem2.png"
@@ -894,7 +891,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="news-item" data-category="tourism">
+                                    <li class="news-item">
                                         <a href="news.html">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/newsItem2.png"
@@ -940,7 +937,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="news-item" data-category="entertainment">
+                                    <li class="news-item">
                                         <a href="news.html">
                                             <div class="news-item__media">
                                                 <img src="./assets/img/newsItem2.png"
@@ -1896,13 +1893,13 @@
             </div>
         </div>
     </footer>
-    <script src="./js/video.js"></script>
+
     <script src="./js/swiper.min.js"></script>
     <script src="./js/nouislider.js"></script>
     <script defer src="./js/transfers.js"></script>
-    <script defer src="./js/menu.js"></script>
+
     <script defer src="./js/popular-item.js"></script>
-    <script src="./js/news-filter.js"></script>
+
     <script defer src="./script.js"></script>
 </body>
 
