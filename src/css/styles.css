@@ -624,17 +624,16 @@ body.active {
     padding-bottom: 40px;
 }
 
-.footer__inner--top {
+.footer__top_inner {
     display: flex;
-    align-items: start;
     justify-content: space-between;
+    align-items: center;
 }
 
-.footer__top-left {
+.footer__mid_inner {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: start;
-    gap: 60px;
 }
 
 .footer__info {
@@ -657,13 +656,7 @@ body.active {
     color: var(--neutral-neutral-300);
 }
 
-.footer__top-right {
-    max-width: 720px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    align-items: end;
-}
+
 
 .footer__nav_list {
     display: flex;

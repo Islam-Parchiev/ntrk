@@ -1,5 +1,10 @@
 const videoPlayer = document.querySelector('.video-player__video-tag');
 const progressBar = document.querySelector('.video-navigation__progress');
+const playVideoBtn = document.querySelector('.video-player__play-btn');
+const videoNewsMuteBtn = document.querySelector(".video-navigation__sound_btn");
+const videoNewsFullScreenBtn = document.querySelector('.video-navigation__fullscreen');
+const durationEl= document.querySelector('.video-navigation__timeline_duration');
+const currentEl = document.querySelector('.video-navigation__timeline_current')
 noUiSlider.create(progressBar, {
     start: 0,
     connect: [true, false],
@@ -62,20 +67,20 @@ function formatTime(seconds) {
     seconds = Math.floor(seconds % 60);
     return `${minutes}:${seconds.toString().padStart(2, '0')}`;
 }
-console.log(video.volume)
+console.log(videoPlayer.volume)
 
 videoNewsMuteBtn.addEventListener("click", () => {
     if (video.muted === true && videoNewsMuteBtn.classList.contains("muted")) {
-        video.muted = false;
+        videoPlayer.muted = false;
         videoNewsMuteBtn.classList.remove("muted");
         input.value = 0.2;
-        video.volume = 0.2;
+        videoPlayer.volume = 0.2;
         softSlider.noUiSlider.set(0.2);
     } else {
-        video.muted = true;
+        videoPlayer.muted = true;
         videoNewsMuteBtn.classList.add("muted");
         input.value = 0;
-        video.volume = 0;
+        videoPlayer.volume = 0;
         softSlider.noUiSlider.set(0);
     }
 })
