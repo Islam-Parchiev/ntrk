@@ -143,6 +143,15 @@
     .schedule-list__item {
         max-width: 180px;
     }
+    .menu-news{
+        /* flex-direction: column; */
+    }
+    .menu-tabs {
+        overflow: scroll;
+    }
+    .menu__inner {
+        padding-top: 100px;
+    }
 }
 
 @media(max-width:750px) {
@@ -172,6 +181,24 @@
     }
     .footer__socials {
         align-items: start;
+    }
+    .menu-tabs {
+        max-width: 400px;
+    }
+    .menu-news__title {
+        display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color:#fff;
+    }
+    .menu-news__text{
+        display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color:#fff;
+    }
     }
 }
 
