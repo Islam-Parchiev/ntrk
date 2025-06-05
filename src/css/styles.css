@@ -1367,7 +1367,7 @@ body.active {
     color: var(--neutral-neutral-500);
 }
 
-.menu__results span {
+.menu__results > span {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;

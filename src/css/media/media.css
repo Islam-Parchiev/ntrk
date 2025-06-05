@@ -152,6 +152,14 @@
     .menu__inner {
         padding-top: 100px;
     }
+    .menu-news__media {
+        width: 112px;
+height: 80px;
+    }
+    .menu-news__title a {
+        font-size: 16px;
+        line-height: 150%;
+    }
 }
 
 @media(max-width:750px) {
@@ -199,6 +207,29 @@
   overflow: hidden;
   color:#fff;
     }
+    .news__grid {
+        gap: 50px;
+    }
+    .main-transfers__list {
+        flex-wrap: nowrap;
+        justify-content: start;
+        overflow-x: scroll;
+			scroll-snap-type: x mandatory;
+    }
+    .main-transfers__list .transferItem {
+        scroll-snap-align:start;
+    }
+    .popular__content {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: start;
+        overflow-x: scroll;
+			scroll-snap-type: x mandatory;
+
+    }
+    .popular-item {
+scroll-snap-align:start;
+flex-shrink: 0;
     }
 }
 
