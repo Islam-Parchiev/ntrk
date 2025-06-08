@@ -210,8 +210,8 @@ window.addEventListener("scroll", fixHeaderOnScroll)
 const menuButton = document.querySelector(".header__search_btn");
 
 const menuCloseBtn = document.querySelector(".menu__close");
-const menu = document.querySelector(".menu");
-const navigators = document.querySelectorAll(".menu > .navigator");
+const menu = document.querySelector("[data-menu='search']");
+const navigators = menu.querySelectorAll(".navigator");
 const bodyMenu = document.querySelector('.body');
 const menuitem = navigators.length;
 menuButton.addEventListener("click", function () {
@@ -249,9 +249,46 @@ menuCloseBtn.addEventListener("click", function () {
   }
 });
 
+const burgerBtn = document.querySelector('.header__burger_btn');
+const burgerMenu = document.querySelector("[data-menu='burger']");
+const burgerNavigators = burgerMenu.querySelectorAll(".navigator");
+const burgermenuitem = burgerNavigators.length;
+const burgerMenuClose = document.querySelector(".burger__menu_close");
+burgerBtn.addEventListener("click",()=> {
+  if (burgerMenu.classList.contains("open")) {
+    for (let i = 0; i < burgermenuitem; i++) {
+      burgerNavigators[i].style.transition = `all .1s linear .${i + 1}s`;
+    }
+    burgerMenu.style.transition = `all .2s linear .${menuitem + 1}s`;
+    burgerMenu.classList.toggle("open");
+    bodyMenu.classList.toggle("dis-scroll");
+  } else {
+    bodyMenu.classList.toggle("dis-scroll");
+    burgerMenu.classList.toggle("open");
+    burgerMenu.style.transition = "all .2s linear .0s";
+    for (let i = 0; i < burgermenuitem; i++) {
+      burgerNavigators[i].style.transition = `all .1s linear .${i + 1}s`;
+    }
+  }
+})
 
-
-
+burgerMenuClose.addEventListener("click", function () {
+  if (menu.classList.contains("open")) {
+    for (let i = 0; i < burgermenuitem; i++) {
+      burgerNavigators[i].style.transition = `all .1s linear .${i + 1}s`;
+    }
+    burgerMenu.style.transition = `all .2s linear .${burgermenuitem + 1}s`;
+    burgerMenu.classList.toggle("open");
+    bodyMenu.classList.toggle("dis-scroll");
+  } else {
+    bodyMenu.classList.toggle("dis-scroll");
+    burgerMenu.classList.toggle("open");
+    burgerMenu.style.transition = "all .2s linear .0s";
+    for (let i = 0; i < burgermenuitem; i++) {
+      burgerNavigators[i].style.transition = `all .1s linear .${i + 1}s`;
+    }
+  }
+});
 
 
 
