@@ -1730,7 +1730,6 @@ body.active {
     height: 136px;
     overflow: hidden;
 }
-
 .programListItem__media img {
     display: block;
     width: 100%;
@@ -1746,7 +1745,9 @@ body.active {
     display: block;
 }
 
-
+.programListItem.programListItem--third .programListItem__media.programListItem__media--mobile {
+    display: none;
+}
 
 .filters.active {
     display: flex;
