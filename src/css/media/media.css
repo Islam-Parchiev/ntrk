@@ -541,3 +541,27 @@
         flex-wrap: wrap;
     }
 }
+
+/* tv-program */
+@media(max-width:1100px) {
+    .tvProgram__right {
+        display: none;
+    }
+
+    .tvProgram__main {
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:1100px) {
+    .tvProgram__right {
+        display: block;
+    }
+
+    .tvProgram__main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
