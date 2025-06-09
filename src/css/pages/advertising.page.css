@@ -1,6 +1,7 @@
 .advertising__page {
     font-family: var(--font-family);
 }
+
 .advertising__text p {
     font-weight: 400;
     font-size: 16px;
@@ -25,14 +26,17 @@
     margin-top: 3%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .advertising__card {
     border-radius: 12px;
     background: var(--neutral-neutral-100);
-    width: 384px;
-    height: 244px;
+    flex-basis: 380px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-height: 244px;
 }
 
 .advertising__card_inner {
@@ -78,6 +82,7 @@
     text-decoration-skip-ink: none;
     color: var(--primary-primary-700);
 }
+
 .advertising__priceList {
     margin-top: 30px;
     display: flex;
@@ -85,10 +90,11 @@
     flex-direction: column;
     gap: 10px;
 }
+
 .advertising__priceList_download {
     font-family: var(--font-family);
-font-weight: 600;
-font-size: 18px;
-line-height: 156%;
-color: var(--primary-primary-500);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--primary-primary-500);
 }
