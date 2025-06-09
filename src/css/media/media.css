@@ -532,3 +532,12 @@
         display: block;
     }
 }
+
+
+
+/* radio page */
+@media(max-width:1100px) {
+    .radio__items {
+        flex-wrap: wrap;
+    }
+}

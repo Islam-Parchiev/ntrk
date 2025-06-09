@@ -1,11 +1,14 @@
 .radio__items {
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 30px;
 }
 
 .radio-item {
-  width: 280px;
+  flex-basis: 280px;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 .radio-item__bottom {
@@ -69,9 +72,11 @@
   overflow: hidden;
   width: 100%;
 }
-.radio-item__title a{
-  color:currentColor;
+
+.radio-item__title a {
+  color: currentColor;
 }
+
 .radio-item__title {
   color: var(--bw-black);
 }
@@ -79,6 +84,7 @@
 .radio-item__title:hover {
   color: var(--primary-primary-500);
 }
+
 .radio-item__meta {
   display: flex;
   gap: 15px;
