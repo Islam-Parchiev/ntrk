@@ -11,7 +11,9 @@
     background-position: center;
 }
 
-
+.transfer-hero__mobile-image {
+    display: none;
+}
 .transfer-hero__container {
     height: 100%;
 }

@@ -565,3 +565,72 @@
     }
 
 }
+
+
+
+/* transfers page */
+@media (max-width:330px) {
+    .transfers__list {
+        gap: 5px;
+    }
+}
+
+
+/* transfer page */
+@media (max-width:1150px) {
+    .transfer-hero {
+        height: 400px;
+    }
+
+    .transfer-hero__title {
+        font-size: 28px;
+        line-height: 129%;
+        margin-top: 10px;
+
+    }
+
+    .transfer-hero__description {
+        max-width: 340px;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 7;
+        line-clamp: 7;
+        overflow: hidden;
+        display: -webkit-box;
+    }
+}
+
+@media (max-width:700px) {
+    .transfer-hero__container {
+        padding: 0;
+    }
+
+    .transfer-hero__info {
+        padding: 10px 10px;
+    }
+
+    .transfer-hero {
+        background-image: none;
+        background: var(--neutral-neutral-800);
+    }
+
+    .transfer-hero__mobile-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .transfer-hero__mobile-image img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .transfer-hero {
+        height: auto;
+    }
+
+    .releases__items {
+        justify-content: center;
+    }
+}
