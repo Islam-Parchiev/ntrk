@@ -83,3 +83,11 @@
 .vjs-poster img {
     object-fit: cover;
 }
+
+.video-player__play-btn.played {
+    display: none;
+}
+
+.video-player__play-btn.played .video-player__media_description {
+    display: none;
+}

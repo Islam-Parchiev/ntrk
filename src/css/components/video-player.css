@@ -4,6 +4,7 @@
     line-height: 117%;
     color: var(--bw-white)
 }
+
 .video-player__media_description {
     position: absolute;
     bottom: 0;
@@ -28,6 +29,7 @@
     line-height: 143%;
     color: var(--bw-white);
 }
+
 .video-player {
     position: relative;
     border-radius: 12px;
@@ -60,6 +62,7 @@
 
 .video-player__play-btn svg circle {
     fill: #1A1A1A;
+    pointer-events: none;
 }
 
 .video-player__play-btn svg path {
