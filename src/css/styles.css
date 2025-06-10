@@ -1222,7 +1222,7 @@ body.active {
 .player {
     border-radius: 12px;
     padding: 8px;
-    width: 280px;
+    width: 100%;
     height: 416px;
     background: var(--neutral-neutral-800);
 }
@@ -1376,6 +1376,7 @@ body.active {
     line-height: 143%;
     color: var(--neutral-neutral-500);
     transition: color 0.3s ease-in-out;
+    user-select: none;
 }
 
 .tab.active {
