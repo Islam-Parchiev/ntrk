@@ -762,3 +762,38 @@
         height: 320px;
     }
 }
+
+
+/* release page */
+
+@media(max-width:1100px)  {
+    .release__main_right {
+        display: none;
+    }
+    .releases__content {
+        padding-bottom: 10%;
+    }
+    
+}
+@media(max-width:770px)  {
+     .releases-item {
+        width: auto;
+        max-width: none;
+        flex-basis: 30%;  
+    }
+}
+@media(max-width:600px)  {
+    .releases-item {
+        width: 100%;
+        flex-basis: 100%;
+        height: auto;
+    }
+    .releases-item .popular-item__media {
+        height: 192px;
+    }
+    .release__media_title {
+        font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+    }
+}

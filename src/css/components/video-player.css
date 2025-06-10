@@ -34,7 +34,8 @@
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    width: 904px;
+    max-width: 904px;
+    width: 100%;
     max-height: 508px;
 
 }
@@ -83,4 +84,7 @@
 
 .video-navigation.hidden {
     display: none;
+}
+.video-navigation__sound_btn svg {
+    pointer-events: none;
 }

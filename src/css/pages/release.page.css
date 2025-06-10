@@ -11,7 +11,7 @@
 
 
 .release__media {
-    width: 915px;
+    max-width: 915px;
 }
 
 .release__media_top {
@@ -19,7 +19,7 @@
     max-width: 905px;
     border-radius: 12px;
     overflow: hidden;
-    height: 510px;
+    height: auto;
 }
 
 .release__media_bottom {
@@ -41,6 +41,7 @@
     font-size: 28px;
     line-height: 129%;
     color: var(--bw-black);
+    
 }
 
 .release__media_bottom time {
@@ -57,7 +58,6 @@
 }
 
 .releases__inner {
-    width: 905px;
     border-top: 1px solid var(--neutral-neutral-200);
     padding-top: 36px;
     margin-top: 36px;
@@ -70,9 +70,13 @@
     height: 100%;
     object-fit: cover;
 }
-
+.release__main_right {
+    width: 280px;
+    flex-shrink: 0;
+    
+}
 .ads-block {
-    max-width: 280px;
+    width: 100%;
 }
 
 .release__video {
@@ -90,4 +94,7 @@
 
 .video-player__play-btn.played .video-player__media_description {
     display: none;
+}
+.releases__content {
+    padding-bottom: 5%;
 }

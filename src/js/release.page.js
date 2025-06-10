@@ -1,9 +1,10 @@
 const videoPlayerTag = document.querySelector('.video-player__video-tag');
-const videoPlayer = document.querySelector(".videoPlayer");
+const videoPlayer = document.querySelector(".video-player");
 const progressBar = document.querySelector('.video-navigation__progress');
 const playVideoBtn = document.querySelector('.video-player__play-btn');
 const videoNewsMuteBtn = document.querySelector(".video-navigation__sound_btn");
 const videoNewsFullScreenBtn = document.querySelector('.video-navigation__fullscreen');
+const videoNavigationPlayBtn= document.querySelector(".video-navigation__btn");
 const durationEl= document.querySelector('.video-navigation__timeline_duration');
 const currentEl = document.querySelector('.video-navigation__timeline_current');
 const videoDescription = document.querySelector(".video-player__media_description");
@@ -52,16 +53,21 @@ videoPlayerTag.addEventListener('loadedmetadata', () => {
 
 
 
-
-playVideoBtn.addEventListener("click", (e) => {
+playVideoBtn.addEventListener("click",()=> {
+    videoPlayerTag.play();
+      videoDescription.classList.add('hidden');
+            videoNavigation.classList.remove("hidden");
+            playVideoBtn.classList.add('hidden');
+            videoNavigationPlayBtn.classList.add("played");
+            
+})
+videoNavigationPlayBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("video-navigation__btn") || e.target.nodeName === "path" || e.target.nodeName === "rect" || e.target.nodeName === "svg") {
-        if (playVideoBtn.classList.contains("played")) {
-            playVideoBtn.classList.remove("played");
-            videoDescription.classList.remove('hidden');
-            videoNavigation.classList.add("hidden");
+        if (videoNavigationPlayBtn.classList.contains("played")) {
+            videoNavigationPlayBtn.classList.remove("played");
             videoPlayerTag.pause();
         } else {
-            playVideoBtn.classList.add("played");
+            videoNavigationPlayBtn.classList.add("played");
             videoDescription.classList.add('hidden');
             videoNavigation.classList.remove("hidden");
             videoPlayerTag.play();
@@ -78,18 +84,24 @@ function formatTime(seconds) {
 console.log(videoPlayerTag.volume)
 
 videoNewsMuteBtn.addEventListener("click", () => {
-    if (videoPlayerTag.muted === true && videoNewsMuteBtn.classList.contains("muted")) {
-        videoPlayerTag.muted = false;
-        videoNewsMuteBtn.classList.remove("muted");
-        input.value = 0.2;
-        videoPlayerTag.volume = 0.2;
-        softSlider.noUiSlider.set(0.2);
-    } else {
-        videoPlayerTag.muted = true;
-        videoNewsMuteBtn.classList.add("muted");
-        input.value = 0;
-        videoPlayerTag.volume = 0;
-        softSlider.noUiSlider.set(0);
+    // console.log('muteeeee');
+    // if (videoPlayerTag.muted === true && videoNewsMuteBtn.classList.contains("muted")) {
+    //     videoPlayerTag.muted = false;
+    //     videoNewsMuteBtn.classList.remove("muted");
+    //     input.value = 0.2;
+    //     videoPlayerTag.volume = 0.2;
+    //     softSlider.noUiSlider.set(0.2);
+    // } else {
+    //     videoPlayerTag.muted = true;
+    //     videoNewsMuteBtn.classList.add("muted");
+    //     input.value = 0;
+    //     videoPlayerTag.volume = 0;
+    //     softSlider.noUiSlider.set(0);
+    // }
+    if(videoNewsMuteBtn.classList.contains("muted")) {
+        console.log("un")
+    }else {
+        console.log('mu')
     }
 })
 

@@ -1993,8 +1993,9 @@ body.active {
     color: var(--neutral-neutral-100);
 }
 
-.video-navigation__sound_btn svg {
+.video-navigation__sound_btn > svg {
     fill: #fff;
+    pointer-events: none;
 }
 
 .video-navigation__sound_btn-mute_svg {
@@ -2418,7 +2419,9 @@ body.active {
 
 .releases-item {
     margin-top: 2.4%;
-    width: 280px;
+    flex-basis: 280px;
+    flex-grow: 0;
+    flex-shrink: 1;
     height: 226px;
     display: flex;
     flex-direction: column;
@@ -2429,7 +2432,6 @@ body.active {
 
 .releases-item .popular-item__media {
     border-radius: 12px;
-    width: 280px;
     height: 158px;
 }
 
