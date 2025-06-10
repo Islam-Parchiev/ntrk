@@ -54,7 +54,7 @@ color: var(--neutral-neutral-500);
 .contacts-map {
     border-radius: 12px;
     overflow: hidden;
-    width: 904px;
+    max-width: 904px;
     height: 480px;
 }
 .contacts-map iframe {
