@@ -11,7 +11,9 @@
 }
 
 .video-news__content {
-    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .video-news__bottom {

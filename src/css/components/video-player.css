@@ -73,7 +73,7 @@
     fill: var(--primary-primary-300);
 }
 
-.video-player__play-btn.hidden {
+.video-player__play-btn.played {
     display: none;
 }
 
@@ -90,4 +90,7 @@
 }
 .video-navigation__sound_btn svg {
     pointer-events: none;
+}
+.video-player.played .video-navigation__btn {
+    
 }
