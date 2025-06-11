@@ -286,6 +286,31 @@
     }
 }
 
+@media (max-width:550px) {
+    .programs-slide {
+        background-image: none !important;
+    }
+
+    .programs-slide__inner {
+        background: none;
+    }
+
+    .programs-slide__mobile-image {
+        display: block;
+    }
+
+    .programs__slider {
+        height: auto;
+        background: var(--neutral-neutral-800);
+        padding-bottom: 20px;
+    }
+    .programs__slider .slider-navigation {
+        max-width: 132px;
+        position: relative;
+        margin-top: 20px;
+    }
+}
+
 @media(max-width:470px) {
 
     .popular__title,
@@ -432,6 +457,7 @@
         width: 100%;
     }
 }
+
 /* single news page */
 @media (max-width:1100px) {
     .single-news-content__inner {
@@ -529,17 +555,20 @@
 
 /* radio page */
 @media(max-width:1210px) {
-   .radio__content_inner {
-    flex-direction: column-reverse;
-   }
-   .radio__content_left {
-    max-width: 100%;
-   }
-   .radio__content_right {
-    max-width: 1004px;
-    width: 100%;
-   }
+    .radio__content_inner {
+        flex-direction: column-reverse;
+    }
+
+    .radio__content_left {
+        max-width: 100%;
+    }
+
+    .radio__content_right {
+        max-width: 1004px;
+        width: 100%;
+    }
 }
+
 @media(max-width:1100px) {
     .radio__items {
         flex-wrap: wrap;
@@ -550,22 +579,28 @@
     .radio-slider {
         height: auto;
         padding-bottom: 5%;
-        background-color: var(--neutral-neutral-800);;
+        background-color: var(--neutral-neutral-800);
+        ;
     }
+
     .radio-slide__mobile-image {
         display: block;
     }
+
     .radio-slide {
         height: auto;
         background-image: none !important;
     }
+
     .radio-slide__wrapper {
         background-image: none;
     }
+
     .radio-slide__inner {
         justify-content: start;
-       padding: 3%;
+        padding: 3%;
     }
+
     .radio-slider-navigation {
         position: relative;
         left: 0;
@@ -573,6 +608,7 @@
         margin-top: 10px;
         max-width: 143px;
     }
+
     .radio-slider-pagination {
         display: flex;
         align-items: center;
@@ -580,6 +616,7 @@
         gap: 5px;
     }
 }
+
 /* tv-program */
 @media(max-width:1100px) {
     .tvProgram__right {
@@ -699,6 +736,10 @@
         gap: 30px;
     }
 
+    .about-us__content {
+        padding-top: 40px;
+    }
+
 }
 
 @media(max-width:570px) {
@@ -708,6 +749,10 @@
 
     .about-us__image {
         height: 184px;
+    }
+
+    .about-us__content {
+        padding-top: 30px;
     }
 }
 
@@ -725,11 +770,12 @@
         height: auto;
     }
 }
+
 @media (max-width:600px) {
     .advertising__priceList_img {
         padding: 0;
-        border:none;
-        border-radius:0;
+        border: none;
+        border-radius: 0;
     }
 }
 
@@ -740,23 +786,28 @@
         flex-direction: column;
         align-items: start;
     }
+
     .contacts__contacts {
         padding-top: 40px;
     }
 }
+
 @media (max-width:768px) {
-        .contacts__ads {
-            display: none;
-        }
+    .contacts__ads {
+        display: none;
+    }
 }
+
 @media (max-width:700px) {
     .contacts-map {
         height: 380px;
     }
-        .contacts__contacts {
+
+    .contacts__contacts {
         padding-top: 28px;
     }
 }
+
 @media (max-width:500px) {
     .contacts-map {
         height: 320px;
@@ -766,34 +817,39 @@
 
 /* release page */
 
-@media(max-width:1100px)  {
+@media(max-width:1100px) {
     .release__main_right {
         display: none;
     }
+
     .releases__content {
         padding-bottom: 10%;
     }
-    
+
 }
-@media(max-width:770px)  {
-     .releases-item {
+
+@media(max-width:770px) {
+    .releases-item {
         width: auto;
         max-width: none;
-        flex-basis: 30%;  
+        flex-basis: 30%;
     }
 }
-@media(max-width:600px)  {
+
+@media(max-width:600px) {
     .releases-item {
         width: 100%;
         flex-basis: 100%;
         height: auto;
     }
+
     .releases-item .popular-item__media {
         height: 192px;
     }
+
     .release__media_title {
         font-weight: 600;
-font-size: 20px;
-line-height: 140%;
+        font-size: 20px;
+        line-height: 140%;
     }
 }

@@ -142,6 +142,8 @@
     line-height: 167%;
     color: var(--neutral-neutral-500);
 }
+
 .director__address {
     margin-top: 15px;
+    font-style: normal;
 }
