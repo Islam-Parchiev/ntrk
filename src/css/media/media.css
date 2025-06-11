@@ -1,5 +1,8 @@
 /* index page */
 @media(max-width:1220px) {
+    .header__schedule {
+        max-width: 900px;
+    }
     .popular-sidebar {
         max-width: 480px;
     }
