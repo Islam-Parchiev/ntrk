@@ -27,8 +27,8 @@ if (slSwiper) {
 
     // Navigation arrows
     navigation: {
-      nextEl: '.slider-btn--prev',
-      prevEl: '.slider-btn--next',
+      nextEl: '.slider-btn--next',
+      prevEl: '.slider-btn--prev',
     },
 
   });
@@ -42,10 +42,10 @@ if (headerScheduleSliders) {
       loop: false,
       slideClass: "schedule-slide",
       wrapperClass: "schedule-wrapper",
-      slidesPerView: 5,
-      slidesPerGroup: 3,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
       slidesPerGroupSkip: 1,
-      spaceBetween: 20,
+      spaceBetween: 0,
       // Navigation arrows
       navigation: {
         nextEl: '.schedule-navigation__btn--next',
@@ -54,31 +54,31 @@ if (headerScheduleSliders) {
       breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 2,
-      
-          spaceBetween: 20
+          slidesPerView: 1,
+
+          spaceBetween: 5
         },
         // when window width is >= 480px
         480: {
-          slidesPerView: 4,
-   
-          spaceBetween: 10
+          slidesPerView: 1,
+
+          spaceBetween: 0
         },
         // when window width is >= 640px
         640: {
-          slidesPerView: 4,
-     
-          spaceBetween: 20
+          slidesPerView: 1,
+
+          spaceBetween: 5
         },
         1000: {
-          slidesPerView: 4,
-       
-          spaceBetween: 20
+          slidesPerView: 1,
+
+          spaceBetween: 0
         },
         1100: {
-          slidesPerView: 5,
-  
-          spaceBetween: 20
+          slidesPerView: 1,
+
+          spaceBetween: 10
         }
       }
     });
@@ -254,7 +254,7 @@ const burgerMenu = document.querySelector("[data-menu='burger']");
 const burgerNavigators = burgerMenu.querySelectorAll(".navigator");
 const burgermenuitem = burgerNavigators.length;
 const burgerMenuClose = document.querySelector(".burger__menu_close");
-burgerBtn.addEventListener("click",()=> {
+burgerBtn.addEventListener("click", () => {
   if (burgerMenu.classList.contains("open")) {
     for (let i = 0; i < burgermenuitem; i++) {
       burgerNavigators[i].style.transition = `all .1s linear .${i + 1}s`;
