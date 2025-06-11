@@ -62,21 +62,27 @@ if (headerScheduleSliders) {
         480: {
           slidesPerView: 1,
 
-          spaceBetween: 0
+          spaceBetween: 10
         },
         // when window width is >= 640px
         640: {
-          slidesPerView: 1,
+          slidesPerView: 2,
 
-          spaceBetween: 5
+          spaceBetween: 10
+        },
+        750: {
+          slidesPerView: 3,
+          slidesPerGroupSkip: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 10
         },
         1000: {
-          slidesPerView: 1,
+          slidesPerView: 4,
 
-          spaceBetween: 0
+          spaceBetween: 10
         },
         1100: {
-          slidesPerView: 1,
+          slidesPerView: 5,
 
           spaceBetween: 10
         }
