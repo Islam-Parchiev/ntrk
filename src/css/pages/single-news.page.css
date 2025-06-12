@@ -177,4 +177,5 @@
 
 .single-news-other__list .news-item {
     display: block;
+    flex-grow: 1;
 }

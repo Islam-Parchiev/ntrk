@@ -513,7 +513,6 @@ body.active {
 }
 
 .header__media_content--radio {
-    height: calc(100% - 32px);
     position: relative;
     background-color: var(--primary-primary-500);
 }

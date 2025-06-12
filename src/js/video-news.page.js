@@ -1,5 +1,5 @@
-const videoPlayerTag = document.querySelector('.video-player__video-tag');
-const videoPlayer = document.querySelector(".videoPlayer");
+    const videoPlayerTag = document.querySelector('.video-player__video-tag');
+    const videoPlayer = document.querySelector(".video-player");
 const progressBar = document.querySelector('.video-navigation__progress');
 const playVideoBtn = document.querySelector('.video-player__play-btn');
 const videoNewsMuteeBtn = document.querySelector(".video-navigation__sound_btn");
@@ -56,22 +56,36 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-playVideoBtn.addEventListener("click", (e) => {
+playVideoBtn.addEventListener("click", () => {
 
     if (playVideoBtn.classList.contains("played")) {
         playVideoBtn.classList.remove("played");
+        videoPlayer.classList.remove("playing");
         videoDescription.classList.remove('hidden');
         videoNavigation.classList.add("hidden");
+        videoNavBtn.classList.remove("played");
         videoPlayerTag.pause();
     } else {
         playVideoBtn.classList.add("played");
         videoDescription.classList.add('hidden');
         videoNavigation.classList.remove("hidden");
+        videoNavBtn.classList.add("played");
+          videoPlayer.classList.add("playing");
         videoPlayerTag.play();
     }
 
 })
-
+videoNavBtn.addEventListener("click", ()=> {
+   if(videoPlayer.classList.contains("playing")) {
+    videoPlayerTag.pause();
+    videoNavBtn.classList.remove('played')
+    videoPlayer.classList.remove("playing");
+   }else {
+     videoPlayerTag.play();
+    videoNavBtn.classList.add('played');
+     videoPlayer.classList.add("playing");
+   }
+})
 console.log(videoPlayerTag.volume)
 
 videoNewsMuteeBtn.addEventListener("click", () => {
