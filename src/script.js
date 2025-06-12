@@ -54,9 +54,9 @@ if (headerScheduleSliders) {
       breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 1,
+          slidesPerView: 3,
 
-          spaceBetween: 5
+          spaceBetween: 8
         },
         // when window width is >= 480px
         480: {
