@@ -614,6 +614,7 @@ body.active {
     flex-direction: column;
     margin-right: 0;
     padding-top: 50px;
+    padding-bottom: 25px;
 }
 .burger__menu_top {
     display: flex;
@@ -812,6 +813,7 @@ body.active {
     height: 100%;
     left: 0;
     top: 0;
+    overflow-y: scroll;
     z-index: 10008;
     transform: scaleY(0);
     background: var(--neutral-neutral-900);
@@ -1885,8 +1887,9 @@ body.active {
     border-radius: 12px;
     padding: 20px 16px;
     overflow-y: scroll;
+    scrollbar-color: var(--neutral-neutral-500) var(--neutral-neutral-100);
+    scrollbar-width: thin;
 }
-
 .popular-sidebar__title {
 
     font-family: var(--font-family);
