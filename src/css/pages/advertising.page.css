@@ -1,13 +1,14 @@
 .advertising__page {
     font-family: var(--font-family);
 }
-
+.advertising__text {
+    padding-top: 32px;
+}
 .advertising__text p {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: var(--bw-black);
-    margin-top: 2%;
 }
 
 .advertising__title {

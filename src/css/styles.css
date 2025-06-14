@@ -1541,7 +1541,7 @@ body.active {
 .news-item_views {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 7px;
 }
 
 .item-views__icon svg {
@@ -1912,6 +1912,7 @@ body.active {
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 5px;
 }
 
 .popular-sidebar__item_text {
