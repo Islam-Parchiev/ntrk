@@ -64,6 +64,11 @@ if (headerScheduleSliders) {
 
           spaceBetween: 10
         },
+         550: {
+          slidesPerView: 2,
+
+          spaceBetween: 10
+        },
         // when window width is >= 640px
         640: {
           slidesPerView: 2,
