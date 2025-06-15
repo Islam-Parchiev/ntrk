@@ -1431,9 +1431,6 @@ body.active {
     height: 254px;
     font-family: var(--font-family);
 }
-.news-item:not(:first-child) {
-     margin-top: 30px;
-}
 
 
 .news-item__media {
