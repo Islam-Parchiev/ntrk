@@ -21,6 +21,9 @@
     flex-wrap: wrap;
 }
 
+.programs {
+    height: 680px;
+}
 
 .programs__inner {
     padding-bottom: 10%;
@@ -77,9 +80,11 @@
     color: var(--bw-white);
     font-family: var(--font-family);
 }
+
 .programs-slide__mobile-image {
     display: none;
 }
+
 .programs-slide__btns {
     display: flex;
     align-items: start;
@@ -111,7 +116,7 @@
 }
 
 .programs-slide__btn--secondary {
-    padding: 14px 22px;
+    padding: 14px 27px;
     border: 2px solid var(--primary-primary-500);
     background: transparent;
     display: flex;
@@ -142,11 +147,11 @@
 .slider-navigation {
     position: absolute;
     bottom: 60px;
-    left: 16%;
+    left: 18%;
     z-index: 10;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 37px;
 }
 
 .slider-navigation__counter {
@@ -163,4 +168,81 @@
     font-size: 18px;
     line-height: 156%;
     color: var(--neutral-neutral-300);
+}
+
+.main-transfers__list {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.main-transfers__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-transfers__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 122%;
+    color: var(--bw-black);
+}
+
+.main-transfers__body {
+    padding-top: 3%;
+}
+
+.main-transfers__all {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--primary-primary-500);
+    transition: color 0.2s ease-in-out;
+
+}
+
+.main-transfers__all:hover {
+    color: var(--bw-black);
+}
+
+.main-transfers__all--mobile {
+    display: none;
+}
+
+.main-transfers__inner {
+    padding-bottom: 5%;
+    padding-top: 100px;
+}
+
+/* popular: */
+.popular {
+    min-height: 50vh;
+}
+
+.popular__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    padding-bottom: 6%;
+    padding-top: 62px;
+}
+
+.popular__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 122%;
+    color: var(--b&w-black);
+}
+
+.popular__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
 }
