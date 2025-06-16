@@ -64,7 +64,7 @@ if (headerScheduleSliders) {
 
           spaceBetween: 10
         },
-         550: {
+        550: {
           slidesPerView: 2,
 
           spaceBetween: 10
@@ -406,7 +406,7 @@ window.addEventListener("DOMContentLoaded", () => {
           connect: [true, false],
           range: {
             'min': 0,
-            'max':100
+            'max': 100
           },
           behaviour: 'tap-drag',
           step: 0.1,
@@ -419,13 +419,13 @@ window.addEventListener("DOMContentLoaded", () => {
         videoTag.addEventListener('timeupdate', () => {
           // Рассчитываем процент проигранного времени
           const progress = videoTag.duration > 0 ? (videoTag.currentTime / videoTag.duration) * 100 : 0;
-        
-        progressBar.noUiSlider.set(progress);
-        currentEl.textContent = formatTime(videoTag.currentTime);
+
+          progressBar.noUiSlider.set(progress);
+          currentEl.textContent = formatTime(videoTag.currentTime);
 
         });
         progressBar.noUiSlider.on('slide', values => {
-          if(videoTag.duration>0) {
+          if (videoTag.duration > 0) {
 
             const seekTime = (values[0] * videoTag.duration) / 100;
             videoTag.currentTime = seekTime;
@@ -462,11 +462,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function dropdown() {
   const filtersBlock = document.querySelector(".filters");
-  const filtersBtn = document.querySelector("#filtersBtn");
-  if (filtersBlock && filtersBtn) {
+  const filtersBtns = document.querySelectorAll(".news-content__filters_btn");
+  if (filtersBlock && filtersBtns) {
 
 
-    filtersBtn.addEventListener("click", () => filtersBlock.classList.toggle("active"));
+    filtersBtns.forEach((item) => item.addEventListener("click", () => filtersBlock.classList.toggle("active")));
     document.querySelectorAll('.dropdown').forEach(function (dropdownWrapper) {
       const dropdownBtn = dropdownWrapper.querySelector('.dropdown__button');
       const dropdownList = dropdownWrapper.querySelector('.dropdown__list');
