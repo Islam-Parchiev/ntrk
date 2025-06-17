@@ -1,4 +1,5 @@
 /* index page */
+
 @media(max-width:1220px) {
 
     .popular-sidebar {
@@ -8,7 +9,12 @@
     .programs__slider {
         height: 400px;
     }
-
+    .programs {
+        height: auto;
+    }
+    .programs__inner {
+        padding-bottom: 1%;
+    }
     .programs-slide__info {
         padding-top: 0px;
     }
