@@ -4,7 +4,7 @@
 
 .news-content__inner {
     padding-top: 60px;
-    padding-bottom: 10%;
+    padding-bottom: 8.1%;
 }
 
 .news-content__tabs_wrapper {
@@ -84,4 +84,9 @@
 
 .news-content__filters_btn--mobile {
     display: none;
+}
+.news-block__list--second {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 33px;
 }

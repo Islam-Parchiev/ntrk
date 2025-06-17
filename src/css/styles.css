@@ -1484,10 +1484,6 @@ body.active {
     color: var(--bw-black);
 }
 
-.news-block__list--second {
-    flex-wrap: nowrap;
-    flex-direction: column;
-}
 
 .news-item--second {
     display: flex;
