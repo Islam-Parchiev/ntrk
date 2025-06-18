@@ -423,9 +423,54 @@
         -webkit-line-clamp: 2;
         font-size: 12px;
     }
+    
 }
 
 @media (max-width:400px) {
+    .overlay__info {
+        display: none;
+    }
+    .header__media_info--mobile {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .video-title {
+        text-overflow: ellipsis;
+  overflow: hidden;
+  width: 90%;
+  text-wrap: nowrap;
+    }
+    .header-tab {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 5px;
+    }
+    .header__media {
+        display: flex;
+  flex-direction: row-reverse;
+  height: 112px;
+  flex-basis: auto;
+  width: 100vw;
+  max-width: none;
+  border-radius:0;
+    }
+    .header__media_content {
+        height: 100%;
+        width: 60%;
+    }
+    .header__media_tabs {
+        flex-direction: column;
+        height: 100%;
+        width: 40%;
+    }
+    .header__top_inner {
+        padding-top: 0;
+    }
+    .header__media_tab {
+        width: 100%;
+    }
     .main-transfers__list {
         overflow: auto;
         flex-direction: column;

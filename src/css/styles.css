@@ -286,11 +286,20 @@ body.active {
     background: var(--neutral-neutral-800);
     color: var(--bw-white);
 }
-
-.header__media_tab.active>svg {
+.header-tab__main_content>svg {
+    stroke:  var(--neutral-neutral-700);
+}
+.header__media_tab.active .header-tab__main_content>svg {
     stroke: #fff;
 }
-
+.header__media_info--mobile {
+    display: none;
+}
+.header-tab__main_content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 .header__media_tab>svg {
     stroke: var(--neutral-neutral-700);
 }
