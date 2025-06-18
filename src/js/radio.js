@@ -2,7 +2,6 @@
 const radioItems = document.querySelectorAll('.radio-item');
 radioItems.forEach((item)=> {
     item.addEventListener('click',(e)=> {
-        console.log("click");
         if (e.target.classList.contains("radio-item__play_btn") || e.target.nodeName === "path" || e.target.nodeName === "svg"||e.target.nodeName==="rect") {
             console.log("clicket btn")
             item.querySelector(".radio-item__play_btn").classList.toggle("active");
