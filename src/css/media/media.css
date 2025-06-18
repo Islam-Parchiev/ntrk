@@ -435,11 +435,15 @@
         align-items: center;
         gap: 5px;
     }
-    .video-title {
+    .video__title {
         text-overflow: ellipsis;
   overflow: hidden;
   width: 90%;
   text-wrap: nowrap;
+  color: var(--neutral-neutral-500);
+    }
+    .header__media_tab.active .video__title{
+        color:var(--bw-white);
     }
     .header-tab {
         display: flex;
