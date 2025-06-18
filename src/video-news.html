@@ -29,23 +29,36 @@
 </head>
 
 <body class="body">
-   <header class="header">
+    <header class="header">
         <div class="header__top">
             <div class="container">
                 <div class="header__top_inner">
                     <div class="header__media">
                         <div class="header__media_tabs">
-                            <button class="btn-reset header__media_tab active" data-media-tab="tv">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            <button class="btn-reset header__media_tab header-tab active" data-media-tab="tv">
+                               <div class="header-tab__main_content">
+                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect x="4" y="8" width="12" height="8" rx="2" stroke-width="1.5" />
                                     <path d="M5.38892 3L9.88895 7.50003L14.3889 3" stroke-width="1.5"
                                         stroke-linejoin="bevel" />
                                 </svg>
                                 ТВ
+                               </div>
+                               <div class="header__media_info--mobile">
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4" fill="#70E780" />
+                                </svg>
+                                <h6 class="video__title">
+                                    Автостопом по России
+                                </h6>
+                            </div>
                             </button>
-                            <button class="btn-reset header__media_tab" data-media-tab="radio">
-                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                            <button class="btn-reset header__media_tab header-tab" data-media-tab="radio">
+                                <div class="header-tab__main_content">
+
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M13.5 13C15.1568 11.3431 15.1568 8.65684 13.5 6.99999M7.50001 13C5.84316 11.3431 5.84316 8.65684 7.50001 6.99999"
@@ -56,6 +69,16 @@
                                     <circle cx="10.5" cy="10" r="2" />
                                 </svg>
                                 Радио
+                            </div>
+                            <div class="header__media_info--mobile">
+                                <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4" fill="#70E780" />
+                                </svg>
+                                <h6 class="video__title">
+                                    Интервью с Зауром 
+                                </h6>
+                            </div>
                             </button>
                         </div>
                         <div class="header__media_content  header__media_content--video active" id="tv">
@@ -621,77 +644,77 @@
                 </div>
             </div>
         </div>
-         <div class="menu burger__menu" data-menu="burger">
+        <div class="menu burger__menu" data-menu="burger">
             <div class="container menu__container">
                 <div class="menu__inner">
                     <div class="burger__menu_top">
 
                         <button class="btn-reset burger__menu_close">
-                            
-                            
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            
-                            
-                            <path d="M4 4L21 20" stroke="white" stroke-width="2" />
-                            
-                            
-                            <path d="M21 4L4 20" stroke="white" stroke-width="2" />
-                            
-                            
-                        </svg>
-                        
-                        
-                    </button>
 
-                </div>
-                <div class="burger__menu_bottom">
-                    <nav class="header__nav">
-                        <ul class="list-reset header__list">
-                            <li class="header__item">
-                                <a href="live.html">
-                                    Эфир
-                                </a>
-                            </li>
-                            <li class="header__item">
-                                <a href="news.html">
-                                    Новости
-                                </a>
-                            </li>
-                            <li class="header__item">
-                                <a href="tv-program.html">
-                                    Телепрограмма
-                                </a>
-                            </li>
-                            <li class="header__item">
-                                <a href="transfers.html">
-                                    Передачи
-                                </a>
-                            </li>
-                            <li class="header__item">
-                                <a href="watch.html">
-                                    Где смотреть
-                                </a>
-                            </li>
-                            <li class="header__item">
-                                <a href="about-us.html">
-                                    О нас
-                                </a>
-                            </li>
-                            <li class="header__item">
-                                <a href="advertising.html">
-                                    Реклама
-                                </a>
-                            </li>
-                            <li class="header__item">
-                                <a href="contacts.html">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
-                
-                    </nav>
-                </div>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+
+
+                                <path d="M4 4L21 20" stroke="white" stroke-width="2" />
+
+
+                                <path d="M21 4L4 20" stroke="white" stroke-width="2" />
+
+
+                            </svg>
+
+
+                        </button>
+
+                    </div>
+                    <div class="burger__menu_bottom">
+                        <nav class="header__nav">
+                            <ul class="list-reset header__list">
+                                <li class="header__item">
+                                    <a href="live.html">
+                                        Эфир
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="news.html">
+                                        Новости
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="tv-program.html">
+                                        Телепрограмма
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="transfers.html">
+                                        Передачи
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="watch.html">
+                                        Где смотреть
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="about-us.html">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="advertising.html">
+                                        Реклама
+                                    </a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="contacts.html">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
