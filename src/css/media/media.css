@@ -430,6 +430,9 @@
 }
 
 @media (max-width:400px) {
+    body.active {
+        padding-top: 297px;
+    }
     .overlay__info {
         display: none;
     }

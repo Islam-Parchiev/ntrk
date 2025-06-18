@@ -47,7 +47,7 @@ headerScheduleSliders.forEach((slider) => {
       slidesPerView: 1,
       slidesPerGroup: 1,
       slidesPerGroupSkip: 1,
-      spaceBetween: 10,
+      spaceBetween: 0,
       // Navigation arrows
       navigation: {
         nextEl: '.schedule-navigation__btn--next',
