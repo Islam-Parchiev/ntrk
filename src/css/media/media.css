@@ -9,12 +9,15 @@
     .programs__slider {
         height: 400px;
     }
+
     .programs {
         height: auto;
     }
+
     .programs__inner {
         padding-bottom: 1%;
     }
+
     .programs-slide__info {
         padding-top: 0px;
     }
@@ -263,6 +266,10 @@
 }
 
 @media(max-width:620px) {
+    .slider-nav-wrapper {
+        position: initial;
+    }
+
     .main-news-item .news-item__descr p {
         -webkit-line-clamp: 3;
     }
