@@ -209,7 +209,7 @@ body.active {
 }
 
 .header.fixed.animate {
-    max-height: 120px;
+    max-height: 127px;
     transition: max-height 1.3s ease-in-out;
     min-height: auto;
 
