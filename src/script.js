@@ -47,7 +47,7 @@ headerScheduleSliders.forEach((slider) => {
       slidesPerView: 1,
       slidesPerGroup: 1,
       slidesPerGroupSkip: 1,
-      spaceBetween: 0,
+      spaceBetween: 10,
       // Navigation arrows
       navigation: {
         nextEl: '.schedule-navigation__btn--next',
@@ -427,7 +427,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const currentEl = item.querySelector(".video-navigation__timeline_current");
         const durationEl = item.querySelector(".video-navigation__timeline_duration");
         const fullScreenBtn = item.querySelector(".video-navigation__fullscreen");
-        let softSlider = item.querySelector('#video-navigation__slider-round');
+        let softSlider = item.querySelector('[data-id="video-navigation__slider-round"]');
 
         item.querySelector(".popular-item__media_timeline").textContent = formatTime(videoTag.duration)
         playBtn.addEventListener("click", () => {

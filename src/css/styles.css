@@ -2010,7 +2010,7 @@ body.active {
     border: 1px dashed #fff;
 }
 
-#video-navigation__slider-round .noUi-handle {
+.video-navigation__slider-styled .noUi-handle {
     position: absolute;
     height: 10px;
     width: 10px;
@@ -2023,7 +2023,7 @@ body.active {
     background-color: #fff;
 }
 
-#video-navigation__slider-round .noUi-origin {
+.video-navigation__slider-styled .noUi-origin {
     height: 100% !important;
 }
 

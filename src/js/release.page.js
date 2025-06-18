@@ -119,7 +119,7 @@ videoNewsFullScreenBtn.addEventListener('click', () => {
 })
 
 
-      let softSlider = document.querySelector('#video-navigation__slider-round');
+      let softSlider = document.querySelector('[data-id="video-navigation__slider-round"]');
 
  noUiSlider.create(softSlider, {
         start: [0],
