@@ -26,7 +26,7 @@ let softSlider = document.getElementById('slider-round');
 
 noUiSlider.create(softSlider, {
     start: [1],
-    connect:'lower',
+    connect: 'lower',
     step: 0.01,
     range: {
         'min': [0.0],
@@ -38,7 +38,7 @@ noUiSlider.create(softSlider, {
 // Из слайдера в input
 softSlider.noUiSlider.on('update', function (values, handle) {
     input.value = values[handle];
-    playerAudio.volume=values[handle];
+    playerAudio.volume = values[handle];
     console.log(values[handle]);
 });
 
@@ -49,53 +49,33 @@ input.addEventListener('change', function () {
 });
 
 
-playBtn.addEventListener("click",()=> {
-    if(playBtn.classList.contains("active")) {
+playBtn.addEventListener("click", () => {
+    if (playBtn.classList.contains("active")) {
         playBtn.classList.remove("active");
         playerAudio.pause();
-    }else {
+    } else {
         playBtn.classList.add("active");
         playerAudio.play();
     }
 })
-muteAudio.addEventListener("click",(e)=> {
-    if(e.target.classList.contains("popular-item__media_btn") || e.target.nodeName === "path" || e.target.nodeName === "svg"){
+muteAudio.addEventListener("click", (e) => {
+    if (e.target.classList.contains("popular-item__media_btn") || e.target.nodeName === "path" || e.target.nodeName === "svg") {
 
-        if(playerAudio.muted===true) {
-            playerAudio.muted=false
-        }else {
-            playerAudio.muted=true
+        if (playerAudio.muted === true) {
+            playerAudio.muted = false
+        } else {
+            playerAudio.muted = true
         }
     }
 })
-// const slider = document.getElementById('volume-slider');
-// const volumeValue = document.getElementById('volume-value');
-
-// noUiSlider.create(slider, {
-//   start: [50], // Начальное значение громкости
-//   range: {
-//     'min': 0,
-//     'max': 100
-//   },
-//   orientation: 'horizontal', // Горизонтальное расположение
-//   direction: 'ltr', // Направление слева направо
-//   connect: 'lower', // Заполнять слева
-//   step: 1,        // Шаг изменения громкости
-//   tooltips: false,  // Отключаем тултипы (не нужны в этом примере)
-// });
-
-// // Обновление значения громкости при изменении положения ползунка
-// slider.noUiSlider.on('update', function (values, handle) {
-//   const volume = parseInt(values[handle]);
-//   volumeValue.textContent = volume;
-
-//   // Здесь можно добавить код для установки громкости видео/аудио
-//   // Например: myAudio.volume = volume / 100;
-// });
-
 
 // Инициализация аудио
 // Выбираем все контейнеры аудио-плееров
+function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    seconds = Math.floor(seconds % 60);
+    return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+}
 const audioPlayers = document.querySelectorAll('.radio-item');
 console.log(audioPlayers);
 audioPlayers.forEach(container => {
@@ -106,7 +86,10 @@ audioPlayers.forEach(container => {
     noUiSlider.create(slider, {
         start: 0,
         connect: [true, false],
-        range: {'min': 0, 'max': 100},
+        range: {
+            'min': 0,
+            'max': 100
+        },
         behaviour: 'tap-drag',
         step: 0.1,
         format: {
@@ -127,18 +110,12 @@ audioPlayers.forEach(container => {
         const seekTime = (values[0] * audio.duration) / 100;
         audio.currentTime = seekTime;
     });
-    window.addEventListener('DOMContentLoaded',()=> {
-      durationEl.textContent=formatTime(audio.duration);
-    })
     audio.addEventListener('loadedmetadata', () => {
         durationEl.textContent = formatTime(audio.duration);
-        slider.noUiSlider.updateOptions({
-            range: {'min': 0, 'max': audio.duration}
-        });
     });
+    window.addEventListener('DOMContentLoaded', () => {
+        if (audio.readyState > 0) {
+            durationEl.textContent = formatTime(audio.duration);
+        }
+    })
 });
-function formatTime(seconds) {
-  const minutes = Math.floor(seconds / 60);
-  seconds = Math.floor(seconds % 60);
-  return `${minutes}:${seconds.toString().padStart(2, '0')}`;
-}
