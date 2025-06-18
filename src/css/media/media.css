@@ -84,9 +84,6 @@
 }
 
 @media(max-width:1000px) {
-    body.active {
-        padding-top: 455px;
-    }
 
     .header {
         overflow: hidden;
@@ -346,6 +343,9 @@
 }
 
 @media (max-width:550px) {
+    body.active {
+        padding-top: 407px;
+    }
     .header.fixed .schedule-list__item a{
         text-wrap: nowrap;
     }
@@ -1020,11 +1020,18 @@
     .about-us__inner {
         flex-direction: column;
     }
-
+    .about-us--left {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .about-us--right {
         width: 100%;
     }
-
+    .about-us__media {
+        max-width: 80%;
+    }
     .director__info {
         margin-top: 0;
     }
