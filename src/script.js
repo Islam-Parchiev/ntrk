@@ -274,14 +274,16 @@ fullscreenButton.addEventListener("click", function () {
   toggleFullscreen(videoO);
 });
 videoCustom()
-function throttle(func, limit) {
-  let lastCall = 0;
+
+function debounce(func, delay) {
+  let timeoutId;
   return function() {
-    const now = Date.now();
-    if (now - lastCall >= limit) {
-      func.apply(this, arguments);
-      lastCall = now;
-    }
+    const context = this;
+    const args = arguments;
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      func.apply(context, args);
+    }, delay);
   };
 }
 function fixHeaderOnScroll() {
@@ -305,9 +307,9 @@ function fixHeaderOnScroll() {
 window.addEventListener('DOMContentLoaded', ()=> {
   fixHeaderOnScroll()
 
-  const throttledHandler = throttle(fixHeaderOnScroll, 500);
+  const debouncedHandler = debounce(fixHeaderOnScroll, 100);
   
-  window.addEventListener('scroll', throttledHandler);
+  window.addEventListener('scroll', debouncedHandler);
 });
 
 
