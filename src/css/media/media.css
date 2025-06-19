@@ -430,6 +430,9 @@
     .overlay__info {
         display: none;
     }
+    .radio-overlay {
+        display: none;
+    }
     .header__media_info--mobile {
         display: flex;
         align-items: center;
