@@ -8,7 +8,7 @@ const radio = document.querySelector('#radio');
 const fullscreenRadio = document.querySelector('[data-id="fullScreenRadio"]');
 const slSwiper = document.querySelector('.swiper');
 const headerScheduleSliders = document.querySelectorAll(".header__schedule_slider");
-
+const header = document.querySelector(".header");
 fullscreenRadio.addEventListener('click', () => {
   radio.requestFullscreen();
 })
@@ -33,9 +33,11 @@ if (slSwiper) {
 
   });
 }
-if (headerScheduleSliders) {
-
-  headerScheduleSliders.forEach((slider) => {
+function scheduleSliders() {
+  if (headerScheduleSliders) {
+  if(header.classList.contains("fixed")) {
+    console.log("fixed");
+headerScheduleSliders.forEach((slider) => {
     new Swiper(slider, {
       // Optional parameters
       direction: 'horizontal',
@@ -54,11 +56,17 @@ if (headerScheduleSliders) {
       breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 3,
+          slidesPerView: 1,
 
-          spaceBetween: 8
+          spaceBetween: 0
+        },
+         400: {
+          slidesPerView: 1,
+
+          spaceBetween: 5
         },
         // when window width is >= 480px
+        
         480: {
           slidesPerView: 3,
 
@@ -94,7 +102,76 @@ if (headerScheduleSliders) {
       }
     });
   })
+  }else {
+console.log("not fix  ed");
+  
+  headerScheduleSliders.forEach((slider) => {
+    new Swiper(slider, {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+      slideClass: "schedule-slide",
+      wrapperClass: "schedule-wrapper",
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      slidesPerGroupSkip: 1,
+      spaceBetween: 0,
+      // Navigation arrows
+      navigation: {
+        nextEl: '.schedule-navigation__btn--next',
+        prevEl: '.schedule-navigation__btn--prev',
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
 
+          spaceBetween: 8
+        },
+         400: {
+          slidesPerView: 3,
+
+          spaceBetween: 5
+        },
+        // when window width is >= 480px
+        
+        480: {
+          slidesPerView: 3,
+
+          spaceBetween: 10
+        },
+        550: {
+          slidesPerView: 2,
+
+          spaceBetween: 10
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 2,
+
+          spaceBetween: 10
+        },
+        750: {
+          slidesPerView: 3,
+          slidesPerGroupSkip: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 10
+        },
+        1000: {
+          slidesPerView: 4,
+
+          spaceBetween: 10
+        },
+        1100: {
+          slidesPerView: 5,
+
+          spaceBetween: 10
+        }
+      }
+    });
+  })
+  }
+}
 }
 const tabBtns = document.querySelectorAll(".header__media_tab");
 const tabs = document.querySelectorAll(".header__media_content");
@@ -197,7 +274,16 @@ fullscreenButton.addEventListener("click", function () {
   toggleFullscreen(videoO);
 });
 videoCustom()
-
+function throttle(func, limit) {
+  let lastCall = 0;
+  return function() {
+    const now = Date.now();
+    if (now - lastCall >= limit) {
+      func.apply(this, arguments);
+      lastCall = now;
+    }
+  };
+}
 function fixHeaderOnScroll() {
   const header = document.querySelector('.header');
   const body = document.querySelector("body");
@@ -207,14 +293,22 @@ function fixHeaderOnScroll() {
       header.classList.add("fixed");
       header.classList.add("animate");
       body.classList.add("active");
+      scheduleSliders()
     } else {
       header.classList.remove("fixed");
       header.classList.remove("animate");
       body.classList.remove("active");
+      scheduleSliders()
     }
   }
 }
-window.addEventListener("scroll", fixHeaderOnScroll)
+window.addEventListener('DOMContentLoaded', ()=> {
+  fixHeaderOnScroll()
+
+  const throttledHandler = throttle(fixHeaderOnScroll, 500);
+  
+  window.addEventListener('scroll', throttledHandler);
+});
 
 
 

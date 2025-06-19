@@ -346,6 +346,9 @@
 }
 
 @media (max-width:550px) {
+    .header.fixed .schedule-list__item a{
+        text-wrap: nowrap;
+    }
     .schedule-list__item {
         height: 80px;
         padding: 8px 12px;
