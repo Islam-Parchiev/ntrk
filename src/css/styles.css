@@ -360,11 +360,15 @@ body.active {
     line-height: 143%;
     color: var(--bw-black);
 }
-
-.schedule-list__item a:hover {
-    color: var(--primary-primary-500)
+@media (hover: hover) {
+    
+    .schedule-list__item a:hover {
+        color: var(--primary-primary-500)
+    }
 }
-
+.schedule-list__item a:active {
+    color: var(--primary-primary-700)
+}
 .header__schedule_top {
     width: 100%;
     display: flex;
@@ -433,9 +437,11 @@ body.active {
     line-height: 143%;
     color: var(--bw-black);
 }
+@media (hover: hover) {
 
-.header__item a:hover {
-    color: var(--primary-primary-500);
+    .header__item a:hover {
+        color: var(--primary-primary-500);
+    }
 }
 
 .header__search_btn>svg {
@@ -801,6 +807,9 @@ body.active {
     left: 0;
     top: 0;
     overflow-y: scroll;
+    user-select: none;
+    pointer-events: none;
+    visibility: hidden;
     z-index: 10008;
     transform: scaleY(0);
     background: var(--neutral-neutral-900);
@@ -828,6 +837,9 @@ body.active {
 
 .menu.open {
     transform: scaleY(1);
+    user-select: initial;
+    pointer-events: initial;
+    visibility: initial;
 }
 
 .menu__container {
@@ -2179,11 +2191,13 @@ body.active {
     opacity: 0;
     visibility: hidden;
 }
-
-.transferItem:hover .transferItem_media::before {
+@media (hover: hover) {
+    .transferItem:hover .transferItem_media::before {
     visibility: visible;
     opacity: 0.35;
 }
+}
+
 
 .transferItem_media {
     position: relative;
@@ -2217,9 +2231,11 @@ body.active {
     color: var(--primary-primary-500);
     transition: color 0.3s ease-in-out;
 }
+@media (hover: hover) {
 
-.transferItem:hover .transferItem_count {
-    color: var(--bw-black);
+    .transferItem:hover .transferItem_count {
+        color: var(--bw-black);
+    }
 }
 
 
@@ -2263,9 +2279,10 @@ body.active {
     background: var(--bw-black);
     opacity: 0.35;
 }
-
-.popular-item:hover .popular-item__media::before {
-    display: block;
+@media (hover: hover) {
+    .popular-item:hover .popular-item__media::before {
+        display: block;
+    }
 }
 
 .popular-item__media_btn {
@@ -2326,9 +2343,10 @@ body.active {
     line-height: 167%;
     color: var(--neutral-neutral-500);
 }
-
-.popular-item:hover .popular-item__time {
-    color: var(--bw-black);
+@media (hover: hover) {
+    .popular-item:hover .popular-item__time {
+        color: var(--bw-black);
+    }
 }
 
 .popular-item.btn-hidden .popular-item__media_btn {
