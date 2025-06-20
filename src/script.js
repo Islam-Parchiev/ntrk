@@ -58,7 +58,7 @@ headerScheduleSliders.forEach((slider) => {
         320: {
           slidesPerView: 1,
 
-          spaceBetween: 0
+          spaceBetween: 5
         },
          400: {
           slidesPerView: 1,
