@@ -275,6 +275,15 @@
 }
 
 @media(max-width:620px) {
+    .popular-item .video-navigation__progress .noUi-handle .noUi-touch-area{
+        width: 30px;
+        height: 30px;
+        transform: translate(-30%, -30%);
+        border: 1px dashed #fff;
+    }
+    .popular-item.played .popular-item__video-navigation {
+        opacity: 1;
+    }
     .slider-nav-wrapper {
         position: initial;
     }
