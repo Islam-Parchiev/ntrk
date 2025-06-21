@@ -2388,9 +2388,11 @@ body.active {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
+@media (hover: none) and (pointer: coarse){
 
-.popular-item.played:hover .video-navigation {
-    opacity: 1;
+    .popular-item.played:hover .video-navigation {
+        opacity: 1;
+    }
 }
 
 /* releases item */

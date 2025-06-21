@@ -101,9 +101,11 @@
     background: var(--primary-primary-500);
     transition: background ease-in-out 0.1s;
 }
+@media (hover: hover) and (pointer: fine){
 
-.programs-slide__btn--primary:hover {
-    background: var(--primary-primary-700);
+    .programs-slide__btn--primary:hover {
+        background: var(--primary-primary-700);
+    }
 }
 
 .programs-slide__btn--primary:disabled {
@@ -125,14 +127,18 @@
 .programs-slide__btn--secondary>svg {
     fill: var(--primary-primary-500);
 }
+@media (hover: hover) and (pointer: fine){
 
-.programs-slide__btn--secondary:hover {
-    background: var(--primary-primary-100);
-    color: var(--primary-primary-700);
+    .programs-slide__btn--secondary:hover {
+        background: var(--primary-primary-100);
+        color: var(--primary-primary-700);
+    }
 }
+@media (hover: hover) and (pointer: fine){
 
-.programs-slide__btn--secondary:hover>svg {
-    fill: var(--primary-primary-700);
+    .programs-slide__btn--secondary:hover>svg {
+        fill: var(--primary-primary-700);
+    }
 }
 
 .programs__slider {
