@@ -360,12 +360,11 @@ body.active {
     line-height: 143%;
     color: var(--bw-black);
 }
-@media (hover: hover) {
-    
+
     .schedule-list__item a:hover {
         color: var(--primary-primary-500)
     }
-}
+
 .schedule-list__item a:active {
     color: var(--primary-primary-700)
 }
@@ -437,12 +436,11 @@ body.active {
     line-height: 143%;
     color: var(--bw-black);
 }
-@media (hover: hover) {
 
     .header__item a:hover {
         color: var(--primary-primary-500);
     }
-}
+
 
 .header__search_btn>svg {
     stroke: var(--bw-black);
@@ -2191,12 +2189,12 @@ body.active {
     opacity: 0;
     visibility: hidden;
 }
-@media (hover: hover) {
+
     .transferItem:hover .transferItem_media::before {
     visibility: visible;
     opacity: 0.35;
 }
-}
+
 
 
 .transferItem_media {
@@ -2231,12 +2229,11 @@ body.active {
     color: var(--primary-primary-500);
     transition: color 0.3s ease-in-out;
 }
-@media (hover: hover) {
 
     .transferItem:hover .transferItem_count {
         color: var(--bw-black);
     }
-}
+
 
 
 .transferItem.transferItem--index {
@@ -2249,12 +2246,14 @@ body.active {
 
 /* video news page */
 .popular-item {
-    width: 384px;
     height: 316px;
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 333px;
 }
 
 
@@ -2279,11 +2278,11 @@ body.active {
     background: var(--bw-black);
     opacity: 0.35;
 }
-@media (hover: hover) {
+
     .popular-item:hover .popular-item__media::before {
         display: block;
     }
-}
+
 
 .popular-item__media_btn {
     position: absolute;
@@ -2343,11 +2342,11 @@ body.active {
     line-height: 167%;
     color: var(--neutral-neutral-500);
 }
-@media (hover: hover) {
+
     .popular-item:hover .popular-item__time {
         color: var(--bw-black);
     }
-}
+
 
 .popular-item.btn-hidden .popular-item__media_btn {
     display: none;
@@ -2388,12 +2387,13 @@ body.active {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-@media (hover: none) and (pointer: coarse){
-
+@media (hover:hover) and (pointer: fine) {
+    
     .popular-item.played:hover .video-navigation {
         opacity: 1;
     }
 }
+
 
 /* releases item */
 
