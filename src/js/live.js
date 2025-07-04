@@ -15,10 +15,10 @@ livePlayBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("main-media__play") || e.target.nodeName === "path" || e.target.nodeName === "svg" || e.target.nodeName === "circle" || e.target.nodeName === "rect") {
         if (!livePlayBtn.classList.contains("pause")) {
             livePlayBtn.classList.add("pause");
-            liveVideoTag.play();
+            testVideo.play();
         } else {
             livePlayBtn.classList.remove("pause");
-            liveVideoTag.pause();
+            testVideo.pause();
         }
 
     }
@@ -42,4 +42,9 @@ liveMuteBtn.addEventListener("click", () => {
         liveVideoTag.muted = true;
         liveMuteBtn.classList.add('muted');
     }
+})
+
+window.addEventListener("DOMContentLoaded",function() {
+    const testVideo= document.querySelector('#smplayer_html5_api');
+console.log(testVideo);
 })

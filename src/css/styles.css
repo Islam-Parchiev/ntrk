@@ -388,7 +388,6 @@ body.active {
 
 .schedule-navigation__btn svg {
     stroke: var(--neutral-neutral-500);
-    ;
 }
 
 .header__schedule_title {
@@ -473,6 +472,9 @@ body.active {
 
 .header__media_content--video:hover .overlay {
     display: block;
+}
+.header__media_video iframe {
+    pointer-events: none;
 }
 
 .header__media_content--radio:hover .overlay {
@@ -2433,4 +2435,10 @@ body.active {
 
 .releases-item .video-navigation__controls_left {
     gap: 17px;
+}
+.header__media_content--video .video-custom-controls__btn--mute,
+.header__media_content--video .video-custom-controls__btn--unmute,
+.header__media_content--video .video-custom-controls__btn--play,
+.header__media_content--video .video-custom-controls__btn--pause {
+    display: none;
 }
