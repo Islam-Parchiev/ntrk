@@ -80,10 +80,10 @@
                             </button>
                         </div>
                         <div class="header__media_content  header__media_content--video active" id="tv">
-
-                            <video poster="./assets/img/preview.png" class="header__media_video" id="videoOne">
-                                <source src="./assets/test.mp4" type="video/mp4" />
-                            </video>
+                            <iframe class="header__media_video" src="https://public.mediacdn.ru/magas/" frameborder="0" id="videoOne"></iframe>
+                            <!-- <video poster="./assets/img/preview.png" class="header__media_video" id="videoOne">
+                                <source src="https://public.mediacdn.ru/magas/" type="video/mp4" />
+                            </video> -->
                             <div class="overlay">
                                 <div class="overlay__inner">
                                     <div class="video-custom-controls">
@@ -642,7 +642,7 @@
                 </div>
             </div>
         </div>
-        <div class="menu burger__menu" data-menu="burger">
+        <div class="menu burger__menu" data-menu="burger" tabindex="-1">
             <div class="container menu__container">
                 <div class="menu__inner">
                     <div class="burger__menu_top">
