@@ -1461,6 +1461,7 @@ body.active {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     /* Макс. число строк */
     overflow: hidden;
 }
@@ -1477,6 +1478,7 @@ body.active {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     /* Макс. число строк */
     overflow: hidden;
     width: 100%;
@@ -1565,6 +1567,7 @@ body.active {
     overflow: auto;
     -webkit-box-orient: inherit;
     -webkit-line-clamp: inherit;
+    line-clamp: inherit;
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 20px;
@@ -1584,6 +1587,7 @@ body.active {
 .main-news-item .news-item__descr p {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 7;
+    line-clamp: 7;
     overflow: hidden;
     width: 100%;
     font-family: var(--font-family);
@@ -1664,6 +1668,7 @@ body.active {
     font-family: var(--font-family);
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     /* Макс. число строк */
     overflow: hidden;
 }
