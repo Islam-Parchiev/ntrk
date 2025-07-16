@@ -11,6 +11,8 @@
 }
 
 .live-content__left {
+    display: flex;
+    flex-direction: column;
     max-width: 904px;
 }
 
@@ -24,7 +26,7 @@
     max-height: 508px;
     border-radius: 12px;
     overflow: hidden;
-    height: 100%;
+    height: 508px;
 }
 
 .play-svg {
