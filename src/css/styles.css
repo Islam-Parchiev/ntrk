@@ -845,6 +845,7 @@ body.active {
 
 .menu__container {
     height: 100%;
+    width: 100%;
 }
 
 .menu.open .navigator {
