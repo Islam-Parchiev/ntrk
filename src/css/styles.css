@@ -619,7 +619,10 @@ body.active {
 .burger__menu .menu__inner {
     width: 300px;
 }
-
+.burger__menu .menu__container {
+    display: flex;
+    justify-content: center;
+}
 .header__burger_btn:hover span {
     background-color: var(--primary-primary-500);
     color: var(--primary-primary-500);
