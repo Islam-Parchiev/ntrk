@@ -1,18 +1,43 @@
 
-const radioItems = document.querySelectorAll('.radio-item');
-radioItems.forEach((item)=> {
-    item.addEventListener('click',(e)=> {
-        if (e.target.classList.contains("radio-item__play_btn") || e.target.nodeName === "path" || e.target.nodeName === "svg"||e.target.nodeName==="rect") {
-            console.log("clicket btn")
-            item.querySelector(".radio-item__play_btn").classList.toggle("active");
-        }
-        if(item.querySelector(".radio-item__play_btn").classList.contains("active")) {
-            item.querySelector("audio").play();
-        }
-        if(!item.querySelector(".radio-item__play_btn").classList.contains("active")) {
-            item.querySelector("audio").pause();
-        }
-    })
-})
+document.querySelector('.radio__items').addEventListener('click', (e) => {
+
+    const radioItem = e.target.closest('.radio-item');
+    if (!radioItem) return;
 
 
+    const isPlayButtonClicked = e.target.closest('.radio-item__play_btn');
+    if (!isPlayButtonClicked) return;
+
+
+    const playBtn = radioItem.querySelector('.radio-item__play_btn');
+    const audio = radioItem.querySelector('audio');
+    
+
+    document.querySelectorAll('.radio-item').forEach(item => {
+        if (item !== radioItem) {
+         
+            const otherAudio = item.querySelector('audio');
+            const otherBtn = item.querySelector('.radio-item__play_btn');
+            
+            if (otherAudio && !otherAudio.paused) {
+                otherAudio.pause();
+                otherAudio.currentTime = 0;
+            }
+            otherBtn?.classList.remove('active');
+        }
+    });
+
+   
+    const isActive = playBtn.classList.toggle('active');
+    
+   
+    if (isActive) {
+        audio.play().catch(error => {
+            console.error('Ошибка воспроизведения:', error);
+            playBtn.classList.remove('active');
+        });
+    } else {
+        audio.pause();
+        audio.currentTime = 0;
+    }
+});

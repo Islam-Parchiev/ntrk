@@ -36,7 +36,6 @@ if (slSwiper) {
 function scheduleSliders() {
   if (headerScheduleSliders) {
   if(header.classList.contains("fixed")) {
-    console.log("fixed");
 headerScheduleSliders.forEach((slider) => {
     new Swiper(slider, {
       // Optional parameters
@@ -103,7 +102,7 @@ headerScheduleSliders.forEach((slider) => {
     });
   })
   }else {
-console.log("not fix  ed");
+
   
   headerScheduleSliders.forEach((slider) => {
     new Swiper(slider, {
@@ -581,7 +580,7 @@ function dropdown() {
           })
           e.target.classList.add('dropdown__list-item_active');
           dropdownBtn.innerText = this.innerText;
-          console.log("value:", this.dataset.value);
+
           dropdownInput.value = this.dataset.value;
           dropdownList.classList.remove('dropdown__list_visible');
         })
