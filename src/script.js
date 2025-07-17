@@ -1,5 +1,5 @@
-const body = document.querySelector('.body');
-
+// Основные элементы
+const body = document.querySelector('body');
 const videoO = document.getElementById("videoOne");
 const muteButton = document.querySelector('[data-id="muteVideo"]');
 const unmuteButton = document.querySelector('[data-id="unmuteVideo"]');
@@ -9,211 +9,177 @@ const fullscreenRadio = document.querySelector('[data-id="fullScreenRadio"]');
 const slSwiper = document.querySelector('.swiper');
 const headerScheduleSliders = document.querySelectorAll(".header__schedule_slider");
 const header = document.querySelector(".header");
-fullscreenRadio.addEventListener('click', () => {
-  radio.requestFullscreen();
-})
+
+// Обработчики полноэкранного режима
+if (fullscreenRadio && radio) {
+    fullscreenRadio.addEventListener('click', () => {
+        radio.requestFullscreen().catch(console.error);
+    });
+}
+
+// Инициализация основного слайдера
 if (slSwiper) {
-
-
-  const swiper = new Swiper(slSwiper, {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      type: "fraction"
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.slider-btn--next',
-      prevEl: '.slider-btn--prev',
-    },
-
-  });
-}
-function scheduleSliders() {
-  if (headerScheduleSliders) {
-  if(header.classList.contains("fixed")) {
-headerScheduleSliders.forEach((slider) => {
-    new Swiper(slider, {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: false,
-      slideClass: "schedule-slide",
-      wrapperClass: "schedule-wrapper",
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      slidesPerGroupSkip: 1,
-      spaceBetween: 0,
-      // Navigation arrows
-      navigation: {
-        nextEl: '.schedule-navigation__btn--next',
-        prevEl: '.schedule-navigation__btn--prev',
-      },
-      breakpoints: {
-        // when window width is >= 320px
-        320: {
-          slidesPerView: 1,
-
-          spaceBetween: 5
+    const swiper = new Swiper(slSwiper, {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: "fraction"
         },
-         400: {
-          slidesPerView: 1,
-
-          spaceBetween: 5
+        navigation: {
+            nextEl: '.slider-btn--next',
+            prevEl: '.slider-btn--prev',
         },
-        // when window width is >= 480px
-        
-        480: {
-          slidesPerView: 3,
-
-          spaceBetween: 10
-        },
-        550: {
-          slidesPerView: 2,
-
-          spaceBetween: 10
-        },
-        // when window width is >= 640px
-        640: {
-          slidesPerView: 2,
-
-          spaceBetween: 10
-        },
-        750: {
-          slidesPerView: 3,
-          slidesPerGroupSkip: 3,
-          slidesPerGroup: 3,
-          spaceBetween: 10
-        },
-        1000: {
-          slidesPerView: 4,
-
-          spaceBetween: 10
-        },
-        1100: {
-          slidesPerView: 5,
-
-          spaceBetween: 10
-        }
-      }
     });
-  })
-  }else {
+}
 
-  
-  headerScheduleSliders.forEach((slider) => {
-    new Swiper(slider, {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: false,
-      slideClass: "schedule-slide",
-      wrapperClass: "schedule-wrapper",
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      slidesPerGroupSkip: 1,
-      spaceBetween: 0,
-      // Navigation arrows
-      navigation: {
-        nextEl: '.schedule-navigation__btn--next',
-        prevEl: '.schedule-navigation__btn--prev',
-      },
-      breakpoints: {
-        // when window width is >= 320px
-        320: {
-          slidesPerView: 2,
-
-          spaceBetween: 8
-        },
-         400: {
-          slidesPerView: 3,
-
-          spaceBetween: 5
-        },
-        // when window width is >= 480px
-        
-        480: {
-          slidesPerView: 3,
-
-          spaceBetween: 10
-        },
-        550: {
-          slidesPerView: 2,
-
-          spaceBetween: 10
-        },
-        // when window width is >= 640px
-        640: {
-          slidesPerView: 2,
-
-          spaceBetween: 10
-        },
-        750: {
-          slidesPerView: 3,
-          slidesPerGroupSkip: 3,
-          slidesPerGroup: 3,
-          spaceBetween: 10
-        },
-        1000: {
-          slidesPerView: 4,
-
-          spaceBetween: 10
-        },
-        1100: {
-          slidesPerView: 5,
-
-          spaceBetween: 10
+// Функция инициализации слайдеров расписания
+function initScheduleSliders() {
+    if (!headerScheduleSliders.length) return;
+    
+    // Общая конфигурация слайдеров
+    const commonConfig = {
+        direction: 'horizontal',
+        loop: false,
+        slideClass: "schedule-slide",
+        wrapperClass: "schedule-wrapper",
+        slidesPerGroup: 1,
+        slidesPerGroupSkip: 1,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: '.schedule-navigation__btn--next',
+            prevEl: '.schedule-navigation__btn--prev',
         }
-      }
+    };
+    
+    // Конфигурация для фиксированного хедера
+    const fixedHeaderConfig = {
+        ...commonConfig,
+        slidesPerView: 1,
+        breakpoints: {
+            320: { slidesPerView: 1, spaceBetween: 5 },
+            400: { slidesPerView: 1, spaceBetween: 5 },
+            480: { slidesPerView: 3, spaceBetween: 10 },
+            550: { slidesPerView: 2, spaceBetween: 10 },
+            640: { slidesPerView: 2, spaceBetween: 10 },
+            750: { slidesPerView: 3, slidesPerGroup: 3, slidesPerGroupSkip: 3, spaceBetween: 10 },
+            1000: { slidesPerView: 4, spaceBetween: 10 },
+            1100: { slidesPerView: 5, spaceBetween: 10 }
+        }
+    };
+    
+    // Конфигурация для обычного хедера
+    const normalHeaderConfig = {
+        ...commonConfig,
+        slidesPerView: 1,
+        breakpoints: {
+            320: { slidesPerView: 2, spaceBetween: 8 },
+            400: { slidesPerView: 3, spaceBetween: 5 },
+            480: { slidesPerView: 3, spaceBetween: 10 },
+            550: { slidesPerView: 2, spaceBetween: 10 },
+            640: { slidesPerView: 2, spaceBetween: 10 },
+            750: { slidesPerView: 3, slidesPerGroup: 3, slidesPerGroupSkip: 3, spaceBetween: 10 },
+            1000: { slidesPerView: 4, spaceBetween: 10 },
+            1100: { slidesPerView: 5, spaceBetween: 10 }
+        }
+    };
+    
+    // Выбор конфигурации в зависимости от состояния хедера
+    const config = header.classList.contains("fixed") 
+        ? fixedHeaderConfig 
+        : normalHeaderConfig;
+    
+    // Инициализация слайдеров
+    headerScheduleSliders.forEach(slider => {
+        new Swiper(slider, config);
     });
-  })
-  }
 }
-}
+
+// Инициализация слайдеров расписания
+initScheduleSliders();
+
+
 const tabBtns = document.querySelectorAll(".header__media_tab");
 const tabs = document.querySelectorAll(".header__media_content");
 const scheduleLists = document.querySelectorAll(".header__schedule_slider");
 
 function showTab(tabId) {
-
-  tabBtns.forEach(button => button.classList.remove('active'));
-  tabs.forEach(panel => panel.classList.remove('active'));
+  // Снимаем активные классы со всех элементов
+  tabBtns.forEach(btn => btn.classList.remove('active'));
+  tabs.forEach(tab => tab.classList.remove('active'));
   scheduleLists.forEach(list => list.classList.remove('active'));
 
-  const tabButton = document.querySelector(`button[data-media-tab="${tabId}"]`);
-  const tabPanel = document.getElementById(tabId);
-  const scheduleList = document.querySelector(`div[data-schedule="${tabId}"]`);
-  if (tabButton && tabPanel && scheduleList) {
-    tabButton.classList.add('active');
-    tabPanel.classList.add('active');
-    scheduleList.classList.add('active');
-  }
+  // Находим элементы для активации
+  const activeBtn = document.querySelector(`button[data-media-tab="${tabId}"]`);
+  const activeTab = document.getElementById(tabId);
+  const activeSchedule = document.querySelector(`div[data-schedule="${tabId}"]`);
+
+  // Активируем элементы, если они существуют
+  if (activeBtn) activeBtn.classList.add('active');
+  if (activeTab) activeTab.classList.add('active');
+  if (activeSchedule) activeSchedule.classList.add('active');
 }
+
+// Добавляем обработчики событий
 tabBtns.forEach(button => {
   button.addEventListener('click', () => {
-    const tabId = button.dataset.mediaTab;
-    showTab(tabId);
+    const tabId = button.getAttribute('data-media-tab');
+    if (tabId) showTab(tabId);
   });
 });
 
-
-
-showTab('tv');
+// Инициализация с проверкой
+if (tabBtns.length && tabs.length && scheduleLists.length) {
+  showTab('tv');
+} else {
+  console.warn('Не найдены элементы для инициализации вкладок');
+}
 
 function videoCustom() {
+
   const videoEl = document.querySelector('.header__media_video');
   const playBtn = document.querySelector('[data-id="play"]');
   const pauseBtn = document.querySelector('[data-id="pause"]');
+  
+
+  if (!videoEl || !playBtn || !pauseBtn) {
+    console.error('Один из элементов видео не найден!');
+
+  }
+
 
   playBtn.addEventListener("click", () => {
-    videoEl.play();
+    videoEl.play()
+      .then(() => {
+    
+        playBtn.classList.add("hidden");
+        pauseBtn.classList.remove("hidden");
+      })
+      .catch(error => {
+        console.error('Ошибка воспроизведения видео:', error);
+      });
+  });
+
+ 
+  pauseBtn.addEventListener("click", () => {
+    videoEl.pause();
+    playBtn.classList.remove("hidden");
+    pauseBtn.classList.add("hidden");
+  });
+
+
+  videoEl.addEventListener('play', () => {
     playBtn.classList.add("hidden");
     pauseBtn.classList.remove("hidden");
   });
-  pauseBtn.addEventListener("click", () => {
-    videoEl.pause();
+
+  videoEl.addEventListener('pause', () => {
+    playBtn.classList.remove("hidden");
+    pauseBtn.classList.add("hidden");
+  });
+
+
+  videoEl.addEventListener('ended', () => {
     playBtn.classList.remove("hidden");
     pauseBtn.classList.add("hidden");
   });
@@ -254,16 +220,35 @@ function toggleFullscreen(element) {
 
 function toggleMute() {
 
-  muteButton.addEventListener("click", () => {
+  if (!muteButton || !unmuteButton || !videoO) {
+    console.error('Один из элементов управления звуком не найден!');
+    return;
+  }
+
+ 
+  const updateMuteState = () => {
+    const isMuted = videoO.muted;
+    muteButton.classList.toggle('hidden', isMuted);
+    unmuteButton.classList.toggle('hidden', !isMuted);
+  };
+
+
+  muteButton.addEventListener('click', () => {
     videoO.muted = true;
-    unmuteButton.classList.remove("hidden");
-    muteButton.classList.add("hidden");
-  })
-  unmuteButton.addEventListener("click", () => {
+    updateMuteState();
+  });
+
+
+  unmuteButton.addEventListener('click', () => {
     videoO.muted = false;
-    muteButton.classList.remove("hidden");
-    unmuteButton.classList.add("hidden");
-  })
+    updateMuteState();
+  });
+
+ 
+  videoO.addEventListener('volumechange', updateMuteState);
+  
+
+  updateMuteState();
 }
 
 
@@ -276,39 +261,45 @@ videoCustom()
 
 function debounce(func, delay) {
   let timeoutId;
-  return function() {
-    const context = this;
-    const args = arguments;
+  return function(...args) {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => {
-      func.apply(context, args);
+      func.apply(this, args);
     }, delay);
   };
 }
-function fixHeaderOnScroll() {
-  const header = document.querySelector('.header');
-  const body = document.querySelector("body");
-  if (!window.location.pathname.split("/").find((item) => item === "watch.html")) {
 
-    if (window.pageYOffset > 600) {
-      header.classList.add("fixed");
-      header.classList.add("animate");
-      body.classList.add("active");
-      scheduleSliders()
-    } else {
-      header.classList.remove("fixed");
-      header.classList.remove("animate");
-      body.classList.remove("active");
-      scheduleSliders()
-    }
+function initSlidersOnce() {
+  if (!initSlidersOnce.executed) {
+    initScheduleSliders();
+    initSlidersOnce.executed = true;
   }
 }
-window.addEventListener('DOMContentLoaded', ()=> {
-  fixHeaderOnScroll()
 
-  const debouncedHandler = debounce(fixHeaderOnScroll, 100);
+function handleHeaderState() {
+  const header = document.querySelector('.header');
+  const body = document.body;
+  const isFixed = window.pageYOffset > 600;
+  const isWatchPage = window.location.pathname.includes('watch.html');
+
+  if (isWatchPage) return;
   
-  window.addEventListener('scroll', debouncedHandler);
+  header.classList.toggle('fixed', isFixed);
+  header.classList.toggle('animate', isFixed);
+  body.classList.toggle('active', isFixed);
+  
+  if (isFixed) initSlidersOnce();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  handleHeaderState();
+  
+
+  if (!window.location.pathname.includes('watch.html')) {
+    const optimizedScrollHandler = debounce(handleHeaderState, 100);
+    window.addEventListener('scroll', optimizedScrollHandler);
+  }
 });
 
 
