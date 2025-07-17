@@ -868,7 +868,7 @@
     }
 
     .live__main-media {
-        height: auto;
+        height: 400px;
     }
 }
 
@@ -1169,6 +1169,9 @@
     .advertising__inner {
         padding-bottom: 15%;
         padding-top: 28px;
+    }
+      .live__main-media {
+        height: 300px;
     }
 }
 
