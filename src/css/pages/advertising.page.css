@@ -37,7 +37,7 @@
     flex-basis: 380px;
     flex-shrink: 1;
     flex-grow: 1;
-    height: 352px;
+    min-height: 352px;
 }
 
 .advertising__card_body {

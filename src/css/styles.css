@@ -364,6 +364,11 @@ body.active {
     font-size: 14px;
     line-height: 143%;
     color: var(--bw-black);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
 }
 
     .schedule-list__item a:hover {
@@ -2237,6 +2242,11 @@ body.active {
     font-size: 18px;
     line-height: 156%;
     color: #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
 }
 
 .transferItem_count {
@@ -2246,6 +2256,11 @@ body.active {
     line-height: 167%;
     color: var(--primary-primary-500);
     transition: color 0.3s ease-in-out;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
 }
 
     .transferItem:hover .transferItem_count {
@@ -2349,6 +2364,11 @@ body.active {
     font-size: 20px;
     line-height: 140%;
     color: var(--bw-black);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
 }
 
 

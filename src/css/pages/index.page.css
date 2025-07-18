@@ -60,6 +60,11 @@
     font-size: 48px;
     line-height: 125%;
     color: var(--bw-white);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
 }
 
 .programs-slide__schedule span {
@@ -75,6 +80,11 @@
     line-height: 150%;
     color: var(--bw-white);
     font-family: var(--font-family);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
 }
 
 .programs-slide__mobile-image {
