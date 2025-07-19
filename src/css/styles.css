@@ -865,6 +865,7 @@ body.active {
     padding-top: 12%;
     max-width: 1008px;
     height: 100%;
+    margin: 0 auto;
 }
 
 .menu__top {

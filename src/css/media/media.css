@@ -48,6 +48,7 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
+        line-clamp: 3;
         overflow: hidden;
     }
 
@@ -163,6 +164,7 @@
 
     .main-news-item .news-item__descr p {
         -webkit-line-clamp: 5;
+        line-clamp: 5;
     }
 
     .main-transfers__list {
@@ -267,6 +269,7 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
+        line-clamp: 1;
         overflow: hidden;
         color: #fff;
     }
@@ -275,6 +278,7 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
+        line-clamp: 2;
         overflow: hidden;
         color: #fff;
     }
@@ -330,6 +334,7 @@
     }
     .main-news-item .news-item__descr p {
         -webkit-line-clamp: 3;
+        line-clamp: 3;
     }
 
     .news-item .news-item__media {
@@ -413,6 +418,7 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
+        line-clamp: 2;
         overflow: hidden;
     }
 
@@ -479,6 +485,7 @@
     .schedule-list__item a {
 
         -webkit-line-clamp: 2;
+        line-clamp: 2;
         font-size: 12px;
     }
     
@@ -584,6 +591,7 @@
     .schedule-list__item a {
 
         -webkit-line-clamp: 1;
+        line-clamp: 1;
     }
 
     .menu-tabs {
