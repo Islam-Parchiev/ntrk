@@ -1,4 +1,2 @@
 node_modules
-.gitignore
-test.mp3
-test.mp4
+package-lock.json
