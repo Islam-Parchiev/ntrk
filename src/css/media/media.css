@@ -199,6 +199,9 @@
         font-size: 16px;
         line-height: 150%;
     }
+    .video-player {
+        height: 450px;
+    }
 }
 @media (max-width:900px) {
     .popular-item.played .popular-item__video-navigation {
@@ -300,6 +303,9 @@
 .popular-item {
     flex-basis: 270px;
   }
+  .video-player {
+    height: 400px;
+  }
 }
 @media(max-width:650px) {
     .main-transfers__list {
@@ -393,6 +399,9 @@
 
     .filters {
         gap: 10px;
+    }
+    .video-player {
+        height: 350px;
     }
 }
 
@@ -584,6 +593,9 @@
 
     .menu-tabs {
         max-width: 350px;
+    }
+    .video-player {
+        height: 300px;
     }
 }
 

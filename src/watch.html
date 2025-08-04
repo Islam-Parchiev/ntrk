@@ -17,16 +17,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/vendor/normalize.css">
     <link rel="stylesheet" href="./css/vendor/swiper.min.css">
-
-    <link rel="stylesheet" href="./css/pages/single-news.page.css">
-    <link rel="stylesheet" href="./css/pages/video-news.page.css">
-
-    <link rel="stylesheet" href="./css/components/video-player.css">
-
+    <link rel="stylesheet" href="./css/vendor/video.css">
+    <link rel="stylesheet" href="./css/pages/watch.page.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/media/media.css">
     <title>НТРК</title>
 </head>
+
+<!-- header menu,footer -->
 
 <body class="body">
     <header class="header">
@@ -719,587 +717,333 @@
             </div>
         </div>
     </header>
-    <main class="video-news-page" data-main>
-        <section class="video-news__main">
+    <main class="watch" data-main>
+        <section class="watch__content">
             <div class="container">
+                <div class="watch__content_inner">
+                    <h1 class="watch__title">
+                        Где смотреть
+                    </h1>
 
+                    <div class="watch__list-wrapper">
+                        <ul class="list-reset watch__list">
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/magastv.png" alt="Magas">
+                                    </div>
+                                    <h6 class="watch__item_title">Телерадио<br>компания НТРК МАГАС</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="20" y="4" width="16" height="16" rx="2" transform="rotate(90 20 4)"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M15.2111 11.1056L10.4472 8.72361C9.78231 8.39116 9 8.87465 9 9.61803V14.382C9 15.1253 9.78231 15.6088 10.4472 15.2764L15.2111 12.8944C15.9482 12.5259 15.9482 11.4741 15.2111 11.1056Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        Смотреть онлайн</a>
 
-                <div class="video-news__inner">
-                    <div class="single-news__top video-news__top">
-                        <h1 class="single-news__title">
-                            Комфорт и безопасность: новые автобусы уже вышли на маршруты
-                        </h1>
-                        <div class="single-news__info">
-                            <time>1 апреля 2025, 13:45</time>
-                            ·
-                            <span>Туризм</span>
-                        </div>
-                        <ul class="list-reset socials">
-                            <li class="social"><a href="#">
-                                    <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0.400391 0.300049C0.605013 9.91927 5.51593 15.7 14.1258 15.7H14.6138V10.1967C17.7776 10.5051 20.17 12.7711 21.1301 15.7H25.6004C24.3727 11.3221 21.1458 8.90185 19.131 7.97693C21.1458 6.83618 23.979 4.06141 24.6558 0.300049H20.5948C19.7133 3.3523 17.1008 6.12707 14.6138 6.38914V0.300049H10.5527V10.9675C8.03428 10.3509 4.85484 7.36031 4.71318 0.300049H0.400391Z" />
-                                    </svg>
-                                </a></li>
-                            <li class="social"><a href="#">
-                                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M14.3686 3.76103C12.3624 4.6106 8.35287 6.369 2.33993 9.03623C1.36352 9.43155 0.852038 9.81829 0.805475 10.1964C0.726783 10.8355 1.51285 11.0872 2.58328 11.4299C2.72889 11.4765 2.87975 11.5248 3.03442 11.576C4.08756 11.9245 5.50421 12.3323 6.24067 12.3485C6.90871 12.3632 7.65432 12.0828 8.4775 11.5073C14.0956 7.64616 16.9957 5.69458 17.1777 5.6525C17.3062 5.62282 17.4842 5.5855 17.6048 5.69464C17.7254 5.80378 17.7135 6.01047 17.7008 6.06592C17.6229 6.40391 14.5373 9.32458 12.9404 10.836C12.4426 11.3072 12.0895 11.6414 12.0174 11.7178C11.8557 11.8888 11.6909 12.0505 11.5325 12.206C10.5541 13.1662 9.82038 13.8864 11.5731 15.0623C12.4154 15.6274 13.0894 16.0947 13.7618 16.5609C14.4961 17.0701 15.2285 17.5779 16.1762 18.2103C16.4176 18.3715 16.6482 18.5388 16.8728 18.7019C17.7274 19.3221 18.4951 19.8794 19.4436 19.7905C19.9948 19.7389 20.5641 19.2112 20.8532 17.6375C21.5366 13.9184 22.8797 5.86021 23.1901 2.53961C23.2173 2.24868 23.1831 1.87635 23.1556 1.71291C23.1281 1.54947 23.0707 1.31659 22.862 1.1442C22.6149 0.940043 22.2334 0.896991 22.0628 0.900051C21.287 0.913965 20.0967 1.33533 14.3686 3.76103Z"
-                                            fill="#1A1A1A" />
-                                    </svg>
-                                </a></li>
-                            <li class="social"><a href="#">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14 25C14.1509 20.0758 14.278 17.8282 16.0253 16.0253C17.8282 14.278 20.0758 14.1589 25 14C25 18.4397 24.9841 21.7596 23.3957 23.3957C21.7596 24.9841 18.5906 25 14 25Z"
-                                            fill="#1A1A1A" />
-                                        <path
-                                            d="M4.60433 23.3957C3.01588 21.7596 3 18.4397 3 14C7.92417 14.1509 10.1718 14.278 11.9747 16.0253C13.722 17.8282 13.8411 20.0758 14 25C9.40938 25 6.24043 24.9841 4.60433 23.3957Z"
-                                            fill="#1A1A1A" />
-                                        <path
-                                            d="M4.60433 4.60433C6.24043 3.01588 9.41733 3 14 3C13.8491 7.92417 13.722 10.1718 11.9747 11.9747C10.1718 13.722 7.92417 13.8411 3 14C3 9.56029 3.01588 6.24043 4.60433 4.60433Z"
-                                            fill="#1A1A1A" />
-                                        <path
-                                            d="M14 3C14.1509 7.92417 14.278 10.1718 16.0253 11.9747C17.8282 13.722 20.0758 13.8411 25 14C25 9.56029 24.9841 6.24043 23.3957 4.60433C21.7596 3.01588 18.5906 3 14 3Z"
-                                            fill="#1A1A1A" />
-                                    </svg>
-                                </a></li>
-                            <li class="social"><a href="#">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M19.4783 8.47908C19.4783 11.4996 17.0218 13.9565 14 13.9565C10.9788 13.9565 8.52173 11.4996 8.52173 8.47908C8.52173 5.45762 10.9788 3 14 3C17.0218 3 19.4783 5.45762 19.4783 8.47908ZM16.7391 8.47867C16.7391 9.98891 15.5109 11.2174 14 11.2174C12.4894 11.2174 11.2609 9.98891 11.2609 8.47867C11.2609 6.96794 12.4894 5.73913 14 5.73913C15.5109 5.73913 16.7391 6.96794 16.7391 8.47867Z"
-                                            fill="#1A1A1A" />
-                                        <path
-                                            d="M16.1633 18.2463C17.2516 17.9944 18.3012 17.5569 19.268 16.94C19.9996 16.4713 20.22 15.4888 19.7591 14.7454C19.2984 14.0005 18.332 13.7762 17.599 14.2449C15.409 15.6441 12.5893 15.6438 10.4005 14.2449C9.66759 13.7762 8.70084 14.0005 8.24113 14.7454C7.78014 15.4894 7.99992 16.4713 8.73155 16.94C9.6983 17.5563 10.7479 17.9944 11.8362 18.2463L8.84703 21.2834C8.23601 21.9049 8.23601 22.9124 8.84767 23.5339C9.15382 23.8443 9.55435 23.9997 9.95487 23.9997C10.356 23.9997 10.7572 23.8443 11.0633 23.5339L13.9995 20.5495L16.9381 23.5339C17.5491 24.1554 18.5405 24.1554 19.1522 23.5339C19.7645 22.9124 19.7645 21.9042 19.1522 21.2834L16.1633 18.2463Z"
-                                            fill="#1A1A1A" />
-                                    </svg>
+                                </div>
+                            </li>
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/tricolor.png" alt="Триколор">
+                                    </div>
+                                    <h6 class="watch__item_title">Оператор цифрового<br> телевидения Триколор</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="18.6567" y="12.4141" width="13" height="10" rx="2"
+                                                transform="rotate(135 18.6567 12.4141)" stroke="#1A1A1A"
+                                                stroke-width="1.5" />
+                                            <rect x="11.5859" y="8.17188" width="2" height="2" rx="0.5"
+                                                transform="rotate(45 11.5859 8.17188)" fill="#1A1A1A" />
+                                            <rect x="9.46436" y="11.3536" width="4.5" height="4.5" rx="2.25"
+                                                transform="rotate(45 9.46436 11.3536)" stroke="#1A1A1A"
+                                                stroke-width="1.5" />
+                                            <rect x="14.4141" y="11" width="2" height="2" rx="0.5"
+                                                transform="rotate(45 14.4141 11)" fill="#1A1A1A" />
+                                            <path
+                                                d="M17.8979 6.10263C18.0153 6.21998 18.0916 6.36262 18.1286 6.51281L17.4878 5.872C17.638 5.90891 17.7805 5.98528 17.8979 6.10263Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M20.0711 9.58489C21.6332 8.02279 21.6332 5.49013 20.0711 3.92804C18.509 2.36594 15.9763 2.36594 14.4142 3.92804"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        813 канал</a>
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="20" y="4" width="16" height="16" rx="2" transform="rotate(90 20 4)"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M15.2111 11.1056L10.4472 8.72361C9.78231 8.39116 9 8.87465 9 9.61803V14.382C9 15.1253 9.78231 15.6088 10.4472 15.2764L15.2111 12.8944C15.9482 12.5259 15.9482 11.4741 15.2111 11.1056Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        Смотреть онлайн</a>
 
-                                </a></li>
-                            <li class="social"><a href="#">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M15.411 12.589C14.181 11.3589 12.3615 11.1842 11.3471 12.1986L5.83683 17.7088C4.82241 18.7232 4.99719 20.5427 6.22721 21.7727C7.45722 23.0027 9.27669 23.1775 10.2911 22.1631L13.0462 19.408"
-                                            stroke="#1A1A1A" fill="white" stroke-width="3" />
-                                        <path
-                                            d="M12.6561 15.3444C13.8494 16.5376 15.639 16.6825 16.6534 15.6681L22.1637 10.1579C23.1781 9.14346 23.0331 7.35382 21.8399 6.1606C20.6467 4.96738 18.857 4.82242 17.8426 5.83683L15.0875 8.59196"
-                                            stroke="#1A1A1A" fill="white" stroke-width="3" />
-                                    </svg>
-                                </a></li>
+                                </div>
+                            </li>
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/rostelekom.png" alt="Ростелеком">
+                                    </div>
+                                    <h6 class="watch__item_title">Телеком<br>муникационная компания Ростелеком</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="18.6567" y="12.4141" width="13" height="10" rx="2"
+                                                transform="rotate(135 18.6567 12.4141)" stroke="#1A1A1A"
+                                                stroke-width="1.5" />
+                                            <rect x="11.5859" y="8.17188" width="2" height="2" rx="0.5"
+                                                transform="rotate(45 11.5859 8.17188)" fill="#1A1A1A" />
+                                            <rect x="9.46436" y="11.3536" width="4.5" height="4.5" rx="2.25"
+                                                transform="rotate(45 9.46436 11.3536)" stroke="#1A1A1A"
+                                                stroke-width="1.5" />
+                                            <rect x="14.4141" y="11" width="2" height="2" rx="0.5"
+                                                transform="rotate(45 14.4141 11)" fill="#1A1A1A" />
+                                            <path
+                                                d="M17.8979 6.10263C18.0153 6.21998 18.0916 6.36262 18.1286 6.51281L17.4878 5.872C17.638 5.90891 17.7805 5.98528 17.8979 6.10263Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M20.0711 9.58489C21.6332 8.02279 21.6332 5.49013 20.0711 3.92804C18.509 2.36594 15.9763 2.36594 14.4142 3.92804"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        21 канал</a>
+
+                                </div>
+                            </li>
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/wink.png" alt="Цифровой видеосервис Wink">
+                                    </div>
+                                    <h6 class="watch__item_title">Цифровой видеосервис Wink</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="20" y="4" width="16" height="16" rx="2" transform="rotate(90 20 4)"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M15.2111 11.1056L10.4472 8.72361C9.78231 8.39116 9 8.87465 9 9.61803V14.382C9 15.1253 9.78231 15.6088 10.4472 15.2764L15.2111 12.8944C15.9482 12.5259 15.9482 11.4741 15.2111 11.1056Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        Смотреть онлайн</a>
+
+                                </div>
+                            </li>
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/rutube.png" alt="Онлайн видео-хостинг RUTUBE">
+                                    </div>
+                                    <h6 class="watch__item_title">Онлайн видео-хостинг RUTUBE</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="20" y="4" width="16" height="16" rx="2" transform="rotate(90 20 4)"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M15.2111 11.1056L10.4472 8.72361C9.78231 8.39116 9 8.87465 9 9.61803V14.382C9 15.1253 9.78231 15.6088 10.4472 15.2764L15.2111 12.8944C15.9482 12.5259 15.9482 11.4741 15.2111 11.1056Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        Смотреть онлайн</a>
+
+                                </div>
+                            </li>
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/russia.png" alt="Онлайн ТВ-платформа Цифоровое ТВ">
+                                    </div>
+                                    <h6 class="watch__item_title">Онлайн ТВ-платформа Цифоровое ТВ</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                   
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="20" y="4" width="16" height="16" rx="2" transform="rotate(90 20 4)"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M15.2111 11.1056L10.4472 8.72361C9.78231 8.39116 9 8.87465 9 9.61803V14.382C9 15.1253 9.78231 15.6088 10.4472 15.2764L15.2111 12.8944C15.9482 12.5259 15.9482 11.4741 15.2111 11.1056Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        Смотреть онлайн</a>
+
+                                </div>
+                            </li>
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/red.png" alt="Онлайн ТВ-платформа Online Red">
+                                    </div>
+                                    <h6 class="watch__item_title">Онлайн ТВ-платформа Online Red</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                   
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="20" y="4" width="16" height="16" rx="2" transform="rotate(90 20 4)"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M15.2111 11.1056L10.4472 8.72361C9.78231 8.39116 9 8.87465 9 9.61803V14.382C9 15.1253 9.78231 15.6088 10.4472 15.2764L15.2111 12.8944C15.9482 12.5259 15.9482 11.4741 15.2111 11.1056Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        Смотреть онлайн</a>
+
+                                </div>
+                            </li>
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/watch.png" alt="Онлайн ТВ-платформа СмотретьTV">
+                                    </div>
+                                    <h6 class="watch__item_title">Онлайн ТВ-платформа СмотретьTV</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                   
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="20" y="4" width="16" height="16" rx="2" transform="rotate(90 20 4)"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M15.2111 11.1056L10.4472 8.72361C9.78231 8.39116 9 8.87465 9 9.61803V14.382C9 15.1253 9.78231 15.6088 10.4472 15.2764L15.2111 12.8944C15.9482 12.5259 15.9482 11.4741 15.2111 11.1056Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        Смотреть онлайн</a>
+
+                                </div>
+                            </li>
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/lime.png" alt="Онлайн ТВ-платформа ЛаймТВ">
+                                    </div>
+                                    <h6 class="watch__item_title">Онлайн ТВ-платформа ЛаймТВ</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                   
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="20" y="4" width="16" height="16" rx="2" transform="rotate(90 20 4)"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M15.2111 11.1056L10.4472 8.72361C9.78231 8.39116 9 8.87465 9 9.61803V14.382C9 15.1253 9.78231 15.6088 10.4472 15.2764L15.2111 12.8944C15.9482 12.5259 15.9482 11.4741 15.2111 11.1056Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        Смотреть онлайн</a>
+
+                                </div>
+                            </li>
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/tv2free.png" alt="Онлайн видеотранслятор tv2free">
+                                    </div>
+                                    <h6 class="watch__item_title">Онлайн видеотранслятор tv2free</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                   
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="20" y="4" width="16" height="16" rx="2" transform="rotate(90 20 4)"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M15.2111 11.1056L10.4472 8.72361C9.78231 8.39116 9 8.87465 9 9.61803V14.382C9 15.1253 9.78231 15.6088 10.4472 15.2764L15.2111 12.8944C15.9482 12.5259 15.9482 11.4741 15.2111 11.1056Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        Смотреть онлайн</a>
+
+                                </div>
+                            </li>
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/lite.png" alt="Онлайн ТВ-платформа Лайт TV">
+                                    </div>
+                                    <h6 class="watch__item_title">Онлайн ТВ-платформа Лайт TV</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                   
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="20" y="4" width="16" height="16" rx="2" transform="rotate(90 20 4)"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M15.2111 11.1056L10.4472 8.72361C9.78231 8.39116 9 8.87465 9 9.61803V14.382C9 15.1253 9.78231 15.6088 10.4472 15.2764L15.2111 12.8944C15.9482 12.5259 15.9482 11.4741 15.2111 11.1056Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        Смотреть онлайн</a>
+
+                                </div>
+                            </li>
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/live.png" alt="Онлайн ТВ-платформа Эфир ТВ">
+                                    </div>
+                                    <h6 class="watch__item_title">Онлайн ТВ-платформа Эфир ТВ</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                   
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="20" y="4" width="16" height="16" rx="2" transform="rotate(90 20 4)"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M15.2111 11.1056L10.4472 8.72361C9.78231 8.39116 9 8.87465 9 9.61803V14.382C9 15.1253 9.78231 15.6088 10.4472 15.2764L15.2111 12.8944C15.9482 12.5259 15.9482 11.4741 15.2111 11.1056Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        Смотреть онлайн</a>
+
+                                </div>
+                            </li>
+                            <li class="watch__item">
+                                <div class="watch__item_top">
+                                    <div class="watch__item_image">
+                                        <img src="./assets/img/watch/vits.png" alt="Онлайн видеотранслятор VitsTV">
+                                    </div>
+                                    <h6 class="watch__item_title">Онлайн видеотранслятор VitsTV</h6>
+                                </div>
+                                <div class="watch__item_bottom">
+                                   
+                                    <a href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="20" y="4" width="16" height="16" rx="2" transform="rotate(90 20 4)"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                            <path
+                                                d="M15.2111 11.1056L10.4472 8.72361C9.78231 8.39116 9 8.87465 9 9.61803V14.382C9 15.1253 9.78231 15.6088 10.4472 15.2764L15.2111 12.8944C15.9482 12.5259 15.9482 11.4741 15.2111 11.1056Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg>
+                                        Смотреть онлайн</a>
+
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                    <div class="video-news__bottom">
-                        <div class="single-news__content video-news__content">
-                            <p class="single-news__paragraph">
-                                С введением в эксплуатацию новых автобусов на городских маршрутах, пассажиры могут
-                                рассчитывать на значительно повышенный уровень комфорта и безопасности.
-                            </p>
-                            <div class="video-player">
-                                <iframe 
-                                src="https://vk.com/video_ext.php?oid=-220873017&id=456248198&hd=2" 
-                                width="853" 
-                                height="480" 
-                                allow="encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" 
-                                frameborder="0" 
-                                allowfullscreen></iframe>
-                            </div>
-
-                            <div class="single-news__subInner">
-                                <div class="video-news__text">
-                                    <p class="video-news__paragraph">
-                                        Эти современные транспортные средства предлагают не только комфортные
-                                        сиденья и просторные салоны, но и такие удобства, как USB-зарядки и
-                                        системы климат-контроля. Благодаря улучшенной шумоизоляции и современным
-                                        технологиям, поездка становится более приятной и спокойной, что особенно
-                                        важно в условиях городской суеты. Пассажиры теперь могут наслаждаться
-                                        комфортом, который ранее был доступен лишь в частных автомобилях.
-                                    </p>
-                                    <span class="video-news__author">Автор: Администрация г. Магас</span>
-                                </div>
-                            </div>
-                            <div class="single-news-other__inner--video">
-                                <h2 class="single-news-other__title">Также смотрите</h2>
-                                <ul class="list-reset news-block__list single-news-other__list">
-                                    <li class="news-item news-item--media">
-                                        <div class="news-item__media">
-                                            <img src="./assets/img/zagl.png"
-                                                alt="С началом весны участились случаи возгорания сухой травы и сжигания мусора.">
-                                            <button class="btn-reset news-item--media__btn">
-                                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M9.39052 5.1221L1.47885 0.806647C0.812478 0.44317 0 0.925483 0 1.68454V10.3155C0 11.0745 0.812477 11.5568 1.47885 11.1934L9.39052 6.8779C10.0854 6.49888 10.0854 5.50112 9.39052 5.1221Z"
-                                                        fill="white" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="news-item__bottom">
-                                            <h6 class="news-item__title">
-                                                <a href="#">С началом весны участились случаи возгорания сухой
-                                                    травы
-                                                    и сжигания мусора.1</a>
-                                            </h6>
-                                            <div class="news-item__info">
-                                                <time datetime="2025-04-1 18:35" class="news-item_time">
-                                                    1 апр, 18:35
-                                                </time>
-                                                <div class="news-item_views">
-                                                    <div class="item-views__icon">
-
-                                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M7 0.333496C11.6523 0.333496 13.9857 5.21553 14 5.24561C14 5.24561 11.6667 9.6665 7 9.6665C2.33333 9.6665 0 5.24561 0 5.24561C0.0143304 5.21553 2.34771 0.333496 7 0.333496ZM7 2.6665C5.71134 2.6665 4.66699 3.71182 4.66699 5.00049C4.66717 6.289 5.71144 7.3335 7 7.3335C8.28856 7.3335 9.33283 6.289 9.33301 5.00049C9.33301 3.71182 8.28866 2.6665 7 2.6665Z" />
-                                                        </svg>
-                                                    </div>
-                                                    <span>12</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="news-item">
-                                        <div class="news-item__media">
-                                            <img src="./assets/img/newsItem2.png"
-                                                alt="В Карабулаке и Джейрахе прошли продовольственные ярмарки, приуроченные к священному месяцу Рамадан.">
-                                            <button class="btn-reset news-item--media__btn">
-                                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M9.39052 5.1221L1.47885 0.806647C0.812478 0.44317 0 0.925483 0 1.68454V10.3155C0 11.0745 0.812477 11.5568 1.47885 11.1934L9.39052 6.8779C10.0854 6.49888 10.0854 5.50112 9.39052 5.1221Z"
-                                                        fill="white" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="news-item__bottom">
-                                            <h6 class="news-item__title">
-                                                <a href="#">В Карабулаке и Джейрахе прошли продовольственные
-                                                    ярмарки, приуроченные к священному месяцу Рамадан.</a>
-                                            </h6>
-                                            <div class="news-item__info">
-                                                <time datetime="2025-03-28 12:53" class="news-item_time">
-                                                    28 мар, 12:53
-                                                </time>
-                                                <div class="news-item_views">
-                                                    <div class="item-views__icon">
-
-                                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M7 0.333496C11.6523 0.333496 13.9857 5.21553 14 5.24561C14 5.24561 11.6667 9.6665 7 9.6665C2.33333 9.6665 0 5.24561 0 5.24561C0.0143304 5.21553 2.34771 0.333496 7 0.333496ZM7 2.6665C5.71134 2.6665 4.66699 3.71182 4.66699 5.00049C4.66717 6.289 5.71144 7.3335 7 7.3335C8.28856 7.3335 9.33283 6.289 9.33301 5.00049C9.33301 3.71182 8.28866 2.6665 7 2.6665Z" />
-                                                        </svg>
-                                                    </div>
-                                                    <span>34</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="news-item news-item--media">
-                                        <div class="news-item__media">
-                                            <img src="./assets/img/newsItem3.png"
-                                                alt="7 апреля в кампусе “Школы 21” в Магасе начнётся седьмой отборочный «бассейн».">
-                                            <button class="btn-reset news-item--media__btn">
-                                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M9.39052 5.1221L1.47885 0.806647C0.812478 0.44317 0 0.925483 0 1.68454V10.3155C0 11.0745 0.812477 11.5568 1.47885 11.1934L9.39052 6.8779C10.0854 6.49888 10.0854 5.50112 9.39052 5.1221Z"
-                                                        fill="white" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="news-item__bottom">
-                                            <h6 class="news-item__title">
-                                                <a href="#">7 апреля в кампусе “Школы 21” в Магасе начнётся
-                                                    седьмой отборочный «бассейн».</a>
-                                            </h6>
-                                            <div class="news-item__info">
-                                                <time datetime="2025-03-28 20:25" class="news-item_time">
-                                                    28 мар, 20:25
-                                                </time>
-                                                <div class="news-item_views">
-                                                    <div class="item-views__icon">
-
-                                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M7 0.333496C11.6523 0.333496 13.9857 5.21553 14 5.24561C14 5.24561 11.6667 9.6665 7 9.6665C2.33333 9.6665 0 5.24561 0 5.24561C0.0143304 5.21553 2.34771 0.333496 7 0.333496ZM7 2.6665C5.71134 2.6665 4.66699 3.71182 4.66699 5.00049C4.66717 6.289 5.71144 7.3335 7 7.3335C8.28856 7.3335 9.33283 6.289 9.33301 5.00049C9.33301 3.71182 8.28866 2.6665 7 2.6665Z" />
-                                                        </svg>
-                                                    </div>
-                                                    <span>142</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="news-item">
-                                        <div class="news-item__media">
-                                            <img src="./assets/img/newsItem4.png"
-                                                alt="В НИИ прошел семинар, посвященный 255-летию добровольного вхождения Ингушетии в состав России.">
-                                            <button class="btn-reset news-item--media__btn">
-                                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M9.39052 5.1221L1.47885 0.806647C0.812478 0.44317 0 0.925483 0 1.68454V10.3155C0 11.0745 0.812477 11.5568 1.47885 11.1934L9.39052 6.8779C10.0854 6.49888 10.0854 5.50112 9.39052 5.1221Z"
-                                                        fill="white" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="news-item__bottom">
-                                            <h6 class="news-item__title">
-                                                <a href="#">В НИИ прошел семинар, посвященный 255-летию
-                                                    добровольного вхождения Ингушетии в состав России.</a>
-                                            </h6>
-                                            <div class="news-item__info">
-                                                <time datetime="2025-03-28 12:53" class="news-item_time">
-                                                    27 мар, 22:05
-                                                </time>
-                                                <div class="news-item_views">
-                                                    <div class="item-views__icon">
-
-                                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M7 0.333496C11.6523 0.333496 13.9857 5.21553 14 5.24561C14 5.24561 11.6667 9.6665 7 9.6665C2.33333 9.6665 0 5.24561 0 5.24561C0.0143304 5.21553 2.34771 0.333496 7 0.333496ZM7 2.6665C5.71134 2.6665 4.66699 3.71182 4.66699 5.00049C4.66717 6.289 5.71144 7.3335 7 7.3335C8.28856 7.3335 9.33283 6.289 9.33301 5.00049C9.33301 3.71182 8.28866 2.6665 7 2.6665Z" />
-                                                        </svg>
-                                                    </div>
-                                                    <span>54</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="news-item">
-                                        <div class="news-item__media">
-                                            <img src="./assets/img/newsItem5.png"
-                                                alt="Зелимхан Бакаев включен в окончательный состав сборной России">
-                                            <button class="btn-reset news-item--media__btn">
-                                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M9.39052 5.1221L1.47885 0.806647C0.812478 0.44317 0 0.925483 0 1.68454V10.3155C0 11.0745 0.812477 11.5568 1.47885 11.1934L9.39052 6.8779C10.0854 6.49888 10.0854 5.50112 9.39052 5.1221Z"
-                                                        fill="white" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="news-item__bottom">
-                                            <h6 class="news-item__title">
-                                                <a href="#">Зелимхан Бакаев включен в окончательный состав
-                                                    сборной России</a>
-                                            </h6>
-                                            <div class="news-item__info">
-                                                <time datetime="2025-03-27 23:53" class="news-item_time">
-                                                    27 мар, 23:53
-                                                </time>
-                                                <div class="news-item_views">
-                                                    <div class="item-views__icon">
-
-                                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M7 0.333496C11.6523 0.333496 13.9857 5.21553 14 5.24561C14 5.24561 11.6667 9.6665 7 9.6665C2.33333 9.6665 0 5.24561 0 5.24561C0.0143304 5.21553 2.34771 0.333496 7 0.333496ZM7 2.6665C5.71134 2.6665 4.66699 3.71182 4.66699 5.00049C4.66717 6.289 5.71144 7.3335 7 7.3335C8.28856 7.3335 9.33283 6.289 9.33301 5.00049C9.33301 3.71182 8.28866 2.6665 7 2.6665Z" />
-                                                        </svg>
-                                                    </div>
-                                                    <span>27</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="news-item news-item--media">
-                                        <div class="news-item__media">
-                                            <img src="./assets/img/newsItem6.png"
-                                                alt="Комфорт и безопасность: новые автобусы уже вышли на маршруты">
-                                            <button class="btn-reset news-item--media__btn">
-                                                <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M9.39052 5.1221L1.47885 0.806647C0.812478 0.44317 0 0.925483 0 1.68454V10.3155C0 11.0745 0.812477 11.5568 1.47885 11.1934L9.39052 6.8779C10.0854 6.49888 10.0854 5.50112 9.39052 5.1221Z"
-                                                        fill="white" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="news-item__bottom">
-                                            <h6 class="news-item__title">
-                                                <a href="#">Комфорт и безопасность: новые автобусы уже вышли на
-                                                    маршруты</a>
-                                            </h6>
-                                            <div class="news-item__info">
-                                                <time datetime="2025-03-27 16:27" class="news-item_time">
-                                                    27 мар, 16:27
-                                                </time>
-                                                <div class="news-item_views">
-                                                    <div class="item-views__icon">
-
-                                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M7 0.333496C11.6523 0.333496 13.9857 5.21553 14 5.24561C14 5.24561 11.6667 9.6665 7 9.6665C2.33333 9.6665 0 5.24561 0 5.24561C0.0143304 5.21553 2.34771 0.333496 7 0.333496ZM7 2.6665C5.71134 2.6665 4.66699 3.71182 4.66699 5.00049C4.66717 6.289 5.71144 7.3335 7 7.3335C8.28856 7.3335 9.33283 6.289 9.33301 5.00049C9.33301 3.71182 8.28866 2.6665 7 2.6665Z" />
-                                                        </svg>
-                                                    </div>
-                                                    <span>264</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="single-news__right-block video-news__right-block">
-                            <div class="ads-block">
-                                <img src="./assets/add.jpg" alt="add">
-                            </div>
-                            <div class="content__popular popular-sidebar popular-sidebar--news">
-                                <h3 class="popular-sidebar__title">Популярное</h3>
-                                <ul class="list-reset popular-sidebar__list">
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Учёные создали материал, который восстанавливается
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            ИИ научился распознавать эмоции с точностью 99%
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Неожиданный рекорд: новый фильм собрал миллиарды за неделю
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Книга, которую никто не ожидал: бестселлер от неизвестного автора
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Музыкальная сенсация: трек, который взорвал чарты за день
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Редкое природное явление: когда его можно увидеть?
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            В недрах Ингушетии обнаружен новый драгоценный минерал
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Учёные создали материал, который восстанавливается
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Учёные создали материал, который восстанавливается
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Учёные создали материал, который восстанавливается
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Учёные создали материал, который восстанавливается
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Учёные создали материал, который восстанавливается
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Учёные создали материал, который восстанавливается
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Учёные создали материал, который восстанавливается
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="popular-sidebar__item">
-                                        <a href="#" class="popular-sidebar__item_text">
-                                            Учёные создали материал, который восстанавливается
-                                        </a>
-                                        <div class="popular-sidebar__item_info">
-                                            <time datetime="2024-09-19 21:34" class="popular-sidebar__item_time">
-                                                19 сен, 21:34
-                                            </time>
-                                            <div class="popular-sidebar__item_views">
-                                                <div class="item-views__icon">
-                                                    <img src="./assets/img/views1.svg" alt="Eye icon">
-                                                </div>
-                                                <span>99</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
             </div>
-
         </section>
     </main>
     <footer class="footer">
@@ -1307,8 +1051,7 @@
             <div class="container">
                 <div class="footer__top_inner">
                     <a href="/" class="footer__logo">
-                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M22 0C9.85077 0 0 9.84941 0 22.0009C0 34.1524 9.84901 44 22 44C34.151 44 44 34.1506 44 22.0009C44 9.85117 34.151 0 22 0ZM35.4543 33.432L30.9842 30.8393C30.8451 30.7583 30.6725 30.7829 30.5562 30.8956C28.3318 33.0427 25.3041 34.3602 21.9701 34.3602C17.4683 34.3602 13.5283 31.9577 11.3619 28.3646C11.3003 28.2624 11.17 28.2272 11.066 28.2871L9.03531 29.4601C8.91026 29.5341 8.8944 29.7103 9.00536 29.8036C10.8124 31.3448 10.1132 33.4284 8.70243 34.2457C7.23001 35.0947 5.14466 34.3461 4.15835 32.6464C3.17733 30.945 3.85365 28.8278 5.32431 27.9806L9.79441 25.395C9.93531 25.314 10.0022 25.1502 9.96173 24.9952C9.72044 24.0335 9.59363 23.0242 9.59363 21.9886C9.59363 15.2268 15.0166 9.7314 21.7517 9.61691C21.8714 9.61339 21.9683 9.51827 21.9683 9.3985V7.05416C21.9683 6.90621 21.8204 6.80405 21.6812 6.85337C19.4462 7.64949 17.9896 5.99912 17.9896 4.36812C17.9896 2.73712 19.6822 1.23822 21.646 1.23822C23.6098 1.23822 25.1034 2.88155 25.1034 4.58124V9.74372C25.1034 9.90577 25.2126 10.0449 25.3675 10.0872C30.5474 11.5649 34.3412 16.3329 34.3412 21.9886C34.3412 24.1708 33.7741 26.2246 32.7807 28.007C32.7226 28.111 32.7578 28.2413 32.8617 28.3012L34.8907 29.4778C35.0158 29.5517 35.1778 29.4778 35.2042 29.3316C35.6375 26.9996 37.7951 26.5645 39.2058 27.3835C40.6765 28.2343 41.0657 30.4166 40.0829 32.1162C39.0966 33.8177 36.9232 34.2845 35.4543 33.432Z"
                                 fill="white" />
@@ -1445,8 +1188,6 @@
         </div>
     </footer>
     <script src="./js/swiper.min.js"></script>
-    <script src="./js/nouislider.js"></script>
-
     <script defer src="./script.js"></script>
 </body>
 
