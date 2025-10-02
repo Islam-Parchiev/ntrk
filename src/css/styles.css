@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import './components/live.css';
 :root {
     --primary-primary-500: #14ab28;
     --primary-primary-300: #70e780;
@@ -479,6 +479,9 @@ body.active {
     pointer-events: none;
 }
 .header__media_content--radio:hover .overlay {
+    display: block;
+}
+.header__media_content--video:hover .overlay {
     display: block;
 }
 
