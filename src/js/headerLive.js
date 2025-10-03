@@ -1,5 +1,5 @@
-import './../js/lib/video.min.js';
-import './../js/lib/videojs.quality.switch.js';
+import './lib/video.min.js';
+// import './lib/videojs.quality.switch.js';
 
     (function(){
   const play = document.querySelector('.video-custom-controls__btn--play');
@@ -46,10 +46,19 @@ function toggleFullscreen(element) {
     unmute.classList.toggle('hidden', !isMuted);
   };
 play.addEventListener('click',()=> {
-  vid.play();
+  vid.play().then(() => {
+    
+    play.classList.add("hidden");
+    pause.classList.remove("hidden");
+  })
+  .catch(error => {
+    console.error('Ошибка воспроизведения видео:', error);
+  });
 })
 pause.addEventListener('click',()=> {
   vid.pause();
+  play.classList.remove("hidden");
+  pause.classList.add("hidden");
 });
 mute.addEventListener('click',()=> {
   console.log('mute')
@@ -61,25 +70,19 @@ unmute.addEventListener('click',()=> {
   vid.muted=false;
  updateMuteState()
 })
-function videoJsTest() {
+function headerLive() {
   console.log('test')
   videojs('header__media--video', {
-    controls: [],
+    controls: false,
     muted: false,
     preload: 'auto',
     autoplay: true,
     language: 'ru',
-    liveui: [],
+    liveui: false,
     liveTracker: false,
-    controlBar: [],
+    controlBar: false,
     html5: [],
-    plugins: {
-      qualitySwitch: {
-        // optional param:
-        // qualityText is an Array of String's, from 'low' to 'high' variants
-        qualityText: ["Низкое", "Среднее", "Высокое"]
-      }
-    },
+    plugins: {},
     sources: [{
       src: "https://ingushetia.mediacdn.ru/cdn/ingushetia/playlist.m3u8",
       type: "application/vnd.apple.mpegURL"
@@ -91,7 +94,7 @@ function videoJsTest() {
     // HB once in 5 min
   }, 5 * 60 * 1000);
 }
-videoJsTest();
+headerLive();
 fullscreenButton.addEventListener("click", function () {
   toggleFullscreen(vid);
 });

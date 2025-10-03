@@ -2461,3 +2461,6 @@ body.active {
 .releases-item .video-navigation__controls_left {
     gap: 17px;
 }
+.vjs-loading-spinner,.vjs-big-play-button,.vjs-modal-dialog,.vjs-text-track-display {
+    display: none !important;
+}

@@ -1,11 +1,4 @@
-import './js/header.js';
-import './js/live.js';
-// Основные элементы
-// const body = document.querySelector('body');
-// const videoO = document.getElementById("videoOne");
-// const muteButton = document.querySelector('[data-id="muteVideo"]');
-// const unmuteButton = document.querySelector('[data-id="unmuteVideo"]');
-// const fullscreenButton = document.querySelector('[data-id="fullScreenVideo"]');
+import './js/headerLive.js';
 const radio = document.querySelector('#radio');
 const fullscreenRadio = document.querySelector('[data-id="fullScreenRadio"]');
 const slSwiper = document.querySelector('.swiper');
