@@ -10,13 +10,6 @@ import './lib/video.min.js';
 const fullscreenButton = document.querySelector('[data-id="fullScreenVideo"]');
 
 
-const loadingSpinner = document.createElement('div');
-  loadingSpinner.className = 'video-loading-spinner hidden';
-  loadingSpinner.innerHTML = `
-    <div class="spinner"></div>
-    <div class="loading-text">Загрузка...</div>
-  `;
-  vid.parentNode.appendChild(loadingSpinner);
 
 function toggleFullscreen(element) {
   if (!document.fullscreenElement) {
@@ -56,31 +49,15 @@ function toggleFullscreen(element) {
   };
 
 
-  const showLoading = () => {
-    loadingSpinner.classList.remove('hidden');
-  };
-
-  const hideLoading = () => {
-    loadingSpinner.classList.add('hidden');
-  };
-  vid.addEventListener('waiting', showLoading);
-  vid.addEventListener('canplay', hideLoading);
-  vid.addEventListener('canplaythrough', hideLoading);
-  vid.addEventListener('seeking', showLoading);
-  vid.addEventListener('seeked', hideLoading);
-  vid.addEventListener('error', hideLoading);
 
   play.addEventListener('click',() => {
-    showLoading();
+
     vid.play().then(() => {
       play.classList.add("hidden");
       pause.classList.remove("hidden");
-      // Скрываем индикатор после начала воспроизведения
-      setTimeout(hideLoading, 500);
     })
     .catch(error => {
       console.error('Ошибка воспроизведения видео:', error);
-      hideLoading();
     });
   });
 pause.addEventListener('click',()=> {
@@ -100,7 +77,6 @@ unmute.addEventListener('click',()=> {
 })
 function headerLive() {
   console.log('test');
-  showLoading();
   videojs('header__media--video', {
     controls: false,
     muted: false,
