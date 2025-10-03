@@ -326,30 +326,7 @@ body.active {
 .header__media_content.active {
     display: block;
 }
-.header__media_loading {
-     position: relative;
-    display: none;
-    width: 100%;
-    height: calc(100% - 32px);
-     text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.header__media_content.loading .header__media_loading {
-    display: flex;
-}
-.header__media_content.loading .header__media--video {
-    display: none;
-}
-.header__media_content.loading .overlay {
-    display: none;
-}
-.header__media_content.loading.fullscreen .header__media--video {
-    display: block;
-}
-.header__media_content--video.fullscreen .header__media_loading {
-    display: none !important;
-}
+
 .header__schedule {
     max-width: 958px;
     width: calc(100% - 256px);

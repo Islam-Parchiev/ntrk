@@ -8,6 +8,8 @@ import './lib/video.min.js';
   const mute = document.querySelector('.main-media__mute');
 //   const unmute = document.querySelector('[data-id="unmuteVideo"]');
   const fullscreenButton = document.querySelector('.navigation-bar__fullscreen');
+  const liveIndicator = document.querySelector('.main-media__status');
+  let isLive = true;
   function toggleFullscreen(element) {
     if (!document.fullscreenElement) {
       // Если не в полноэкранном режиме, запрашиваем его
@@ -43,7 +45,7 @@ import './lib/video.min.js';
         console.log('test')
        const player= videojs('live__main-media--video', {
           controls: false,
-          muted: false,
+          muted: true,
           preload: 'auto',
           autoplay: true,
           language: 'ru',
@@ -87,6 +89,12 @@ import './lib/video.min.js';
             mute.classList.add('muted');
         }
       })
+
+      if(isLive) {
+        liveIndicator.classList.add('online');
+      }else {
+        liveIndicator.classList.remove('online');
+      }
 })()
 // main-media__mute
 // muted

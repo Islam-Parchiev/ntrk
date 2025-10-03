@@ -79,7 +79,7 @@ function headerLive() {
   console.log('test');
   const player = videojs('header__media--video', {
     controls: false,
-    muted: false,
+    muted: true,
     preload: true,
     autoplay: true,
     language: 'ru',
