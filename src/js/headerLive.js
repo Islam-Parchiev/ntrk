@@ -8,7 +8,7 @@ import './lib/video.min.js';
   const unmute = document.querySelector('[data-id="unmuteVideo"]');
   const vid = document.querySelector('#header__media--video');
 const fullscreenButton = document.querySelector('[data-id="fullScreenVideo"]');
-
+const videoContainer = document.querySelector('.header__media_content--video');
 
 
 function toggleFullscreen(element) {
@@ -44,8 +44,8 @@ function toggleFullscreen(element) {
 }
     const updateMuteState = () => {
     const isMuted = vid.muted;
-    mute.classList.toggle('hidden', isMuted);
-    unmute.classList.toggle('hidden', !isMuted);
+    mute.classList.toggle('hidden', !isMuted);
+    unmute.classList.toggle('hidden',isMuted);
   };
 
 
@@ -67,17 +67,17 @@ pause.addEventListener('click',()=> {
 });
 mute.addEventListener('click',()=> {
   console.log('mute')
-  vid.muted=true;
+  vid.muted=false;
 updateMuteState()
 })
 unmute.addEventListener('click',()=> {
   console.log('unmute')
-  vid.muted=false;
+  vid.muted=true;
  updateMuteState()
 })
 function headerLive() {
   console.log('test');
-  videojs('header__media--video', {
+  const player = videojs('header__media--video', {
     controls: false,
     muted: false,
     preload: true,
@@ -93,6 +93,20 @@ function headerLive() {
       type: "application/vnd.apple.mpegURL"
     }]
   });
+    document.addEventListener('fullscreenchange', function() {
+  if (document.fullscreenElement) {
+   videoContainer.classList.add('fullscreen');
+  } else {
+    videoContainer.classList.remove('fullscreen');
+  }
+});
+  player.on('waiting',function(){
+    videoContainer.classList.add('loading');
+  })
+  player.on('canplay', function() {
+   videoContainer.classList.remove('loading');
+});
+
   setInterval(function() {
     gtag('event', 'heartbeat', { 'non_interaction': true });
     // console.log('send heartbeat');
