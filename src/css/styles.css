@@ -474,17 +474,27 @@ body.active {
     background: rgba(0, 0, 0, 0.5);
     display: none;
 }
-
+.overlay.visible {
+    display: block;
+}
+.overlay.visible .video__title {
+    font-size: 30px;
+}
 .header__media_video iframe {
     pointer-events: none;
+} 
+@media (any-hover: hover) {
+   
+    .header__media_content--radio:hover .overlay {
+        display: block;
+    }
 }
-.header__media_content--radio:hover .overlay {
-    display: block;
+@media (any-hover: hover) {
+    
+    .header__media_content--video:hover .overlay {
+        display: block;
+    }
 }
-.header__media_content--video:hover .overlay {
-    display: block;
-}
-
 .overlay__inner {
     padding: 12px;
     display: flex;
